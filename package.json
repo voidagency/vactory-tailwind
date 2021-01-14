@@ -1,0 +1,49 @@
+{
+  "name": "tailwind",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Hamza Bahlaouane <h.bahlaouane@void.fr>",
+  "license": "MIT",
+  "scripts": {
+    "develop": "gatsby develop",
+    "build": "gatsby build",
+    "storybook": "start-storybook -p 6006 --ci",
+    "build-storybook": "build-storybook"
+  },
+  "dependencies": {
+    "@storybook/addon-controls": "^6.1.11",
+    "@storybook/addon-knobs": "^6.1.11",
+    "@tailwindcss/aspect-ratio": "^0.2.0",
+    "@tailwindcss/forms": "^0.2.1",
+    "animated-number-react": "^0.1.1",
+    "autoprefixer": "^10.1.0",
+    "clsx": "^1.1.1",
+    "deepmerge": "^4.2.2",
+    "dotenv": "^8.2.0",
+    "gatsby": "^2.20.12",
+    "postcss": "^8.2.2",
+    "postcss-import": "^14.0.0",
+    "postcss-loader": "^4.1.0",
+    "postcss-nested": "^5.0.3",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
+    "react-slick": "^0.27.12",
+    "react-youtube": "^7.13.0",
+    "rtlcss": "^3.0.0",
+    "tailwindcss": "^2.0.2",
+    "tailwindcss-children": "^2.1.0",
+    "tailwindcss-dir": "^4.0.0",
+    "tailwindcss-pseudo-elements": "^1.5.1",
+    "tailwindcss-rtl": "^0.7.3",
+    "vactory-ui": "^1.0.8"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.11.6",
+    "@storybook/addon-actions": "^6.1.11",
+    "@storybook/addon-essentials": "^6.1.11",
+    "@storybook/addon-links": "^6.1.11",
+    "@storybook/react": "^6.1.11",
+    "babel-loader": "^8.1.0",
+    "react-is": "^16.13.1"
+  }
+}
