@@ -9,7 +9,7 @@ export default (props) => {
 				<li>
 					<div>
 						<a
-							href="#"
+							href="#!"
 							className="text-gray-400 hover:text-gray-500"
 						>
 							{/* <!-- Heroicon name: home --> */}
@@ -38,7 +38,7 @@ export default (props) => {
 							<path d="M5.555 17.776l8-16 .894.448-8 16-.894-.448z" />
 						</svg>
 						<a
-							href="#"
+							href="#!"
 							className="ltr:ml-4 rtl:mr-4 text-sm font-medium text-gray-500 hover:text-gray-700"
 						>
 							Projects
@@ -57,7 +57,7 @@ export default (props) => {
 							<path d="M5.555 17.776l8-16 .894.448-8 16-.894-.448z" />
 						</svg>
 						<a
-							href="#"
+							href="#!"
 							aria-current="page"
 							className="ltr:ml-4 rtl:mr-4 text-sm font-medium text-gray-500 hover:text-gray-700"
 						>

@@ -13,7 +13,7 @@ export default (props) => {
 				<div className="mt-8 flex justify-center">
 					<div className="inline-flex rounded-md shadow">
 						<a
-							href="#"
+							href="#!"
 							className="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700"
 						>
 							Get started
@@ -21,7 +21,7 @@ export default (props) => {
 					</div>
 					<div className="ltr:ml-3 rtl:mr-3 inline-flex">
 						<a
-							href="#"
+							href="#!"
 							className="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-indigo-700 bg-indigo-100 hover:bg-indigo-200"
 						>
 							Learn more

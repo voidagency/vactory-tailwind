@@ -14,21 +14,21 @@ export const DropdownExample = () => {
 				label={<span>Options</span>}
 				items={[
 					<a
-						href="#"
+						href="#!"
 						className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900"
 						role="menuitem"
 					>
 						Account settings
 					</a>,
 					<a
-						href="#"
+						href="#!"
 						className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900"
 						role="menuitem"
 					>
 						Support
 					</a>,
 					<a
-						href="#"
+						href="#!"
 						className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900"
 						role="menuitem"
 					>

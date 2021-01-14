@@ -41,7 +41,7 @@ export default (props) => {
 										<ul className="flex justify-center rtl:space-x-reverse space-x-5">
 											<li>
 												<a
-													href="#"
+													href="#!"
 													className="text-gray-400 hover:text-gray-300"
 												>
 													<span className="sr-only">
@@ -59,7 +59,7 @@ export default (props) => {
 											</li>
 											<li>
 												<a
-													href="#"
+													href="#!"
 													className="text-gray-400 hover:text-gray-300"
 												>
 													<span className="sr-only">

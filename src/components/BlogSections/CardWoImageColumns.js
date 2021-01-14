@@ -17,13 +17,13 @@ export default (props) => {
 				<div className="mt-12 grid gap-16 pt-12 lg:grid-cols-3 lg:gap-x-5 lg:gap-y-12">
 					<div>
 						<div>
-							<a href="#" className="inline-block">
+							<a href="#!" className="inline-block">
 								<span className="inline-flex items-center px-3 py-0.5 rounded-full text-sm font-medium bg-indigo-100 text-indigo-800">
 									Article
 								</span>
 							</a>
 						</div>
-						<a href="#" className="block mt-4">
+						<a href="#!" className="block mt-4">
 							<p className="text-xl font-semibold text-gray-900">
 								Boost your conversion rate
 							</p>
@@ -35,7 +35,7 @@ export default (props) => {
 						</a>
 						<div className="mt-6 flex items-center">
 							<div className="flex-shrink-0">
-								<a href="#">
+								<a href="#!">
 									<span className="sr-only">Paul York</span>
 									<img
 										className="h-10 w-10 rounded-full"
@@ -46,7 +46,7 @@ export default (props) => {
 							</div>
 							<div className="ltr:ml-3 rtl:mr-3">
 								<p className="text-sm font-medium text-gray-900">
-									<a href="#">Paul York</a>
+									<a href="#!">Paul York</a>
 								</p>
 								<div className="flex rtl:space-x-reverse space-x-1 text-sm text-gray-500">
 									<time dateTime="2020-03-16">
@@ -61,13 +61,13 @@ export default (props) => {
 
 					<div>
 						<div>
-							<a href="#" className="inline-block">
+							<a href="#!" className="inline-block">
 								<span className="inline-flex items-center px-3 py-0.5 rounded-full text-sm font-medium bg-pink-100 text-pink-800">
 									Video
 								</span>
 							</a>
 						</div>
-						<a href="#" className="block mt-4">
+						<a href="#!" className="block mt-4">
 							<p className="text-xl font-semibold text-gray-900">
 								How to use search engine optimization to drive
 								sales
@@ -80,7 +80,7 @@ export default (props) => {
 						</a>
 						<div className="mt-6 flex items-center">
 							<div className="flex-shrink-0">
-								<a href="#">
+								<a href="#!">
 									<span className="sr-only">Dessie Ryan</span>
 									<img
 										className="h-10 w-10 rounded-full"
@@ -91,7 +91,7 @@ export default (props) => {
 							</div>
 							<div className="ltr:ml-3 rtl:mr-3">
 								<p className="text-sm font-medium text-gray-900">
-									<a href="#">Dessie Ryan</a>
+									<a href="#!">Dessie Ryan</a>
 								</p>
 								<div className="flex rtl:space-x-reverse space-x-1 text-sm text-gray-500">
 									<time dateTime="2020-03-10">
@@ -106,13 +106,13 @@ export default (props) => {
 
 					<div>
 						<div>
-							<a href="#" className="inline-block">
+							<a href="#!" className="inline-block">
 								<span className="inline-flex items-center px-3 py-0.5 rounded-full text-sm font-medium bg-green-100 text-green-800">
 									Case Study
 								</span>
 							</a>
 						</div>
-						<a href="#" className="block mt-4">
+						<a href="#!" className="block mt-4">
 							<p className="text-xl font-semibold text-gray-900">
 								Improve your customer experience
 							</p>
@@ -124,7 +124,7 @@ export default (props) => {
 						</a>
 						<div className="mt-6 flex items-center">
 							<div className="flex-shrink-0">
-								<a href="#">
+								<a href="#!">
 									<span className="sr-only">
 										Easer Collins
 									</span>
@@ -137,7 +137,7 @@ export default (props) => {
 							</div>
 							<div className="ltr:ml-3 rtl:mr-3">
 								<p className="text-sm font-medium text-gray-900">
-									<a href="#">Easer Collins</a>
+									<a href="#!">Easer Collins</a>
 								</p>
 								<div className="flex rtl:space-x-reverse space-x-1 text-sm text-gray-500">
 									<time dateTime="2020-02-12">

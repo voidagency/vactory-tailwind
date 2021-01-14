@@ -46,17 +46,17 @@ export default (props) => {
 				<div className="mt-6 pt-10 grid gap-16 lg:grid-cols-1 lg:gap-x-5 lg:gap-y-12">
 					<div>
 						<div className="rtl:space-x-reverse space-x-3">
-							<a href="#" className="inline-block">
+							<a href="#!" className="inline-block">
 								<span className="inline-flex items-center px-3 py-0.5 rounded-full text-sm font-medium bg-indigo-100 text-indigo-800">
 									Article
 								</span>
 							</a>
-							<a href="#" className="inline-block">
+							<a href="#!" className="inline-block">
 								<span className="inline-flex items-center px-3 py-0.5 rounded-full text-sm font-medium bg-pink-100 text-pink-800">
 									Dev
 								</span>
 							</a>
-							<a href="#" className="inline-block">
+							<a href="#!" className="inline-block">
 								<span className="inline-flex items-center px-3 py-0.5 rounded-full text-sm font-medium bg-green-100 text-green-800">
 									Casablanca
 								</span>
@@ -65,7 +65,7 @@ export default (props) => {
 						<p className="mt-2 text-sm text-gray-500">
 							<time dateTime="2020-03-16">Mar 16, 2020</time>
 						</p>
-						<a href="#" className="mt-2 block">
+						<a href="#!" className="mt-2 block">
 							<p className="text-xl font-semibold text-gray-900">
 								Boost your conversion rate
 							</p>
@@ -79,7 +79,7 @@ export default (props) => {
 						</a>
 						<div className="mt-3">
 							<a
-								href="#"
+								href="#!"
 								className="text-base font-semibold text-indigo-600 hover:text-indigo-500"
 							>
 								Read full story
@@ -89,17 +89,17 @@ export default (props) => {
 
 					<div>
 						<div className="rtl:space-x-reverse space-x-3">
-							<a href="#" className="inline-block">
+							<a href="#!" className="inline-block">
 								<span className="inline-flex items-center px-3 py-0.5 rounded-full text-sm font-medium bg-indigo-100 text-indigo-800">
 									Article
 								</span>
 							</a>
-							<a href="#" className="inline-block">
+							<a href="#!" className="inline-block">
 								<span className="inline-flex items-center px-3 py-0.5 rounded-full text-sm font-medium bg-pink-100 text-pink-800">
 									Video
 								</span>
 							</a>
-							<a href="#" className="inline-block">
+							<a href="#!" className="inline-block">
 								<span className="inline-flex items-center px-3 py-0.5 rounded-full text-sm font-medium bg-green-100 text-green-800">
 									Rabat
 								</span>
@@ -108,7 +108,7 @@ export default (props) => {
 						<p className="mt-3 text-sm text-gray-500">
 							<time dateTime="2020-03-10">Mar 10, 2020</time>
 						</p>
-						<a href="#" className="mt-2 block">
+						<a href="#!" className="mt-2 block">
 							<p className="text-xl font-semibold text-gray-900">
 								How to use search engine optimization to drive
 								sales
@@ -121,7 +121,7 @@ export default (props) => {
 						</a>
 						<div className="mt-3">
 							<a
-								href="#"
+								href="#!"
 								className="text-base font-semibold text-indigo-600 hover:text-indigo-500"
 							>
 								Read full story
@@ -131,17 +131,17 @@ export default (props) => {
 
 					<div>
 						<div className="rtl:space-x-reverse space-x-3">
-							<a href="#" className="inline-block">
+							<a href="#!" className="inline-block">
 								<span className="inline-flex items-center px-3 py-0.5 rounded-full text-sm font-medium bg-indigo-100 text-indigo-800">
 									Article
 								</span>
 							</a>
-							<a href="#" className="inline-block">
+							<a href="#!" className="inline-block">
 								<span className="inline-flex items-center px-3 py-0.5 rounded-full text-sm font-medium bg-pink-100 text-pink-800">
 									Dev
 								</span>
 							</a>
-							<a href="#" className="inline-block">
+							<a href="#!" className="inline-block">
 								<span className="inline-flex items-center px-3 py-0.5 rounded-full text-sm font-medium bg-green-100 text-green-800">
 									Casablanca
 								</span>
@@ -150,7 +150,7 @@ export default (props) => {
 						<p className="mt-3 text-sm text-gray-500">
 							<time dateTime="2020-02-12">Feb 12, 2020</time>
 						</p>
-						<a href="#" className="mt-2 block">
+						<a href="#!" className="mt-2 block">
 							<p className="text-xl font-semibold text-gray-900">
 								Improve your customer experience
 							</p>
@@ -162,7 +162,7 @@ export default (props) => {
 						</a>
 						<div className="mt-3">
 							<a
-								href="#"
+								href="#!"
 								className="text-base font-semibold text-indigo-600 hover:text-indigo-500"
 							>
 								Read full story
@@ -172,17 +172,17 @@ export default (props) => {
 
 					<div>
 						<div className="rtl:space-x-reverse space-x-3">
-							<a href="#" className="inline-block">
+							<a href="#!" className="inline-block">
 								<span className="inline-flex items-center px-3 py-0.5 rounded-full text-sm font-medium bg-indigo-100 text-indigo-800">
 									Article
 								</span>
 							</a>
-							<a href="#" className="inline-block">
+							<a href="#!" className="inline-block">
 								<span className="inline-flex items-center px-3 py-0.5 rounded-full text-sm font-medium bg-pink-100 text-pink-800">
 									Dev
 								</span>
 							</a>
-							<a href="#" className="inline-block">
+							<a href="#!" className="inline-block">
 								<span className="inline-flex items-center px-3 py-0.5 rounded-full text-sm font-medium bg-green-100 text-green-800">
 									Tanger
 								</span>
@@ -191,7 +191,7 @@ export default (props) => {
 						<p className="mt-3 text-sm text-gray-500">
 							<time dateTime="2020-01-29">Jan 29, 2020</time>
 						</p>
-						<a href="#" className="mt-2 block">
+						<a href="#!" className="mt-2 block">
 							<p className="text-xl font-semibold text-gray-900">
 								Writing effective landing page copy
 							</p>
@@ -205,7 +205,7 @@ export default (props) => {
 						</a>
 						<div className="mt-3">
 							<a
-								href="#"
+								href="#!"
 								className="text-base font-semibold text-indigo-600 hover:text-indigo-500"
 							>
 								Read full story

@@ -20,7 +20,7 @@ export default (props) => {
 						</p>
 						<div class="flex space-x-6">
 							<a
-								href="#"
+								href="#!"
 								class="text-gray-400 hover:text-gray-500"
 							>
 								<span class="sr-only">Facebook</span>
@@ -39,7 +39,7 @@ export default (props) => {
 							</a>
 
 							<a
-								href="#"
+								href="#!"
 								class="text-gray-400 hover:text-gray-500"
 							>
 								<span class="sr-only">Instagram</span>
@@ -58,7 +58,7 @@ export default (props) => {
 							</a>
 
 							<a
-								href="#"
+								href="#!"
 								class="text-gray-400 hover:text-gray-500"
 							>
 								<span class="sr-only">Twitter</span>
@@ -73,7 +73,7 @@ export default (props) => {
 							</a>
 
 							<a
-								href="#"
+								href="#!"
 								class="text-gray-400 hover:text-gray-500"
 							>
 								<span class="sr-only">GitHub</span>
@@ -92,7 +92,7 @@ export default (props) => {
 							</a>
 
 							<a
-								href="#"
+								href="#!"
 								class="text-gray-400 hover:text-gray-500"
 							>
 								<span class="sr-only">Dribbble</span>

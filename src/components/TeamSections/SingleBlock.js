@@ -86,7 +86,7 @@ export default (props) => {
 							<ul className="flex rtl:space-x-reverse space-x-5">
 								<li>
 									<a
-										href="#"
+										href="#!"
 										className="text-gray-400 hover:text-gray-500"
 									>
 										<span className="sr-only">Twitter</span>
@@ -102,7 +102,7 @@ export default (props) => {
 								</li>
 								<li>
 									<a
-										href="#"
+										href="#!"
 										className="text-gray-400 hover:text-gray-500"
 									>
 										<span className="sr-only">

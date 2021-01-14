@@ -11,7 +11,7 @@ export default (props) => {
 				<li className="flex">
 					<div className="flex items-center">
 						<a
-							href="#"
+							href="#!"
 							className="text-gray-400 hover:text-gray-500"
 						>
 							{/* <!-- Heroicon name: home --> */}
@@ -41,7 +41,7 @@ export default (props) => {
 							<path d="M.293 0l22 22-22 22h1.414l22-22-22-22H.293z" />
 						</svg>
 						<a
-							href="#"
+							href="#!"
 							className="ltr:ml-4 rtl:mr-4 text-sm font-medium text-gray-500 hover:text-gray-700"
 						>
 							Projects
@@ -61,7 +61,7 @@ export default (props) => {
 							<path d="M.293 0l22 22-22 22h1.414l22-22-22-22H.293z" />
 						</svg>
 						<a
-							href="#"
+							href="#!"
 							aria-current="page"
 							className="ltr:ml-4 rtl:mr-4 text-sm font-medium text-gray-500 hover:text-gray-700"
 						>

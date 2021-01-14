@@ -20,7 +20,7 @@ export default (props) => {
 						</p>
 						<div class="flex space-x-6">
 							<a
-								href="#"
+								href="#!"
 								class="text-gray-400 hover:text-gray-500"
 							>
 								<span class="sr-only">Facebook</span>
@@ -39,7 +39,7 @@ export default (props) => {
 							</a>
 
 							<a
-								href="#"
+								href="#!"
 								class="text-gray-400 hover:text-gray-500"
 							>
 								<span class="sr-only">Instagram</span>
@@ -58,7 +58,7 @@ export default (props) => {
 							</a>
 
 							<a
-								href="#"
+								href="#!"
 								class="text-gray-400 hover:text-gray-500"
 							>
 								<span class="sr-only">Twitter</span>
@@ -73,7 +73,7 @@ export default (props) => {
 							</a>
 
 							<a
-								href="#"
+								href="#!"
 								class="text-gray-400 hover:text-gray-500"
 							>
 								<span class="sr-only">GitHub</span>
@@ -92,7 +92,7 @@ export default (props) => {
 							</a>
 
 							<a
-								href="#"
+								href="#!"
 								class="text-gray-400 hover:text-gray-500"
 							>
 								<span class="sr-only">Dribbble</span>
@@ -120,7 +120,7 @@ export default (props) => {
 								<ul class="mt-4 space-y-4">
 									<li>
 										<a
-											href="#"
+											href="#!"
 											class="text-base text-gray-500 hover:text-gray-900"
 										>
 											Marketing
@@ -129,7 +129,7 @@ export default (props) => {
 
 									<li>
 										<a
-											href="#"
+											href="#!"
 											class="text-base text-gray-500 hover:text-gray-900"
 										>
 											Analytics
@@ -138,7 +138,7 @@ export default (props) => {
 
 									<li>
 										<a
-											href="#"
+											href="#!"
 											class="text-base text-gray-500 hover:text-gray-900"
 										>
 											Commerce
@@ -147,7 +147,7 @@ export default (props) => {
 
 									<li>
 										<a
-											href="#"
+											href="#!"
 											class="text-base text-gray-500 hover:text-gray-900"
 										>
 											Insights
@@ -162,7 +162,7 @@ export default (props) => {
 								<ul class="mt-4 space-y-4">
 									<li>
 										<a
-											href="#"
+											href="#!"
 											class="text-base text-gray-500 hover:text-gray-900"
 										>
 											Pricing
@@ -171,7 +171,7 @@ export default (props) => {
 
 									<li>
 										<a
-											href="#"
+											href="#!"
 											class="text-base text-gray-500 hover:text-gray-900"
 										>
 											Documentation
@@ -180,7 +180,7 @@ export default (props) => {
 
 									<li>
 										<a
-											href="#"
+											href="#!"
 											class="text-base text-gray-500 hover:text-gray-900"
 										>
 											Guides
@@ -189,7 +189,7 @@ export default (props) => {
 
 									<li>
 										<a
-											href="#"
+											href="#!"
 											class="text-base text-gray-500 hover:text-gray-900"
 										>
 											API Status
@@ -206,7 +206,7 @@ export default (props) => {
 								<ul class="mt-4 space-y-4">
 									<li>
 										<a
-											href="#"
+											href="#!"
 											class="text-base text-gray-500 hover:text-gray-900"
 										>
 											About
@@ -215,7 +215,7 @@ export default (props) => {
 
 									<li>
 										<a
-											href="#"
+											href="#!"
 											class="text-base text-gray-500 hover:text-gray-900"
 										>
 											Blog
@@ -224,7 +224,7 @@ export default (props) => {
 
 									<li>
 										<a
-											href="#"
+											href="#!"
 											class="text-base text-gray-500 hover:text-gray-900"
 										>
 											Jobs
@@ -233,7 +233,7 @@ export default (props) => {
 
 									<li>
 										<a
-											href="#"
+											href="#!"
 											class="text-base text-gray-500 hover:text-gray-900"
 										>
 											Press
@@ -242,7 +242,7 @@ export default (props) => {
 
 									<li>
 										<a
-											href="#"
+											href="#!"
 											class="text-base text-gray-500 hover:text-gray-900"
 										>
 											Partners
@@ -257,7 +257,7 @@ export default (props) => {
 								<ul class="mt-4 space-y-4">
 									<li>
 										<a
-											href="#"
+											href="#!"
 											class="text-base text-gray-500 hover:text-gray-900"
 										>
 											Claim
@@ -266,7 +266,7 @@ export default (props) => {
 
 									<li>
 										<a
-											href="#"
+											href="#!"
 											class="text-base text-gray-500 hover:text-gray-900"
 										>
 											Privacy
@@ -275,7 +275,7 @@ export default (props) => {
 
 									<li>
 										<a
-											href="#"
+											href="#!"
 											class="text-base text-gray-500 hover:text-gray-900"
 										>
 											Terms
@@ -321,7 +321,7 @@ export default (props) => {
 				</div>
 				<div class="mt-8 border-t border-gray-200 pt-8 md:flex md:items-center md:justify-between">
 					<div class="flex space-x-6 md:order-2">
-						<a href="#" class="text-gray-400 hover:text-gray-500">
+						<a href="#!" class="text-gray-400 hover:text-gray-500">
 							<span class="sr-only">Facebook</span>
 							<svg
 								class="h-6 w-6"
@@ -337,7 +337,7 @@ export default (props) => {
 							</svg>
 						</a>
 
-						<a href="#" class="text-gray-400 hover:text-gray-500">
+						<a href="#!" class="text-gray-400 hover:text-gray-500">
 							<span class="sr-only">Instagram</span>
 							<svg
 								class="h-6 w-6"
@@ -353,7 +353,7 @@ export default (props) => {
 							</svg>
 						</a>
 
-						<a href="#" class="text-gray-400 hover:text-gray-500">
+						<a href="#!" class="text-gray-400 hover:text-gray-500">
 							<span class="sr-only">Twitter</span>
 							<svg
 								class="h-6 w-6"
@@ -365,7 +365,7 @@ export default (props) => {
 							</svg>
 						</a>
 
-						<a href="#" class="text-gray-400 hover:text-gray-500">
+						<a href="#!" class="text-gray-400 hover:text-gray-500">
 							<span class="sr-only">GitHub</span>
 							<svg
 								class="h-6 w-6"
@@ -381,7 +381,7 @@ export default (props) => {
 							</svg>
 						</a>
 
-						<a href="#" class="text-gray-400 hover:text-gray-500">
+						<a href="#!" class="text-gray-400 hover:text-gray-500">
 							<span class="sr-only">Dribbble</span>
 							<svg
 								class="h-6 w-6"

@@ -6,13 +6,13 @@ export default (props) => {
 		<div class="mt-20 mx-20 bg-white px-4 py-3 flex items-center justify-between border-t border-gray-200 sm:px-6">
 			<div class="flex-1 flex justify-between sm:hidden">
 				<a
-					href="#"
+					href="#!"
 					class="relative inline-flex items-center px-4 py-2 border border-gray-300 text-sm font-medium rounded-md text-gray-700 bg-white hover:text-gray-500"
 				>
 					Previous
 				</a>
 				<a
-					href="#"
+					href="#!"
 					class="ml-3 relative inline-flex items-center px-4 py-2 border border-gray-300 text-sm font-medium rounded-md text-gray-700 bg-white hover:text-gray-500"
 				>
 					Next
@@ -32,7 +32,7 @@ export default (props) => {
 						aria-label="Pagination"
 					>
 						<a
-							href="#"
+							href="#!"
 							class="relative inline-flex items-center px-2 py-2 rounded-l-md border border-gray-300 bg-white text-sm font-medium text-gray-500 hover:bg-gray-50"
 						>
 							<span class="sr-only">Previous</span>
@@ -52,19 +52,19 @@ export default (props) => {
 							</svg>
 						</a>
 						<a
-							href="#"
+							href="#!"
 							class="relative inline-flex items-center px-4 py-2 border border-gray-300 bg-white text-sm font-medium text-gray-700 hover:bg-gray-50"
 						>
 							1
 						</a>
 						<a
-							href="#"
+							href="#!"
 							class="relative inline-flex items-center px-4 py-2 border border-gray-300 bg-white text-sm font-medium text-gray-700 hover:bg-gray-50"
 						>
 							2
 						</a>
 						<a
-							href="#"
+							href="#!"
 							class="hidden md:inline-flex relative items-center px-4 py-2 border border-gray-300 bg-white text-sm font-medium text-gray-700 hover:bg-gray-50"
 						>
 							3
@@ -73,25 +73,25 @@ export default (props) => {
 							...
 						</span>
 						<a
-							href="#"
+							href="#!"
 							class="hidden md:inline-flex relative items-center px-4 py-2 border border-gray-300 bg-white text-sm font-medium text-gray-700 hover:bg-gray-50"
 						>
 							8
 						</a>
 						<a
-							href="#"
+							href="#!"
 							class="relative inline-flex items-center px-4 py-2 border border-gray-300 bg-white text-sm font-medium text-gray-700 hover:bg-gray-50"
 						>
 							9
 						</a>
 						<a
-							href="#"
+							href="#!"
 							class="relative inline-flex items-center px-4 py-2 border border-gray-300 bg-white text-sm font-medium text-gray-700 hover:bg-gray-50"
 						>
 							10
 						</a>
 						<a
-							href="#"
+							href="#!"
 							class="relative inline-flex items-center px-2 py-2 rounded-r-md border border-gray-300 bg-white text-sm font-medium text-gray-500 hover:bg-gray-50"
 						>
 							<span class="sr-only">Next</span>
