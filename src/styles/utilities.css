@@ -1,0 +1,5 @@
+@layer utilities {
+	.text-stroked {
+		-webkit-text-stroke: 2px theme('colors.indigo.DEFAULT');
+	}
+}

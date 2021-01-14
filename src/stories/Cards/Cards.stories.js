@@ -1,5 +1,6 @@
 import React from 'react';
 import {CardA, CardB} from '../../components'
+import ColoredFooter from "../../components/Cards/ColoredFooter";
 
 export default {
 	title: "Components/Cards",
@@ -46,4 +47,8 @@ export const Card2 = () => {
 			<hr className="my-10"/>
 		</div>
 	)
+}
+
+export const WithColoredFooter = () => {
+	return <ColoredFooter />
 }
