@@ -29,8 +29,8 @@ export default (props) => {
 					</div>
 					<div className="lg:col-span-2">
 						<ul className="space-y-12 sm:divide-y sm:divide-gray-200 sm:space-y-0 sm:-mt-8 lg:gap-x-8 lg:space-y-0">
-							{data.map((member) => (
-								<li className="sm:py-8">
+							{data.map((member, i) => (
+								<li key={i} className="sm:py-8">
 									<div className="space-y-4 sm:grid sm:grid-cols-3 sm:items-start sm:gap-6 sm:space-y-0">
 										{/* <!-- Image --> */}
 										<div className="aspect-w-3 aspect-h-2 sm:aspect-w-3 sm:aspect-h-4">

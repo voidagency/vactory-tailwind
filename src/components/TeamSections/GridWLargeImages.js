@@ -20,8 +20,8 @@ export default (props) => {
 						</p>
 					</div>
 					<ul className="space-y-4 sm:grid sm:grid-cols-2 sm:gap-6 sm:space-y-0 lg:grid-cols-3 lg:gap-8">
-						{data.map((member) => (
-							<li className="py-10 px-6 bg-gray-800 text-center rounded-lg xl:px-10 xl:ltr:text-left xl:rtl:text-right">
+						{data.map((member, i) => (
+							<li key={i} className="py-10 px-6 bg-gray-800 text-center rounded-lg xl:px-10 xl:ltr:text-left xl:rtl:text-right">
 								<div className="space-y-6 xl:space-y-10">
 									<img
 										className="mx-auto h-40 w-40 rounded-full xl:w-56 xl:h-56"
