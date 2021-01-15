@@ -5,7 +5,7 @@ import Footer_ToolsColumns from "../../components/Footers/ToolsColumns";
 import Footer_SiteSections from "../../components/Footers/SiteSections";
 
 export default {
-	title: "Components/Footers",
+	title: "Sections/Footers",
 };
 
 export const SocialLinksOnly = () => {

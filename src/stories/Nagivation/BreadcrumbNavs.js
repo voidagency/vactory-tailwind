@@ -5,7 +5,7 @@ import Breadcrumb_Contained from "../../components/BreadcrumbNavs/Contained";
 import Breadcrumb_Slashes from "../../components/BreadcrumbNavs/Slashes";
 
 export default {
-	title: "Components/Navigation/Breadcrumbs",
+	title: "Sections/Navigation/Breadcrumbs",
 };
 
 export const Bar = () => {

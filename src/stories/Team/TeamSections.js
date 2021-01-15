@@ -6,7 +6,7 @@ import TeamSections_VerticalImages from "../../components/TeamSections/VerticalI
 import TeamSections_SingleBlock from "../../components/TeamSections/SingleBlock";
 
 export default {
-	title: "Components/Team",
+	title: "Sections/Team",
 };
 
 export const AllTextGrid = () => {

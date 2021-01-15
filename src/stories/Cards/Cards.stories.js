@@ -3,7 +3,7 @@ import {CardA, CardB} from '../../components'
 import ColoredFooter from "../../components/Cards/ColoredFooter";
 
 export default {
-	title: "Components/Cards",
+	title: "Sections/Cards",
 };
 
 export const CardAExemple = () => <CardA

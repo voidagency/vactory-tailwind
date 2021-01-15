@@ -2,7 +2,7 @@ import React from "react";
 import FAQsAccordion from "../../components/FAQsSections/Accordion";
 
 export default {
-	title: "Components/FAQs",
+	title: "Sections/FAQs",
 };
 
 export const FAQs_Accordion = () => {

@@ -4,7 +4,7 @@ import Pager_SimpleButtons from "../../components/PaginationNavs/SimpleButtons";
 import Pager_ExtendedButtons from "../../components/PaginationNavs/ExtendedButtons";
 
 export default {
-	title: "Components/Navigation/Pagination",
+	title: "Sections/Navigation/Pagination",
 };
 
 export const CenteredPageNumbers = () => {

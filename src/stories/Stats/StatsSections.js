@@ -4,7 +4,7 @@ import Stats_SimpleOnBg from "../../components/StatsSections/SimpleOnBg";
 import Stats_Boxed from "../../components/StatsSections/StatsBoxed";
 
 export default {
-	title: "Components/Stats",
+	title: "Sections/Stats",
 };
 
 export const SimpleInCard = () => {

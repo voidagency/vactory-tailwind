@@ -3,7 +3,7 @@ import {HeaderA, HeaderB} from '../../components'
 import DirSwitch from '../../utilites/dirSwitch'
 
 export default {
-	title: "Components/Headers",
+	title: "Sections/Headers",
 };
 
 export const HeaderAExemple = () => <HeaderA />

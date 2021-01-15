@@ -4,7 +4,7 @@ import Testimonial_SideBySide from "../../components/TestimonialSections/SideByS
 import Testimonial_SimpleCentered from "../../components/TestimonialSections/SimpleCentered";
 
 export default {
-	title: "Components/Testimonials",
+	title: "Sections/Testimonials",
 };
 
 export const LargeAvatar = () => {

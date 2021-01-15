@@ -6,7 +6,7 @@ import CTA_SimpleCenteredWBackground from "../../components/CTASections/SimpleCe
 
 
 export default {
-	title: "Components/Call To Action",
+	title: "Sections/Call To Action",
 };
 
 export const SplitWithImage = () => {

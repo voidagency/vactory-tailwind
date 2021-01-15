@@ -7,7 +7,7 @@ import FeaturesSection_SideBySideAlt from "../../components/FeaturesSections/Sid
 import FeaturesSection_SimpleColumns from "../../components/FeaturesSections/SimpleColumns";
 
 export default {
-	title: "Components/Features List",
+	title: "Sections/Features List",
 };
 
 export const GridWithPictos = () => {

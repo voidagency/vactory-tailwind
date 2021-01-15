@@ -5,7 +5,7 @@ import BlogSection_CardWoImageColumns from "../../components/BlogSections/CardWo
 
 
 export default {
-	title: "Components/Blog Section",
+	title: "Sections/Blog Section",
 };
 
 export const AllTextList = () => {
