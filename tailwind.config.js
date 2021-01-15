@@ -3,7 +3,7 @@ const plugin = require('tailwindcss/plugin')
 
 module.exports = {
 	purge: {
-		enabled: true,
+		// enabled: true,
 		content: ['./src/**/*.{js,jsx,ts,tsx}']
 	},
 	darkMode: "class", // or 'media' or 'class'
@@ -107,7 +107,7 @@ module.exports = {
 	},
 	plugins: [
 		require("@tailwindcss/aspect-ratio"),
-		// require('@tailwindcss/forms'),
+		require('@tailwindcss/forms'),
 		// require("tailwindcss-children"),
 		require("tailwindcss-dir")(),
 		require("tailwindcss-pseudo-elements"),
