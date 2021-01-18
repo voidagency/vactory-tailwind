@@ -24,7 +24,7 @@ export default (props) => {
 				>
 					<option>My Account</option>
 					<option>Company</option>
-					<option selected>Team Members</option>
+					<option>Team Members</option>
 					<option>Billing</option>
 				</select>
 			</div>
@@ -93,7 +93,7 @@ export default (props) => {
 					classNames={{
 						enter: "ease-out duration-300 opacity-0",
 						enterActive: "ease-out duration-300 opacity-100",
-						enterDone: "",
+						enterDone: "block-!",
 						exit: "ease-in duration-200",
 						exitActive: "opacity-0",
 						exitDone: "opacity-0",
@@ -113,7 +113,7 @@ export default (props) => {
 					classNames={{
 						enter: "ease-out duration-300 opacity-0",
 						enterActive: "ease-out duration-300 opacity-100",
-						enterDone: "",
+						enterDone: "block-!",
 						exit: "ease-in duration-200",
 						exitActive: "opacity-0",
 						exitDone: "opacity-0",
@@ -133,7 +133,7 @@ export default (props) => {
 					classNames={{
 						enter: "ease-out duration-300 opacity-0",
 						enterActive: "ease-out duration-300 opacity-100",
-						enterDone: "",
+						enterDone: "block-!",
 						exit: "ease-in duration-200",
 						exitActive: "opacity-0",
 						exitDone: "opacity-0",
@@ -153,7 +153,7 @@ export default (props) => {
 					classNames={{
 						enter: "ease-out duration-300 opacity-0",
 						enterActive: "ease-out duration-300 opacity-100",
-						enterDone: "",
+						enterDone: "block-!",
 						exit: "ease-in duration-200",
 						exitActive: "opacity-0",
 						exitDone: "opacity-0",

@@ -2,11 +2,30 @@ import React from "react";
 import { CSSTransition } from "react-transition-group";
 
 
-export const Dropdown = ({label, items}) => {
+export const Dropdown = ({ label, items }) => {
+	const node = React.useRef(null);
 	const [isOpen, setIsOpen] = React.useState(false);
 
+	// to close dropdown on click outside
+	const handleClickOutside = (e) => {
+		if (!node.current.contains(e.target))
+			setIsOpen(false);
+	};
+
+	// attach click outside handler
+	React.useEffect(() => {
+		document.addEventListener("mousedown", handleClickOutside);
+
+		return () => {
+			document.removeEventListener("mousedown", handleClickOutside);
+		};
+	}, []);
+
 	return (
-		<div className="relative inline-block ltr:text-left rtl:text-right">
+		<div
+			className="relative inline-block ltr:text-left rtl:text-right"
+			ref={node}
+		>
 			<div>
 				<button
 					onClick={(e) => setIsOpen(!isOpen)}
@@ -47,12 +66,11 @@ export const Dropdown = ({label, items}) => {
 					enterDone: "",
 					exit: "transition ease-in duration-75",
 					exitActive: "transform opacity-0 scale-95",
+					exitDone: "hidden"
 				}}
 			>
 				<div
-					className={`${
-						isOpen ? "" : "hidden "
-					}ltr:origin-top-right rtl:origin-top-left absolute ltr:right-0 rtl:left-0 mt-2 w-56 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5`}
+					className="ltr:origin-top-right rtl:origin-top-left absolute ltr:right-0 rtl:left-0 mt-2 w-56 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5"
 				>
 					<div
 						className="py-1"

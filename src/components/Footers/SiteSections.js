@@ -1,4 +1,5 @@
 import React from "react";
+import logoImage from "../../images/capital-azur-gray-300.svg";
 
 export default (props) => {
 	return (
@@ -11,7 +12,7 @@ export default (props) => {
 					<div className="space-y-8 pb-8">
 						<img
 							className="h-10"
-							src="https://tailwindui.com/img/logos/workflow-mark-gray-300.svg"
+							src={logoImage}
 							alt="Company name"
 						/>
 						<p className="text-gray-500 text-base">
@@ -321,7 +322,10 @@ export default (props) => {
 				</div>
 				<div className="mt-8 border-t border-gray-200 pt-8 md:flex md:items-center md:justify-between">
 					<div className="flex space-x-6 md:order-2">
-						<a href="#!" className="text-gray-400 hover:text-gray-500">
+						<a
+							href="#!"
+							className="text-gray-400 hover:text-gray-500"
+						>
 							<span className="sr-only">Facebook</span>
 							<svg
 								className="h-6 w-6"
@@ -337,7 +341,10 @@ export default (props) => {
 							</svg>
 						</a>
 
-						<a href="#!" className="text-gray-400 hover:text-gray-500">
+						<a
+							href="#!"
+							className="text-gray-400 hover:text-gray-500"
+						>
 							<span className="sr-only">Instagram</span>
 							<svg
 								className="h-6 w-6"
@@ -353,7 +360,10 @@ export default (props) => {
 							</svg>
 						</a>
 
-						<a href="#!" className="text-gray-400 hover:text-gray-500">
+						<a
+							href="#!"
+							className="text-gray-400 hover:text-gray-500"
+						>
 							<span className="sr-only">Twitter</span>
 							<svg
 								className="h-6 w-6"
@@ -365,7 +375,10 @@ export default (props) => {
 							</svg>
 						</a>
 
-						<a href="#!" className="text-gray-400 hover:text-gray-500">
+						<a
+							href="#!"
+							className="text-gray-400 hover:text-gray-500"
+						>
 							<span className="sr-only">GitHub</span>
 							<svg
 								className="h-6 w-6"
@@ -381,7 +394,10 @@ export default (props) => {
 							</svg>
 						</a>
 
-						<a href="#!" className="text-gray-400 hover:text-gray-500">
+						<a
+							href="#!"
+							className="text-gray-400 hover:text-gray-500"
+						>
 							<span className="sr-only">Dribbble</span>
 							<svg
 								className="h-6 w-6"

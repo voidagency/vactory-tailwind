@@ -17,14 +17,17 @@ export default (props) => {
 					Select a tab
 				</label>
 				<select
-					onChange={(e) => { console.log(e.currentTarget.value, e.currentTarget); setCurrentTab(e.currentTarget.value) }}
+					onChange={(e) => {
+						console.log(e.currentTarget.value, e.currentTarget);
+						setCurrentTab(e.currentTarget.value);
+					}}
 					id="tabs"
 					name="tabs"
 					className="block w-full focus:ring-indigo-500 focus:border-indigo-500 border-gray-300 rounded-md"
 				>
 					<option>My Account</option>
 					<option>Company</option>
-					<option selected>Team Members</option>
+					<option>Team Members</option>
 					<option>Billing</option>
 				</select>
 			</div>
@@ -156,85 +159,77 @@ export default (props) => {
 				</div>
 			</div>
 
-			{currentTab === "My Account" && (
-				<CSSTransition
-					in={currentTab === "My Account"}
-					timeout={{
-						enter: 300,
-						exit: 200,
-					}}
-					classNames={{
-						enter: "ease-out duration-300 opacity-0",
-						enterActive: "ease-out duration-300 opacity-100",
-						enterDone: "",
-						exit: "ease-in duration-200",
-						exitActive: "opacity-0",
-						exitDone: "opacity-0",
-					}}
-				>
-					<div>My Account</div>
-				</CSSTransition>
-			)}
+			<CSSTransition
+				in={currentTab === "My Account"}
+				timeout={{
+					enter: 300,
+					exit: 200,
+				}}
+				classNames={{
+					enter: "ease-out duration-300 opacity-0",
+					enterActive: "ease-out duration-300 opacity-100",
+					enterDone: "block-!",
+					exit: "ease-in duration-200",
+					exitActive: "opacity-0",
+					exitDone: "hidden",
+				}}
+			>
+				<div className="hidden">My Account</div>
+			</CSSTransition>
 
-			{currentTab === "Company" && (
-				<CSSTransition
-					in={currentTab === "Company"}
-					timeout={{
-						enter: 300,
-						exit: 200,
-					}}
-					classNames={{
-						enter: "ease-out duration-300 opacity-0",
-						enterActive: "ease-out duration-300 opacity-100",
-						enterDone: "",
-						exit: "ease-in duration-200",
-						exitActive: "opacity-0",
-						exitDone: "opacity-0",
-					}}
-				>
-					<div>Company</div>
-				</CSSTransition>
-			)}
+			<CSSTransition
+				in={currentTab === "Company"}
+				timeout={{
+					enter: 300,
+					exit: 200,
+				}}
+				classNames={{
+					enter: "ease-out duration-300 opacity-0",
+					enterActive: "ease-out duration-300 opacity-100",
+					enterDone: "block-!",
+					exit: "ease-in duration-200",
+					exitActive: "opacity-0",
+					exitDone: "hidden",
+				}}
+			>
+				<div className="hidden">Company</div>
+			</CSSTransition>
 
-			{currentTab === "Team Members" && (
-				<CSSTransition
-					in={currentTab === "Team Members"}
-					timeout={{
-						enter: 300,
-						exit: 200,
-					}}
-					classNames={{
-						enter: "ease-out duration-300 opacity-0",
-						enterActive: "ease-out duration-300 opacity-100",
-						enterDone: "",
-						exit: "ease-in duration-200",
-						exitActive: "opacity-0",
-						exitDone: "opacity-0",
-					}}
-				>
-					<div>Team Members</div>
-				</CSSTransition>
-			)}
+			<CSSTransition
+				in={currentTab === "Team Members"}
+				timeout={{
+					enter: 300,
+					exit: 200,
+				}}
+				classNames={{
+					enter: "ease-out duration-300 opacity-0",
+					enterActive: "ease-out duration-300 opacity-100",
+					enterDone: "block-!",
+					exit: "ease-in duration-200",
+					exitActive: "opacity-0",
+					exitDone: "hidden",
+				}}
+			>
+				<div className="hidden">Team Members</div>
+			</CSSTransition>
 
-			{currentTab === "Billing" && (
-				<CSSTransition
-					in={currentTab === "Billing"}
-					timeout={{
-						enter: 300,
-						exit: 200,
-					}}
-					classNames={{
-						enter: "ease-out duration-300 opacity-0",
-						enterActive: "ease-out duration-300 opacity-100",
-						enterDone: "",
-						exit: "ease-in duration-200",
-						exitActive: "opacity-0",
-						exitDone: "opacity-0",
-					}}
-				>
-					<div>Billing</div>
-				</CSSTransition>
-			)}
+			<CSSTransition
+				in={currentTab === "Billing"}
+				timeout={{
+					enter: 300,
+					exit: 200,
+				}}
+				classNames={{
+					enter: "ease-out duration-300 opacity-0",
+					enterActive: "ease-out duration-300 opacity-100",
+					enterDone: "block-!",
+					exit: "ease-in duration-200",
+					exitActive: "opacity-0",
+					exitDone: "hidden",
+				}}
+			>
+				<div className="hidden">Billing</div>
+			</CSSTransition>
 		</div>
 	);
 };

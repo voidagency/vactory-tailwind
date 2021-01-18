@@ -1,4 +1,5 @@
 import React from "react";
+import logoImage from "../../images/capital-azur-gray-300.svg"
 
 export default (props) => {
 	return (
@@ -11,7 +12,7 @@ export default (props) => {
 					<div className="mt-8 xl:col-span-1 space-y-8">
 						<img
 							className="h-10"
-							src="https://tailwindui.com/img/logos/workflow-mark-gray-300.svg"
+							src={logoImage}
 							alt="Company name"
 						/>
 						<p className="text-gray-500 text-base">

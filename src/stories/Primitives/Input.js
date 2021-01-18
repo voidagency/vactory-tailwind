@@ -4,7 +4,7 @@ export default {
 	title: "Primitives/Inputs",
 };
 
-export const Input_1 = () => {
+export const Simple = () => {
 	return (
 		<div className="w-full max-w-xs mx-auto py-6">
 			<div>
@@ -27,7 +27,7 @@ export const Input_1 = () => {
 		</div>
 	);
 };
-export const Input_2 = () => {
+export const HelpText = () => {
 	return (
 		<div className="w-full max-w-xs mx-auto py-6">
 			<div>
@@ -57,7 +57,7 @@ export const Input_2 = () => {
 		</div>
 	);
 };
-export const Input_3 = () => {
+export const Validation = () => {
 	return (
 		<div className="w-full max-w-xs mx-auto py-6">
 			<div>
@@ -102,7 +102,7 @@ export const Input_3 = () => {
 		</div>
 	);
 };
-export const Input_4 = () => {
+export const CornerHint = () => {
 	return (
 		<div className="w-full max-w-xs mx-auto py-6">
 			<div>
@@ -131,7 +131,7 @@ export const Input_4 = () => {
 		</div>
 	);
 };
-export const Input_5 = () => {
+export const LeadingIcon = () => {
 	return (
 		<div className="w-full max-w-xs mx-auto py-6">
 			<div>
@@ -167,7 +167,7 @@ export const Input_5 = () => {
 		</div>
 	);
 };
-export const Input_6 = () => {
+export const TrailingIcon = () => {
 	return (
 		<div className="w-full max-w-xs mx-auto py-6">
 			<div>
@@ -206,35 +206,35 @@ export const Input_6 = () => {
 		</div>
 	);
 };
-export const Input_7 = () => {
-	return (
-		<div className="w-full max-w-xs mx-auto py-6">
-			<div>
-				<label
-					htmlFor="company_website"
-					className="block text-sm font-medium text-gray-700"
-				>
-					Company Website
-				</label>
-				<div className="mt-1 relative rounded-md shadow-sm">
-					<div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
-						<span className="text-gray-500 sm:text-sm">
-							http://
-						</span>
+export const InlinePrefix = () => {
+			return (
+				<div className="w-full max-w-xs mx-auto py-6">
+					<div>
+						<label
+							htmlFor="company_website"
+							className="block text-sm font-medium text-gray-700"
+						>
+							Company Website
+						</label>
+						<div className="mt-1 relative rounded-md shadow-sm">
+							<div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
+								<span className="text-gray-500 sm:text-sm">
+									http://
+								</span>
+							</div>
+							<input
+								type="text"
+								name="company_website"
+								id="company_website"
+								className="focus:ring-indigo-500 focus:border-indigo-500 block w-full pl-16 sm:pl-14 sm:text-sm border-gray-300 rounded-md"
+								placeholder="www.example.com"
+							/>
+						</div>
 					</div>
-					<input
-						type="text"
-						name="company_website"
-						id="company_website"
-						className="focus:ring-indigo-500 focus:border-indigo-500 block w-full pl-16 sm:pl-14 sm:text-sm border-gray-300 rounded-md"
-						placeholder="www.example.com"
-					/>
 				</div>
-			</div>
-		</div>
-	);
-};
-export const Input_8 = () => {
+			);
+		};
+export const Prefix = () => {
 	return (
 		<div className="w-full max-w-xs mx-auto py-6">
 			<div>
@@ -260,7 +260,7 @@ export const Input_8 = () => {
 		</div>
 	);
 };
-export const Input_9 = () => {
+export const LeadingDropdown = () => {
 	return (
 		<div className="w-full max-w-xs mx-auto py-6">
 			<div>
@@ -297,7 +297,7 @@ export const Input_9 = () => {
 		</div>
 	);
 };
-export const Input_10 = () => {
+export const TrailingButton = () => {
 	return (
 		<div className="w-full max-w-sm mx-auto">
 			<div>
@@ -347,7 +347,7 @@ export const Input_10 = () => {
 		</div>
 	);
 };
-export const Input_11 = () => {
+export const SharedBorders = () => {
 	return (
 		<div className="w-full max-w-xs mx-auto py-6">
 			<div>

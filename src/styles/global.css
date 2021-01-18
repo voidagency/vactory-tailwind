@@ -9,7 +9,3 @@ html {
 	@apply font-montserrat;
 }
 
-.text-justify {
-	text-align-last: justify;
-}
-
