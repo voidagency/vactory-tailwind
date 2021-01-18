@@ -26,9 +26,14 @@ import '../src/styles/global.css';
 const customIcons = mergeIcons(iconSet, customIconSet);
 
 export const parameters = {
-    actions: {argTypesRegex: "^on[A-Z].*"},
-    controls: { expanded: true },
-};
+			actions: { argTypesRegex: "^on[A-Z].*" },
+			controls: { expanded: true },
+			options: {
+				storySort: {
+					order: ["Primitives", "Elements", "Sections"],
+				},
+			},
+		};
 
 // Gatsby's Link overrides:
 // Gatsby Link calls the `enqueue` & `hovering` methods on the global variable ___loader.
