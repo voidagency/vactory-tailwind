@@ -1,0 +1,38 @@
+[
+	{
+		"a": "Jane Cooper ",
+		"b": "Regional Paradigm Technician ",
+		"c": "jane.cooper@example.com ",
+		"d": "Admin "
+	},
+	{
+		"a": "Cody Fisher ",
+		"b": "Product Directives Officer ",
+		"c": "cody.fisher@example.com ",
+		"d": "Owner "
+	},
+	{
+		"a": "Esther Howard ",
+		"b": "Forward Response Developer ",
+		"c": "esther.howard@example.com ",
+		"d": "Member "
+	},
+	{
+		"a": "Jenny Wilson ",
+		"b": "Central Security Manager ",
+		"c": "jenny.wilson@example.com ",
+		"d": "Member "
+	},
+	{
+		"a": "Kristin Watson ",
+		"b": "Lead Implementation Liaison ",
+		"c": "kristin.watson@example.com ",
+		"d": "Admin "
+	},
+	{
+		"a": "Cameron Williamson ",
+		"b": "Internal Applications Engineer ",
+		"c": "cameron.williamson@example.com ",
+		"d": "Member "
+	}
+]

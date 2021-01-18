@@ -1,6 +1,6 @@
 import React from "react";
-import Dropdown_Native from "../../components/Dropdowns/Native"
-import Dropdown_Custom from "../../components/Dropdowns/Custom"
+import Dropdown_Native from "../../components/Selects/Native"
+import Dropdown_Custom from "../../components/Selects/Custom"
 
 export default {
 	title: "Primitives/Select",

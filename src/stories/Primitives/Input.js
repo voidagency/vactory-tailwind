@@ -9,7 +9,7 @@ export const Simple = () => {
 		<div className="w-full max-w-xs mx-auto py-6">
 			<div>
 				<label
-					htmlhtmlFor="email"
+					htmlhtmhtmlFor="email"
 					className="block text-sm font-medium text-gray-700"
 				>
 					Email
@@ -27,12 +27,13 @@ export const Simple = () => {
 		</div>
 	);
 };
+
 export const HelpText = () => {
 	return (
 		<div className="w-full max-w-xs mx-auto py-6">
 			<div>
 				<label
-					htmlhtmlFor="email"
+					htmlhtmhtmlFor="email"
 					className="block text-sm font-medium text-gray-700"
 				>
 					Email
@@ -57,12 +58,13 @@ export const HelpText = () => {
 		</div>
 	);
 };
+
 export const Validation = () => {
 	return (
 		<div className="w-full max-w-xs mx-auto py-6">
 			<div>
 				<label
-					htmlhtmlFor="email"
+					htmlhtmhtmlFor="email"
 					className="block text-sm font-medium text-gray-700"
 				>
 					Email
@@ -102,13 +104,14 @@ export const Validation = () => {
 		</div>
 	);
 };
+
 export const CornerHint = () => {
 	return (
 		<div className="w-full max-w-xs mx-auto py-6">
 			<div>
 				<div className="flex justify-between">
 					<label
-						htmlhtmlFor="email"
+						htmlhtmhtmlFor="email"
 						className="block text-sm font-medium text-gray-700"
 					>
 						Email
@@ -131,12 +134,13 @@ export const CornerHint = () => {
 		</div>
 	);
 };
+
 export const LeadingIcon = () => {
 	return (
 		<div className="w-full max-w-xs mx-auto py-6">
 			<div>
 				<label
-					htmlhtmlFor="email"
+					htmlhtmhtmlFor="email"
 					className="block text-sm font-medium text-gray-700"
 				>
 					Email
@@ -167,12 +171,13 @@ export const LeadingIcon = () => {
 		</div>
 	);
 };
+
 export const TrailingIcon = () => {
 	return (
 		<div className="w-full max-w-xs mx-auto py-6">
 			<div>
 				<label
-					htmlhtmlFor="account_number"
+					htmlhtmhtmlFor="account_number"
 					className="block text-sm font-medium text-gray-700"
 				>
 					Account number
@@ -206,40 +211,42 @@ export const TrailingIcon = () => {
 		</div>
 	);
 };
+
 export const InlinePrefix = () => {
-			return (
-				<div className="w-full max-w-xs mx-auto py-6">
-					<div>
-						<label
-							htmlhtmlFor="company_website"
-							className="block text-sm font-medium text-gray-700"
-						>
-							Company Website
-						</label>
-						<div className="mt-1 relative rounded-md shadow-sm">
-							<div className="absolute inset-y-0 ltr:left-0 rtl:right-0 ltr:pl-3 rtl:pr-3 flex items-center pointer-events-none">
-								<span className="text-gray-500 sm:text-sm">
-									http://
-								</span>
-							</div>
-							<input
-								type="text"
-								name="company_website"
-								id="company_website"
-								className="focus:ring-indigo-500 focus:border-indigo-500 block w-full ltr:pl-16 rtl:pr-16 sm:ltr:pl-14 sm:rtl:pr-14 sm:text-sm border-gray-300 rounded-md"
-								placeholder="www.example.com"
-							/>
-						</div>
+	return (
+		<div className="w-full max-w-xs mx-auto py-6">
+			<div>
+				<label
+					htmlhtmhtmlFor="company_website"
+					className="block text-sm font-medium text-gray-700"
+				>
+					Company Website
+				</label>
+				<div className="mt-1 relative rounded-md shadow-sm">
+					<div className="absolute inset-y-0 ltr:left-0 rtl:right-0 ltr:pl-3 rtl:pr-3 flex items-center pointer-events-none">
+						<span className="text-gray-500 sm:text-sm">
+							http://
+						</span>
 					</div>
+					<input
+						type="text"
+						name="company_website"
+						id="company_website"
+						className="focus:ring-indigo-500 focus:border-indigo-500 block w-full ltr:pl-16 rtl:pr-16 sm:ltr:pl-14 sm:rtl:pr-14 sm:text-sm border-gray-300 rounded-md"
+						placeholder="www.example.com"
+					/>
 				</div>
-			);
-		};
+			</div>
+		</div>
+	);
+};
+
 export const Prefix = () => {
 	return (
 		<div className="w-full max-w-xs mx-auto py-6">
 			<div>
 				<label
-					htmlhtmlFor="company_website"
+					htmlhtmhtmlFor="company_website"
 					className="block text-sm font-medium text-gray-700"
 				>
 					Company Website
@@ -260,19 +267,20 @@ export const Prefix = () => {
 		</div>
 	);
 };
+
 export const LeadingDropdown = () => {
 	return (
 		<div className="w-full max-w-xs mx-auto py-6">
 			<div>
 				<label
-					htmlhtmlFor="phone_number"
+					htmlhtmhtmlFor="phone_number"
 					className="block text-sm font-medium text-gray-700"
 				>
 					Phone Number
 				</label>
 				<div className="mt-1 relative rounded-md shadow-sm">
 					<div className="absolute inset-y-0 ltr:left-0 rtl:right-0 flex items-center">
-						<label htmlhtmlFor="country" className="sr-only">
+						<label htmlhtmhtmlFor="country" className="sr-only">
 							Country
 						</label>
 						<select
@@ -297,12 +305,13 @@ export const LeadingDropdown = () => {
 		</div>
 	);
 };
+
 export const TrailingButton = () => {
 	return (
 		<div className="w-full max-w-sm mx-auto">
 			<div>
 				<label
-					htmlhtmlFor="email"
+					htmlhtmhtmlFor="email"
 					className="block text-sm font-medium text-gray-700"
 				>
 					Search candidates
@@ -347,6 +356,7 @@ export const TrailingButton = () => {
 		</div>
 	);
 };
+
 export const SharedBorders = () => {
 	return (
 		<div className="w-full max-w-xs mx-auto py-6">
@@ -357,7 +367,10 @@ export const SharedBorders = () => {
 					</legend>
 					<div className="mt-1 bg-white rounded-md shadow-sm -space-y-px">
 						<div>
-							<label htmlhtmlFor="card-number" className="sr-only">
+							<label
+								htmlhtmhtmlFor="card-number"
+								className="sr-only"
+							>
 								Card number
 							</label>
 							<input
@@ -371,7 +384,7 @@ export const SharedBorders = () => {
 						<div className="flex ltr:-space-x-px rtl:-space-x-px">
 							<div className="w-1/2 flex-1 min-w-0">
 								<label
-									htmlFor="card-expiration-date"
+									htmhtmlFor="card-expiration-date"
 									className="sr-only"
 								>
 									Expiration date
@@ -385,7 +398,10 @@ export const SharedBorders = () => {
 								/>
 							</div>
 							<div className="flex-1 min-w-0">
-								<label htmlhtmlFor="card-cvc" className="sr-only">
+								<label
+									htmlhtmhtmlFor="card-cvc"
+									className="sr-only"
+								>
 									CVC
 								</label>
 								<input
@@ -405,7 +421,7 @@ export const SharedBorders = () => {
 					</legend>
 					<div className="mt-1 rounded-md shadow-sm -space-y-px">
 						<div>
-							<label htmlhtmlFor="country" className="sr-only">
+							<label htmlhtmhtmlFor="country" className="sr-only">
 								Country
 							</label>
 							<select
@@ -418,7 +434,10 @@ export const SharedBorders = () => {
 							</select>
 						</div>
 						<div>
-							<label htmlhtmlFor="postal-code" className="sr-only">
+							<label
+								htmlhtmhtmlFor="postal-code"
+								className="sr-only"
+							>
 								Postal code
 							</label>
 							<input
@@ -436,3 +455,45 @@ export const SharedBorders = () => {
 	);
 };
 
+export const FileInput = () => {
+	return (
+		<div className="w-full max-w-sm mx-auto">
+			<div className="max-w-lg flex justify-center px-6 pt-5 pb-6 border-2 border-gray-300 border-dashed rounded-md">
+				<div className="space-y-1 text-center">
+					<svg
+						className="mx-auto h-12 w-12 text-gray-400"
+						stroke="currentColor"
+						fill="none"
+						viewBox="0 0 48 48"
+						aria-hidden="true"
+					>
+						<path
+							d="M28 8H12a4 4 0 00-4 4v20m32-12v8m0 0v8a4 4 0 01-4 4H12a4 4 0 01-4-4v-4m32-4l-3.172-3.172a4 4 0 00-5.656 0L28 28M8 32l9.172-9.172a4 4 0 015.656 0L28 28m0 0l4 4m4-24h8m-4-4v8m-12 4h.02"
+							strokeWidth="2"
+							strokeLinecap="round"
+							strokeLinejoin="round"
+						/>
+					</svg>
+					<div className="flex text-sm text-gray-600">
+						<label
+							htmhtmlFor="file-upload"
+							className="relative cursor-pointer bg-white rounded-md font-medium text-indigo-600 hover:text-indigo-500 focus-within:outline-none focus-within:ring-2 focus-within:ring-offset-2 focus-within:ring-indigo-500"
+						>
+							<span>Upload a file</span>
+							<input
+								id="file-upload"
+								name="file-upload"
+								type="file"
+								className="sr-only"
+							/>
+						</label>
+						<p className="pl-1">or drag and drop</p>
+					</div>
+					<p className="text-xs text-gray-500">
+						PNG, JPG, GIF up to 10MB
+					</p>
+				</div>
+			</div>
+		</div>
+	);
+};

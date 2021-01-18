@@ -298,7 +298,7 @@ export default (props) => {
 						</p>
 					</div>
 					<form className="mt-4 sm:flex sm:max-w-md lg:mt-0">
-						<label htmlFor="emailAddress" className="sr-only">
+						<label htmhtmlFor="emailAddress" className="sr-only">
 							Email address
 						</label>
 						<input
