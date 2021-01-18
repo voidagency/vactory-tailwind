@@ -13,7 +13,7 @@ export default (props) => {
 				</a>
 				<a
 					href="#!"
-					className="ml-3 relative inline-flex items-center px-4 py-2 border border-gray-300 text-sm font-medium rounded-md text-gray-700 bg-white hover:text-gray-500"
+					className="ltr:ml-3 rtl:mr-3 relative inline-flex items-center px-4 py-2 border border-gray-300 text-sm font-medium rounded-md text-gray-700 bg-white hover:text-gray-500"
 				>
 					Next
 				</a>
@@ -28,17 +28,17 @@ export default (props) => {
 				</div>
 				<div>
 					<nav
-						className="relative z-0 inline-flex shadow-sm -space-x-px"
+						className="relative z-0 inline-flex shadow-sm ltr:-space-x-px rtl:space-x-reverse"
 						aria-label="Pagination"
 					>
 						<a
 							href="#!"
-							className="relative inline-flex items-center px-2 py-2 rounded-l-md border border-gray-300 bg-white text-sm font-medium text-gray-500 hover:bg-gray-50"
+							className="relative inline-flex items-center px-2 py-2 ltr:rounded-l-md rtl:rounded-r-md border border-gray-300 bg-white text-sm font-medium text-gray-500 hover:bg-gray-50"
 						>
 							<span className="sr-only">Previous</span>
 							{/* <!-- Heroicon name: chevron-left --> */}
 							<svg
-								className="h-5 w-5"
+								className="h-5 w-5 transform rtl:-scale-x-100"
 								xmlns="http://www.w3.org/2000/svg"
 								viewBox="0 0 20 20"
 								fill="currentColor"
@@ -92,12 +92,12 @@ export default (props) => {
 						</a>
 						<a
 							href="#!"
-							className="relative inline-flex items-center px-2 py-2 rounded-r-md border border-gray-300 bg-white text-sm font-medium text-gray-500 hover:bg-gray-50"
+							className="relative inline-flex items-center px-2 py-2 ltr:rounded-r-md rtl:rounded-l-md border border-gray-300 bg-white text-sm font-medium text-gray-500 hover:bg-gray-50"
 						>
 							<span className="sr-only">Next</span>
 							{/* <!-- Heroicon name: chevron-right --> */}
 							<svg
-								className="h-5 w-5"
+								className="h-5 w-5 transform rtl:-scale-x-100"
 								xmlns="http://www.w3.org/2000/svg"
 								viewBox="0 0 20 20"
 								fill="currentColor"

@@ -69,7 +69,7 @@ export default (props) => {
 					<div
 						className={`${
 							isOpen ? "inline-block" : "hidden"
-						} align-bottom bg-white rounded-lg text-left overflow-hidden shadow-xl transform transition-all sm:my-8 sm:align-middle sm:max-w-lg sm:w-full"
+						} align-bottom bg-white rounded-lg ltr:text-left rtl:text-right overflow-hidden shadow-xl transform transition-all sm:my-8 sm:align-middle sm:max-w-lg sm:w-full"
 	role="dialog"
 	aria-modal="true"
 	aria-labelledby="modal-headline`}
@@ -94,7 +94,7 @@ export default (props) => {
 										/>
 									</svg>
 								</div>
-								<div className="mt-3 text-center sm:mt-0 sm:ml-4 sm:text-left">
+								<div className="mt-3 text-center sm:mt-0 sm:ltr:ml-4 sm:rtl:mr-4 sm:ltr:text-left sm:rtl:text-right">
 									<h3
 										className="text-lg leading-6 font-medium text-gray-900"
 										id="modal-headline"
@@ -116,14 +116,14 @@ export default (props) => {
 							<button
 								onClick={() => setIsOpen(false)}
 								type="button"
-								className="w-full inline-flex justify-center rounded-md border border-transparent shadow-sm px-4 py-2 bg-red-600 text-base font-medium text-white hover:bg-red-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-red-500 sm:ml-3 sm:w-auto sm:text-sm"
+								className="w-full inline-flex justify-center rounded-md border border-transparent shadow-sm px-4 py-2 bg-red-600 text-base font-medium text-white hover:bg-red-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-red-500 sm:ltr:ml-3 sm:rtl:mr-3 sm:w-auto sm:text-sm"
 							>
 								Deactivate
 							</button>
 							<button
 								onClick={() => setIsOpen(false)}
 								type="button"
-								className="mt-3 w-full inline-flex justify-center rounded-md border border-gray-300 shadow-sm px-4 py-2 bg-white text-base font-medium text-gray-700 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 sm:mt-0 sm:ml-3 sm:w-auto sm:text-sm"
+								className="mt-3 w-full inline-flex justify-center rounded-md border border-gray-300 shadow-sm px-4 py-2 bg-white text-base font-medium text-gray-700 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 sm:mt-0 sm:ltr:ml-3 sm:rtl:mr-3 sm:w-auto sm:text-sm"
 							>
 								Cancel
 							</button>

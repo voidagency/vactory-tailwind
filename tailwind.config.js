@@ -4,7 +4,7 @@ const plugin = require('tailwindcss/plugin')
 module.exports = {
 	purge: {
 		// enabled: true,
-		content: ['./src/**/*.{js,jsx,ts,tsx}']
+		content: ["./src/**/*.{js,jsx,ts,tsx}"],
 	},
 	darkMode: "class", // or 'media' or 'class'
 	theme: {
@@ -96,18 +96,19 @@ module.exports = {
 			borderWidth: ["direction", "active"],
 			divideWidth: ["direction"],
 			space: ["direction"],
-			display: ["after"],
+			display: ["direction", "after"],
 			width: ["after", "hover_after"],
 			height: ["after"],
 			backgroundColor: ["after"],
 			transitionProperty: ["after"],
 			scale: ["direction"],
 			textAlign: ["direction"],
+			borderRadius: ["direction"],
 		},
 	},
 	plugins: [
 		require("@tailwindcss/aspect-ratio"),
-		require('@tailwindcss/forms'),
+		require("@tailwindcss/forms"),
 		// require("tailwindcss-children"),
 		require("tailwindcss-dir")(),
 		require("tailwindcss-pseudo-elements"),

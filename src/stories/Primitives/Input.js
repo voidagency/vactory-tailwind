@@ -9,7 +9,7 @@ export const Simple = () => {
 		<div className="w-full max-w-xs mx-auto py-6">
 			<div>
 				<label
-					htmlFor="email"
+					htmlhtmlFor="email"
 					className="block text-sm font-medium text-gray-700"
 				>
 					Email
@@ -32,7 +32,7 @@ export const HelpText = () => {
 		<div className="w-full max-w-xs mx-auto py-6">
 			<div>
 				<label
-					htmlFor="email"
+					htmlhtmlFor="email"
 					className="block text-sm font-medium text-gray-700"
 				>
 					Email
@@ -62,7 +62,7 @@ export const Validation = () => {
 		<div className="w-full max-w-xs mx-auto py-6">
 			<div>
 				<label
-					htmlFor="email"
+					htmlhtmlFor="email"
 					className="block text-sm font-medium text-gray-700"
 				>
 					Email
@@ -72,13 +72,13 @@ export const Validation = () => {
 						type="text"
 						name="email"
 						id="email"
-						className="block w-full pr-10 border-red-300 text-red-900 placeholder-red-300 focus:outline-none focus:ring-red-500 focus:border-red-500 sm:text-sm rounded-md"
+						className="block w-full ltr:pr-10 rtl:pl-10 border-red-300 text-red-900 placeholder-red-300 focus:outline-none focus:ring-red-500 focus:border-red-500 sm:text-sm rounded-md"
 						placeholder="you@example.com"
 						defaultValue="admin"
 						aria-invalid="true"
 						aria-describedby="email-error"
 					/>
-					<div className="absolute inset-y-0 right-0 pr-3 flex items-center pointer-events-none">
+					<div className="absolute inset-y-0 ltr:right-0 rtl:left-0 ltr:pr-3 rtl:pl-3 flex items-center pointer-events-none">
 						<svg
 							className="h-5 w-5 text-red-500"
 							x-description="Heroicon name: exclamation-circle"
@@ -88,9 +88,9 @@ export const Validation = () => {
 							aria-hidden="true"
 						>
 							<path
-								fill-rule="evenodd"
+								fillRule="evenodd"
 								d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7 4a1 1 0 11-2 0 1 1 0 012 0zm-1-9a1 1 0 00-1 1v4a1 1 0 102 0V6a1 1 0 00-1-1z"
-								clip-rule="evenodd"
+								clipRule="evenodd"
 							></path>
 						</svg>
 					</div>
@@ -108,7 +108,7 @@ export const CornerHint = () => {
 			<div>
 				<div className="flex justify-between">
 					<label
-						htmlFor="email"
+						htmlhtmlFor="email"
 						className="block text-sm font-medium text-gray-700"
 					>
 						Email
@@ -136,13 +136,13 @@ export const LeadingIcon = () => {
 		<div className="w-full max-w-xs mx-auto py-6">
 			<div>
 				<label
-					htmlFor="email"
+					htmlhtmlFor="email"
 					className="block text-sm font-medium text-gray-700"
 				>
 					Email
 				</label>
 				<div className="mt-1 relative rounded-md shadow-sm">
-					<div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
+					<div className="absolute inset-y-0 ltr:left-0 rtl:right-0 ltr:pl-3 rtl:pr-3 flex items-center pointer-events-none">
 						<svg
 							className="h-5 w-5 text-gray-400"
 							x-description="Heroicon name: mail"
@@ -159,7 +159,7 @@ export const LeadingIcon = () => {
 						type="text"
 						name="email"
 						id="email"
-						className="focus:ring-indigo-500 focus:border-indigo-500 block w-full pl-10 sm:text-sm border-gray-300 rounded-md"
+						className="focus:ring-indigo-500 focus:border-indigo-500 block w-full ltr:pl-10 rtl:pr-10 sm:text-sm border-gray-300 rounded-md"
 						placeholder="you@example.com"
 					/>
 				</div>
@@ -172,7 +172,7 @@ export const TrailingIcon = () => {
 		<div className="w-full max-w-xs mx-auto py-6">
 			<div>
 				<label
-					htmlFor="account_number"
+					htmlhtmlFor="account_number"
 					className="block text-sm font-medium text-gray-700"
 				>
 					Account number
@@ -182,10 +182,10 @@ export const TrailingIcon = () => {
 						type="text"
 						name="account_number"
 						id="account_number"
-						className="focus:ring-indigo-500 focus:border-indigo-500 block w-full pr-10 sm:text-sm border-gray-300 rounded-md"
+						className="focus:ring-indigo-500 focus:border-indigo-500 block w-full ltr:pr-10 rtl:pl-10 sm:text-sm border-gray-300 rounded-md"
 						placeholder="000-00-0000"
 					/>
-					<div className="absolute inset-y-0 right-0 pr-3 flex items-center pointer-events-none">
+					<div className="absolute inset-y-0 ltr:right-0 rtl:left-0 ltr:pr-3 rtl:pl-3 flex items-center pointer-events-none">
 						<svg
 							className="h-5 w-5 text-gray-400"
 							x-description="Heroicon name: question-mark-circle"
@@ -195,9 +195,9 @@ export const TrailingIcon = () => {
 							aria-hidden="true"
 						>
 							<path
-								fill-rule="evenodd"
+								fillRule="evenodd"
 								d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-8-3a1 1 0 00-.867.5 1 1 0 11-1.731-1A3 3 0 0113 8a3.001 3.001 0 01-2 2.83V11a1 1 0 11-2 0v-1a1 1 0 011-1 1 1 0 100-2zm0 8a1 1 0 100-2 1 1 0 000 2z"
-								clip-rule="evenodd"
+								clipRule="evenodd"
 							></path>
 						</svg>
 					</div>
@@ -211,13 +211,13 @@ export const InlinePrefix = () => {
 				<div className="w-full max-w-xs mx-auto py-6">
 					<div>
 						<label
-							htmlFor="company_website"
+							htmlhtmlFor="company_website"
 							className="block text-sm font-medium text-gray-700"
 						>
 							Company Website
 						</label>
 						<div className="mt-1 relative rounded-md shadow-sm">
-							<div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
+							<div className="absolute inset-y-0 ltr:left-0 rtl:right-0 ltr:pl-3 rtl:pr-3 flex items-center pointer-events-none">
 								<span className="text-gray-500 sm:text-sm">
 									http://
 								</span>
@@ -226,7 +226,7 @@ export const InlinePrefix = () => {
 								type="text"
 								name="company_website"
 								id="company_website"
-								className="focus:ring-indigo-500 focus:border-indigo-500 block w-full pl-16 sm:pl-14 sm:text-sm border-gray-300 rounded-md"
+								className="focus:ring-indigo-500 focus:border-indigo-500 block w-full ltr:pl-16 rtl:pr-16 sm:ltr:pl-14 sm:rtl:pr-14 sm:text-sm border-gray-300 rounded-md"
 								placeholder="www.example.com"
 							/>
 						</div>
@@ -239,20 +239,20 @@ export const Prefix = () => {
 		<div className="w-full max-w-xs mx-auto py-6">
 			<div>
 				<label
-					htmlFor="company_website"
+					htmlhtmlFor="company_website"
 					className="block text-sm font-medium text-gray-700"
 				>
 					Company Website
 				</label>
 				<div className="mt-1 flex rounded-md shadow-sm">
-					<span className="inline-flex items-center px-3 rounded-l-md border border-r-0 border-gray-300 bg-gray-50 text-gray-500 sm:text-sm">
+					<span className="inline-flex items-center px-3 ltr:rounded-l-md rtl:rounded-r-md border ltr:border-r-0 rtl:border-l-0 border-gray-300 bg-gray-50 text-gray-500 sm:text-sm">
 						http://
 					</span>
 					<input
 						type="text"
 						name="company_website"
 						id="company_website"
-						className="focus:ring-indigo-500 focus:border-indigo-500 flex-1 block w-full px-3 py-2 rounded-none rounded-r-md sm:text-sm border-gray-300"
+						className="focus:ring-indigo-500 focus:border-indigo-500 flex-1 block w-full px-3 py-2 rounded-none ltr:rounded-r-md rtl:rounded-l-md sm:text-sm border-gray-300"
 						placeholder="www.example.com"
 					/>
 				</div>
@@ -265,20 +265,20 @@ export const LeadingDropdown = () => {
 		<div className="w-full max-w-xs mx-auto py-6">
 			<div>
 				<label
-					htmlFor="phone_number"
+					htmlhtmlFor="phone_number"
 					className="block text-sm font-medium text-gray-700"
 				>
 					Phone Number
 				</label>
 				<div className="mt-1 relative rounded-md shadow-sm">
-					<div className="absolute inset-y-0 left-0 flex items-center">
-						<label htmlFor="country" className="sr-only">
+					<div className="absolute inset-y-0 ltr:left-0 rtl:right-0 flex items-center">
+						<label htmlhtmlFor="country" className="sr-only">
 							Country
 						</label>
 						<select
 							id="country"
 							name="country"
-							className="focus:ring-indigo-500 focus:border-indigo-500 h-full py-0 pl-3 pr-7 border-transparent bg-transparent text-gray-500 sm:text-sm rounded-md"
+							className="focus:ring-indigo-500 focus:border-indigo-500 h-full py-0 ltr:pl-3 rtl:pr-3 ltr:pr-7 rtl:pl-7 border-transparent bg-transparent text-gray-500 sm:text-sm rounded-md"
 						>
 							<option>US</option>
 							<option>CA</option>
@@ -289,7 +289,7 @@ export const LeadingDropdown = () => {
 						type="text"
 						name="phone_number"
 						id="phone_number"
-						className="focus:ring-indigo-500 focus:border-indigo-500 block w-full pl-16 sm:text-sm border-gray-300 rounded-md"
+						className="focus:ring-indigo-500 focus:border-indigo-500 block w-full ltr:pl-16 rtl:pr-16 sm:text-sm border-gray-300 rounded-md"
 						placeholder="+1 (555) 987-6543"
 					/>
 				</div>
@@ -302,14 +302,14 @@ export const TrailingButton = () => {
 		<div className="w-full max-w-sm mx-auto">
 			<div>
 				<label
-					htmlFor="email"
+					htmlhtmlFor="email"
 					className="block text-sm font-medium text-gray-700"
 				>
 					Search candidates
 				</label>
 				<div className="mt-1 flex rounded-md shadow-sm">
 					<div className="relative flex items-stretch flex-grow focus-within:z-10">
-						<div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
+						<div className="absolute inset-y-0 ltr:left-0 rtl:right-0 ltr:pl-3 rtl:pr-3 flex items-center pointer-events-none">
 							<svg
 								className="h-5 w-5 text-gray-400"
 								x-description="Heroicon name: users"
@@ -325,11 +325,11 @@ export const TrailingButton = () => {
 							type="text"
 							name="email"
 							id="email"
-							className="focus:ring-indigo-500 focus:border-indigo-500 block w-full rounded-none rounded-l-md pl-10 sm:text-sm border-gray-300"
+							className="focus:ring-indigo-500 focus:border-indigo-500 block w-full rounded-none ltr:rounded-l-md rtl:rounded-r-md ltr:pl-10 rtl:pr-10 sm:text-sm border-gray-300"
 							placeholder="John Doe"
 						/>
 					</div>
-					<button className="-ml-px relative inline-flex items-center space-x-2 px-4 py-2 border border-gray-300 text-sm font-medium rounded-r-md text-gray-700 bg-gray-50 hover:bg-gray-100 focus:outline-none focus:ring-1 focus:ring-indigo-500 focus:border-indigo-500">
+					<button className="ltr:-ml-px rtl:-mr-px relative inline-flex items-center ltr:space-x-2 rtl:space-x-reverse px-4 py-2 border border-gray-300 text-sm font-medium ltr:rounded-r-md rtl:rounded-l-md text-gray-700 bg-gray-50 hover:bg-gray-100 focus:outline-none focus:ring-1 focus:ring-indigo-500 focus:border-indigo-500">
 						<svg
 							className="h-5 w-5 text-gray-400"
 							x-description="Heroicon name: sort-ascending"
@@ -357,7 +357,7 @@ export const SharedBorders = () => {
 					</legend>
 					<div className="mt-1 bg-white rounded-md shadow-sm -space-y-px">
 						<div>
-							<label htmlFor="card-number" className="sr-only">
+							<label htmlhtmlFor="card-number" className="sr-only">
 								Card number
 							</label>
 							<input
@@ -368,10 +368,10 @@ export const SharedBorders = () => {
 								placeholder="Card number"
 							/>
 						</div>
-						<div className="flex -space-x-px">
+						<div className="flex ltr:-space-x-px rtl:-space-x-px">
 							<div className="w-1/2 flex-1 min-w-0">
 								<label
-									for="card-expiration-date"
+									htmlFor="card-expiration-date"
 									className="sr-only"
 								>
 									Expiration date
@@ -380,19 +380,19 @@ export const SharedBorders = () => {
 									type="text"
 									name="card-expiration-date"
 									id="card-expiration-date"
-									className="focus:ring-indigo-500 focus:border-indigo-500 relative block w-full rounded-none rounded-bl-md bg-transparent focus:z-10 sm:text-sm border-gray-300"
+									className="focus:ring-indigo-500 focus:border-indigo-500 relative block w-full rounded-none ltr:rounded-bl-md rtl:rounded-br-md bg-transparent focus:z-10 sm:text-sm border-gray-300"
 									placeholder="MM / YY"
 								/>
 							</div>
 							<div className="flex-1 min-w-0">
-								<label htmlFor="card-cvc" className="sr-only">
+								<label htmlhtmlFor="card-cvc" className="sr-only">
 									CVC
 								</label>
 								<input
 									type="text"
 									name="card-cvc"
 									id="card-cvc"
-									className="focus:ring-indigo-500 focus:border-indigo-500 relative block w-full rounded-none rounded-br-md bg-transparent focus:z-10 sm:text-sm border-gray-300"
+									className="focus:ring-indigo-500 focus:border-indigo-500 relative block w-full rounded-none ltr:rounded-br-md rtl:rounded-bl-md bg-transparent focus:z-10 sm:text-sm border-gray-300"
 									placeholder="CVC"
 								/>
 							</div>
@@ -405,7 +405,7 @@ export const SharedBorders = () => {
 					</legend>
 					<div className="mt-1 rounded-md shadow-sm -space-y-px">
 						<div>
-							<label htmlFor="country" className="sr-only">
+							<label htmlhtmlFor="country" className="sr-only">
 								Country
 							</label>
 							<select
@@ -418,7 +418,7 @@ export const SharedBorders = () => {
 							</select>
 						</div>
 						<div>
-							<label htmlFor="postal-code" className="sr-only">
+							<label htmlhtmlFor="postal-code" className="sr-only">
 								Postal code
 							</label>
 							<input

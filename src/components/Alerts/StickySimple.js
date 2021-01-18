@@ -14,16 +14,24 @@ export default (props) => {
 							Big news! We're excited to announce a brand new
 							product.
 						</span>
-						<span className="block sm:ml-2 sm:inline-block">
-							<a href="#" className="text-white font-bold underline">
+						<span className="block sm:ltr:ml-2 sm:rtl:mr-2 sm:inline-block">
+							<a
+								href="#"
+								className="text-white font-bold underline"
+							>
 								{" "}
 								Learn more{" "}
-								<span aria-hidden="true">&rarr;</span>
+								<span className="rtl:hidden" aria-hidden="true">
+									&rarr;
+								</span>
+								<span className="ltr:hidden" aria-hidden="true">
+									&larr;
+								</span>
 							</a>
 						</span>
 					</p>
 				</div>
-				<div className="absolute inset-y-0 right-0 pt-1 pr-1 flex items-start sm:pt-1 sm:pr-2 sm:items-start">
+				<div className="absolute inset-y-0 ltr:right-0 rtl:left-0 pt-1 ltr:pr-1 rtl:pl-1 flex items-start sm:pt-1 sm:ltr:pr-2 sm:rtl:pl-2 sm:items-start">
 					<button
 						type="button"
 						className="flex p-2 rounded-md hover:bg-indigo-500 focus:outline-none focus:ring-2 focus:ring-white"

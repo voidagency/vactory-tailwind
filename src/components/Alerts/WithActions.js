@@ -21,7 +21,7 @@ export default (props) => {
 						/>
 					</svg>
 				</div>
-				<div className="ml-3">
+				<div className="ltr:ml-3 rtl:mr-3">
 					<h3 className="text-sm font-medium text-green-800">
 						Order completed
 					</h3>
@@ -36,7 +36,7 @@ export default (props) => {
 							<button className="bg-green-50 px-2 py-1.5 rounded-md text-sm font-medium text-green-800 hover:bg-green-100 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-green-50 focus:ring-green-600">
 								View status
 							</button>
-							<button className="ml-3 bg-green-50 px-2 py-1.5 rounded-md text-sm font-medium text-green-800 hover:bg-green-100 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-green-50 focus:ring-green-600">
+							<button className="ltr:ml-3 rtl:mr-3 bg-green-50 px-2 py-1.5 rounded-md text-sm font-medium text-green-800 hover:bg-green-100 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-green-50 focus:ring-green-600">
 								Dismiss
 							</button>
 						</div>

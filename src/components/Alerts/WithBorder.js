@@ -3,7 +3,7 @@ import React from "react";
 
 export default (props) => {
 	return (
-		<div className="max-w-4xl mx-auto bg-yellow-50 border-l-4 border-yellow-400 p-4">
+		<div className="max-w-4xl mx-auto bg-yellow-50 ltr:border-l-4 rtl:border-r-4 border-yellow-400 p-4">
 			<div className="flex">
 				<div className="flex-shrink-0">
 					{/* <!-- Heroicon name: exclamation --> */}
@@ -21,7 +21,7 @@ export default (props) => {
 						/>
 					</svg>
 				</div>
-				<div className="ml-3">
+				<div className="ltr:ml-3 rtl:mr-3">
 					<p className="text-sm text-yellow-700">
 						You have no credits left.
 						<a

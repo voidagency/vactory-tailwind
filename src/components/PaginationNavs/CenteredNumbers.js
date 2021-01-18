@@ -12,7 +12,7 @@ export default (props) => {
 				>
 					{/* <!-- Heroicon name: arrow-narrow-left --> */}
 					<svg
-						className="mr-3 h-5 w-5 text-gray-400"
+						className="ltr:mr-3 rtl:ml-3 h-5 w-5 text-gray-400 transform rtl:-scale-x-100"
 						xmlns="http://www.w3.org/2000/svg"
 						viewBox="0 0 20 20"
 						fill="currentColor"
@@ -73,12 +73,12 @@ export default (props) => {
 			<div className="-mt-px w-0 flex-1 flex justify-end">
 				<a
 					href="#!"
-					className="border-t-2 border-transparent pt-4 pl-1 inline-flex items-center text-sm font-medium text-gray-500 hover:text-gray-700 hover:border-gray-300"
+					className="border-t-2 border-transparent pt-4 ltr:pl-1 rtl:pr-1 inline-flex items-center text-sm font-medium text-gray-500 hover:text-gray-700 hover:border-gray-300"
 				>
 					Next
 					{/* <!-- Heroicon name: arrow-narrow-right --> */}
 					<svg
-						className="ml-3 h-5 w-5 text-gray-400"
+						className="ltr:ml-3 rtl:mr-3 h-5 w-5 text-gray-400 transform rtl:-scale-x-100"
 						xmlns="http://www.w3.org/2000/svg"
 						viewBox="0 0 20 20"
 						fill="currentColor"

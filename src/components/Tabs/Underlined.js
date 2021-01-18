@@ -13,7 +13,7 @@ export default (props) => {
 	return (
 		<div>
 			<div className="sm:hidden">
-				<label htmlFor="tabs" className="sr-only">
+				<label htmlhtmlFor="tabs" className="sr-only">
 					Select a tab
 				</label>
 				<select
@@ -33,7 +33,10 @@ export default (props) => {
 			</div>
 			<div className="hidden sm:block">
 				<div className="border-b border-gray-200">
-					<nav className="-mb-px flex space-x-8" aria-label="Tabs">
+					<nav
+						className="-mb-px flex space-x-8 rtl:space-x-reverse"
+						aria-label="Tabs"
+					>
 						<a
 							onClick={clickHandler}
 							id="My Account"
@@ -50,7 +53,7 @@ export default (props) => {
 									currentTab === "My Account"
 										? "text-indigo-500"
 										: "text-gray-400 group-hover:text-gray-500"
-								} -ml-0.5 mr-2 h-5 w-5`}
+								} ltr:-ml-0.5 rtl:-mr-0.5 ltr:mr-2 rtl:ml-2 h-5 w-5`}
 								xmlns="http://www.w3.org/2000/svg"
 								viewBox="0 0 20 20"
 								fill="currentColor"
@@ -80,7 +83,7 @@ export default (props) => {
 									currentTab === "Company"
 										? "text-indigo-500"
 										: "text-gray-400 group-hover:text-gray-500"
-								} -ml-0.5 mr-2 h-5 w-5`}
+								} ltr:-ml-0.5 rtl:-mr-0.5 ltr:mr-2 rtl:ml-2 h-5 w-5`}
 								xmlns="http://www.w3.org/2000/svg"
 								viewBox="0 0 20 20"
 								fill="currentColor"
@@ -114,7 +117,7 @@ export default (props) => {
 									currentTab === "Team Members"
 										? "text-indigo-500"
 										: "text-gray-400 group-hover:text-gray-500"
-								} -ml-0.5 mr-2 h-5 w-5`}
+								} ltr:-ml-0.5 rtl:-mr-0.5 ltr:mr-2 rtl:ml-2 h-5 w-5`}
 								xmlns="http://www.w3.org/2000/svg"
 								viewBox="0 0 20 20"
 								fill="currentColor"
@@ -140,7 +143,7 @@ export default (props) => {
 									currentTab === "Billing"
 										? "text-indigo-500"
 										: "text-gray-400 group-hover:text-gray-500"
-								} -ml-0.5 mr-2 h-5 w-5`}
+								} ltr:-ml-0.5 rtl:-mr-0.5 ltr:mr-2 rtl:ml-2 h-5 w-5`}
 								xmlns="http://www.w3.org/2000/svg"
 								viewBox="0 0 20 20"
 								fill="currentColor"

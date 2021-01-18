@@ -53,10 +53,10 @@ export default (props) => {
 						aria-haspopup="listbox"
 						aria-expanded="true"
 						aria-labelledby="listbox-label"
-						className="bg-white relative w-full border border-gray-300 rounded-md shadow-sm pl-3 pr-10 py-2 text-left focus:outline-none focus:ring-1 focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
+						className="bg-white relative w-full border border-gray-300 rounded-md shadow-sm ltr:pl-3 rtl:pr-3 ltr:pr-10 rtl:pl-10 py-2 ltr:text-left rtl:text-right focus:outline-none focus:ring-1 focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
 					>
 						<span className="block truncate">{selected}</span>
-						<span className="absolute inset-y-0 right-0 flex items-center pr-2 pointer-events-none">
+						<span className="absolute inset-y-0 ltr:right-0 rtl:left-0 flex items-center ltr:pr-2 rtl:pl-2 pointer-events-none">
 							{/* <!-- Heroicon name: selector --> */}
 							<svg
 								className="h-5 w-5 text-gray-400"
@@ -118,7 +118,7 @@ export default (props) => {
 												isHighlighted
 													? "text-white bg-indigo-600"
 													: "text-gray-900"
-											} cursor-default select-none relative py-2 pl-3 pr-9`}
+											} cursor-default select-none relative py-2 ltr:pl-3 rtl:pr-3 ltr:pr-9 rtl:pl-9`}
 										>
 											{/* <!-- Selected: "font-semibold", Not Selected: "font-normal" --> */}
 											<span
@@ -142,7 +142,7 @@ export default (props) => {
 														isHighlighted
 															? "text-white"
 															: "text-indigo-600"
-													} absolute inset-y-0 right-0 flex items-center pr-4`}
+													} absolute inset-y-0 ltr:right-0 rtl:left-0 flex items-center ltr:pr-4 rtl:pl-4`}
 												>
 													{/* <!-- Heroicon name: check --> */}
 													<svg

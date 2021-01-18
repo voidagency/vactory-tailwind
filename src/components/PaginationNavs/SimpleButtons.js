@@ -23,7 +23,7 @@ export default (props) => {
 				</a>
 				<a
 					href="#!"
-					className="ml-3 relative inline-flex items-center px-4 py-2 border border-gray-300 text-sm font-medium rounded-md text-gray-700 bg-white hover:bg-gray-50"
+					className="ltr:ml-3 rtl:mr-3 relative inline-flex items-center px-4 py-2 border border-gray-300 text-sm font-medium rounded-md text-gray-700 bg-white hover:bg-gray-50"
 				>
 					Next
 				</a>

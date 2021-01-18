@@ -21,14 +21,20 @@ export default (props) => {
 						/>
 					</svg>
 				</div>
-				<div className="ml-3 flex-1 md:flex md:justify-between items-center">
+				<div className="ltr:ml-3 rtl:mr-3 flex-1 md:flex md:justify-between items-center">
 					<p className="text-sm text-blue-700">
 						A new software update is available. See what’s new in
 						version 2.0.4.
 					</p>
-					<p className="mt-3 text-sm md:mt-0 md:ml-6">
+					<p className="mt-3 text-sm md:mt-0 md:ltr:ml-6 md:rtl:mr-6">
 						<button className="inline-flex bg-blue-50 rounded-md p-1.5 text-blue-700 hover:text-blue-600 hover:bg-blue-100 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-blue-50 focus:ring-blue-600">
-							Details <span aria-hidden="true">&rarr;</span>
+							Details
+							<span className="rtl:hidden" aria-hidden="true">
+								&rarr;
+							</span>
+							<span className="ltr:hidden" aria-hidden="true">
+								&larr;
+							</span>
 						</button>
 					</p>
 				</div>

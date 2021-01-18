@@ -22,7 +22,7 @@ export default (props) => {
 						/>
 					</svg>
 				</div>
-				<div className="ml-3">
+				<div className="ltr:ml-3 rtl:mr-3">
 					<h3 className="text-sm font-medium text-yellow-800">
 						Attention needed
 					</h3>

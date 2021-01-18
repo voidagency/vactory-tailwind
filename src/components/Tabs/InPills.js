@@ -13,7 +13,7 @@ export default (props) => {
 	return (
 		<div>
 			<div className="sm:hidden">
-				<label htmlFor="tabs" className="sr-only">
+				<label htmlhtmlFor="tabs" className="sr-only">
 					Select a tab
 				</label>
 				<select
@@ -29,7 +29,7 @@ export default (props) => {
 				</select>
 			</div>
 			<div className="hidden sm:block">
-				<nav className="flex space-x-4" aria-label="Tabs">
+				<nav className="flex space-x-4 rtl:space-x-reverse" aria-label="Tabs">
 					<a
 						id="My Account"
 						onClick={clickHandler}

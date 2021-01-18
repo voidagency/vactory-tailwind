@@ -11,7 +11,7 @@ export default (props) => {
 							<span className="flex p-2 rounded-lg bg-indigo-800">
 								{/* <!-- Heroicon name: speakerphone --> */}
 								<svg
-									className="h-6 w-6 text-white"
+									className="h-6 w-6 text-white transform rtl:-scale-x-100"
 									xmlns="http://www.w3.org/2000/svg"
 									fill="none"
 									viewBox="0 0 24 24"
@@ -26,7 +26,7 @@ export default (props) => {
 									/>
 								</svg>
 							</span>
-							<p className="ml-3 font-medium text-white truncate">
+							<p className="ltr:ml-3 rtl: mr-3 font-medium text-white truncate">
 								<span className="md:hidden">
 									We announced a new product!
 								</span>
@@ -44,10 +44,10 @@ export default (props) => {
 								Learn more
 							</a>
 						</div>
-						<div className="order-2 flex-shrink-0 sm:order-3 sm:ml-2">
+						<div className="order-2 flex-shrink-0 sm:order-3 sm:ltr:ml-2 sm:rtl:mr-2">
 							<button
 								type="button"
-								className="-mr-1 flex p-2 rounded-md hover:bg-indigo-500 focus:outline-none focus:ring-2 focus:ring-white"
+								className="ltr:-mr-1 rtl:-ml-2 flex p-2 rounded-md hover:bg-indigo-500 focus:outline-none focus:ring-2 focus:ring-white"
 							>
 								<span className="sr-only">Dismiss</span>
 								{/* <!-- Heroicon name: x --> */}
