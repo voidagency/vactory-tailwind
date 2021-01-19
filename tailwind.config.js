@@ -104,6 +104,7 @@ module.exports = {
 			scale: ["direction"],
 			textAlign: ["direction"],
 			borderRadius: ["direction"],
+			transformOrigin: ["direction"],
 		},
 	},
 	plugins: [

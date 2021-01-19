@@ -22,7 +22,9 @@ export const Simple = (props) => {
 			<span
 				aria-hidden="true"
 				className={`${
-					isSet ? "translate-x-5" : "translate-x-0"
+					isSet
+						? "ltr:translate-x-5 rtl:-translate-x-5"
+						: "translate-x-0"
 				} translate-x-0 inline-block h-5 w-5 rounded-full bg-white shadow transform ring-0 transition ease-in-out duration-200`}
 			/>
 		</button>
@@ -51,8 +53,10 @@ export const Narrow = () => {
 			<span
 				aria-hidden="true"
 				className={`${
-					isSet ? "translate-x-5" : "translate-x-0"
-				} absolute left-0 inline-block h-5 w-5 border border-gray-200 rounded-full bg-white shadow transform ring-0 transition-transform ease-in-out duration-200`}
+					isSet
+						? "ltr:translate-x-5 rtl:-translate-x-5"
+						: "translate-x-0"
+				} absolute ltr:left-0 rtl:right-0 inline-block h-5 w-5 border border-gray-200 rounded-full bg-white shadow transform ring-0 transition-transform ease-in-out duration-200`}
 			/>
 		</button>
 	);
@@ -75,7 +79,9 @@ export const WithIcon = () => {
 			{/* <!-- On: "translate-x-5", Off: "translate-x-0" --> */}
 			<span
 				className={`${
-					isSet ? "translate-x-5" : "translate-x-0"
+					isSet
+						? "ltr:translate-x-5 rtl:-translate-x-5"
+						: "translate-x-0"
 				} relative inline-block h-5 w-5 rounded-full bg-white shadow transform ring-0 transition ease-in-out duration-200`}
 			>
 				{/* <!-- On: "opacity-0 ease-out duration-100", Off: "opacity-100 ease-in duration-200" --> */}
