@@ -96,7 +96,18 @@ addDecorator((Story, context) => {
 
     React.useEffect(() => {
         document.dir = dir;
-    }, [dir]);
+	}, [dir]);
+	
+	React.useEffect(() => {
+		const allLinks = document.querySelectorAll("a");
+		
+		allLinks.forEach((link) => {
+			link.addEventListener("click", e => {
+				e.preventDefault();
+				// action("click on link");
+			});
+		});
+	});
 
     return (
 		<Suspense fallback="loading">

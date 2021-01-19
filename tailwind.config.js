@@ -5,6 +5,9 @@ module.exports = {
 	purge: {
 		// enabled: true,
 		content: ["./src/**/*.{js,jsx,ts,tsx}"],
+		options: {
+			safelist: [/^border-\w+-\d00/, /^text-\w+-\d+/, /^bg-\w+-\d+/]
+		},
 	},
 	darkMode: "class", // or 'media' or 'class'
 	theme: {
@@ -83,6 +86,13 @@ module.exports = {
 			scale: {
 				"-100": "-1",
 			},
+			gridTemplateRows: {
+				8: "repeat(8, minmax(0, 1fr))",
+				10: "repeat(10, minmax(0, 1fr))",
+			},
+			backgroundSize: {
+				1: "1rem",
+			},
 		},
 	},
 	variants: {
@@ -97,7 +107,7 @@ module.exports = {
 			divideWidth: ["direction"],
 			space: ["direction"],
 			display: ["direction", "after"],
-			width: ["after", "hover_after"],
+			width: ["after", "hover_after", "hover"],
 			height: ["after"],
 			backgroundColor: ["after"],
 			transitionProperty: ["after"],
@@ -105,6 +115,7 @@ module.exports = {
 			textAlign: ["direction"],
 			borderRadius: ["direction"],
 			transformOrigin: ["direction"],
+			gridAutoFlow: ["direction"],
 		},
 	},
 	plugins: [

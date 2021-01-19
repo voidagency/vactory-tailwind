@@ -101,7 +101,7 @@ export const HeaderB = () => {
 				<a href="#!" className="flex-shrink-0 ltr:mr-12 rtl:ml-12">
 					<img
 						className=""
-						src="https://www-new.lbankalik.ma/themes/lbankalik/logo.png"
+						src="https://www.lbankalik.ma/sites/lbankalik/files/logo.png"
 						alt="lbankalik"
 						width="130"
 						height="75"
@@ -112,7 +112,10 @@ export const HeaderB = () => {
 						<ul className="flex items-center justify-end py-2 divide-x-2 divide-gray-600 rtl:divide-x-reverse divide-x text-gray-400 text-xs">
 							{upperNav.map((item) => (
 								<li className="px-4">
-									<a className="hover:text-awb-orange" href="#!">
+									<a
+										className="hover:text-awb-orange"
+										href="#!"
+									>
 										<Icon
 											name={item.icon}
 											size={14}
@@ -127,7 +130,7 @@ export const HeaderB = () => {
 								<a href="#!">
 									<img
 										className=""
-										src="https://www-new.lbankalik.ma/sites/default/files/2020-02/attijari-logo-dark_0.png"
+										src="https://www.lbankalik.ma/sites/all/themes/bankalik/assets/images/awb-groupe-logo.png"
 										alt="Attijari"
 										width={119}
 										height={35}
@@ -140,7 +143,10 @@ export const HeaderB = () => {
 						<ul className="flex justify-between py-5">
 							{lowerNav.map((item) => (
 								<li className="">
-									<a className="font-medium hover:text-awb-orange after:block after:content-empty after:h-1 after:bg-awb-yellow after:transition after:w-0 hover:after:w-full" href="#!">
+									<a
+										className="font-medium hover:text-awb-orange after:block after:content-empty after:h-1 after:bg-awb-yellow after:transition after:w-0 hover:after:w-full"
+										href="#!"
+									>
 										{item}
 									</a>
 								</li>
