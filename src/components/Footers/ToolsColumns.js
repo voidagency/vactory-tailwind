@@ -121,7 +121,7 @@ export default (props) => {
 							your inbox weekly.
 						</p>
 						<form className="mt-4 sm:flex sm:max-w-md">
-							<label htmhtmlFor="emailAddress" className="sr-only">
+							<label htmlFor="emailAddress" className="sr-only">
 								Email address
 							</label>
 							<input
@@ -149,7 +149,7 @@ export default (props) => {
 						</h3>
 						<form className="mt-4 sm:max-w-xs">
 							<fieldset className="w-full">
-								<label htmhtmlFor="language" className="sr-only">
+								<label htmlFor="language" className="sr-only">
 									Language
 								</label>
 								<div className="relative">
@@ -183,7 +183,7 @@ export default (props) => {
 								</div>
 							</fieldset>
 							<fieldset className="mt-4 w-full">
-								<label htmhtmlFor="currency" className="sr-only">
+								<label htmlFor="currency" className="sr-only">
 									Currency
 								</label>
 								<div className="relative">

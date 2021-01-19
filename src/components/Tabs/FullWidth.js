@@ -13,7 +13,7 @@ export default (props) => {
 	return (
 		<div>
 			<div className="sm:hidden">
-				<label htmlhtmhtmlFor="tabs" className="sr-only">
+				<label htmlFor="tabs" className="sr-only">
 					Select a tab
 				</label>
 				<select

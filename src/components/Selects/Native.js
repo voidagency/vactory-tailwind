@@ -5,7 +5,7 @@ export default () => {
 		<div className="w-full max-w-xs mx-auto">
 			<div>
 				<label
-					htmlhtmhtmlFor="location"
+				htmlFor="location"
 					className="block text-sm font-medium text-gray-700"
 				>
 					Location

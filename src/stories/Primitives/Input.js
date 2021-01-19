@@ -9,7 +9,7 @@ export const Simple = () => {
 		<div className="w-full max-w-xs mx-auto py-6">
 			<div>
 				<label
-					htmlhtmhtmlFor="email"
+				htmlFor="email"
 					className="block text-sm font-medium text-gray-700"
 				>
 					Email
@@ -33,7 +33,7 @@ export const HelpText = () => {
 		<div className="w-full max-w-xs mx-auto py-6">
 			<div>
 				<label
-					htmlhtmhtmlFor="email"
+				htmlFor="email"
 					className="block text-sm font-medium text-gray-700"
 				>
 					Email
@@ -64,7 +64,7 @@ export const Validation = () => {
 		<div className="w-full max-w-xs mx-auto py-6">
 			<div>
 				<label
-					htmlhtmhtmlFor="email"
+				htmlFor="email"
 					className="block text-sm font-medium text-gray-700"
 				>
 					Email
@@ -111,7 +111,7 @@ export const CornerHint = () => {
 			<div>
 				<div className="flex justify-between">
 					<label
-						htmlhtmhtmlFor="email"
+					htmlFor="email"
 						className="block text-sm font-medium text-gray-700"
 					>
 						Email
@@ -140,7 +140,7 @@ export const LeadingIcon = () => {
 		<div className="w-full max-w-xs mx-auto py-6">
 			<div>
 				<label
-					htmlhtmhtmlFor="email"
+				htmlFor="email"
 					className="block text-sm font-medium text-gray-700"
 				>
 					Email
@@ -177,7 +177,7 @@ export const TrailingIcon = () => {
 		<div className="w-full max-w-xs mx-auto py-6">
 			<div>
 				<label
-					htmlhtmhtmlFor="account_number"
+				htmlFor="account_number"
 					className="block text-sm font-medium text-gray-700"
 				>
 					Account number
@@ -217,7 +217,7 @@ export const InlinePrefix = () => {
 		<div className="w-full max-w-xs mx-auto py-6">
 			<div>
 				<label
-					htmlhtmhtmlFor="company_website"
+				htmlFor="company_website"
 					className="block text-sm font-medium text-gray-700"
 				>
 					Company Website
@@ -246,7 +246,7 @@ export const Prefix = () => {
 		<div className="w-full max-w-xs mx-auto py-6">
 			<div>
 				<label
-					htmlhtmhtmlFor="company_website"
+				htmlFor="company_website"
 					className="block text-sm font-medium text-gray-700"
 				>
 					Company Website
@@ -273,14 +273,14 @@ export const LeadingDropdown = () => {
 		<div className="w-full max-w-xs mx-auto py-6">
 			<div>
 				<label
-					htmlhtmhtmlFor="phone_number"
+				htmlFor="phone_number"
 					className="block text-sm font-medium text-gray-700"
 				>
 					Phone Number
 				</label>
 				<div className="mt-1 relative rounded-md shadow-sm">
 					<div className="absolute inset-y-0 ltr:left-0 rtl:right-0 flex items-center">
-						<label htmlhtmhtmlFor="country" className="sr-only">
+						<label htmlFor="country" className="sr-only">
 							Country
 						</label>
 						<select
@@ -311,7 +311,7 @@ export const TrailingButton = () => {
 		<div className="w-full max-w-sm mx-auto">
 			<div>
 				<label
-					htmlhtmhtmlFor="email"
+				htmlFor="email"
 					className="block text-sm font-medium text-gray-700"
 				>
 					Search candidates
@@ -368,7 +368,7 @@ export const SharedBorders = () => {
 					<div className="mt-1 bg-white rounded-md shadow-sm -space-y-px">
 						<div>
 							<label
-								htmlhtmhtmlFor="card-number"
+							htmlFor="card-number"
 								className="sr-only"
 							>
 								Card number
@@ -384,7 +384,7 @@ export const SharedBorders = () => {
 						<div className="flex ltr:-space-x-px rtl:-space-x-px">
 							<div className="w-1/2 flex-1 min-w-0">
 								<label
-									htmhtmlFor="card-expiration-date"
+								htmlFor="card-expiration-date"
 									className="sr-only"
 								>
 									Expiration date
@@ -399,7 +399,7 @@ export const SharedBorders = () => {
 							</div>
 							<div className="flex-1 min-w-0">
 								<label
-									htmlhtmhtmlFor="card-cvc"
+								htmlFor="card-cvc"
 									className="sr-only"
 								>
 									CVC
@@ -421,7 +421,7 @@ export const SharedBorders = () => {
 					</legend>
 					<div className="mt-1 rounded-md shadow-sm -space-y-px">
 						<div>
-							<label htmlhtmhtmlFor="country" className="sr-only">
+							<label htmlFor="country" className="sr-only">
 								Country
 							</label>
 							<select
@@ -435,7 +435,7 @@ export const SharedBorders = () => {
 						</div>
 						<div>
 							<label
-								htmlhtmhtmlFor="postal-code"
+							htmlFor="postal-code"
 								className="sr-only"
 							>
 								Postal code
@@ -476,7 +476,7 @@ export const FileInput = () => {
 					</svg>
 					<div className="flex text-sm text-gray-600">
 						<label
-							htmhtmlFor="file-upload"
+						htmlFor="file-upload"
 							className="relative cursor-pointer bg-white rounded-md font-medium text-indigo-600 hover:text-indigo-500 focus-within:outline-none focus-within:ring-2 focus-within:ring-offset-2 focus-within:ring-indigo-500"
 						>
 							<span>Upload a file</span>

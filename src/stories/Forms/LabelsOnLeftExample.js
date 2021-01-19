@@ -23,7 +23,7 @@ export const LabelsOnLeft = () => {
 						<div className="mt-6 sm:mt-5 space-y-6 sm:space-y-5">
 							<div className="sm:grid sm:grid-cols-3 sm:gap-4 sm:items-start sm:border-t sm:border-gray-200 sm:pt-5">
 								<label
-									htmhtmlFor="username"
+								htmlFor="username"
 									className="block text-sm font-medium text-gray-700 sm:mt-px sm:pt-2"
 								>
 									Username
@@ -46,7 +46,7 @@ export const LabelsOnLeft = () => {
 
 							<div className="sm:grid sm:grid-cols-3 sm:gap-4 sm:items-start sm:border-t sm:border-gray-200 sm:pt-5">
 								<label
-									htmhtmlFor="about"
+								htmlFor="about"
 									className="block text-sm font-medium text-gray-700 sm:mt-px sm:pt-2"
 								>
 									About
@@ -66,7 +66,7 @@ export const LabelsOnLeft = () => {
 
 							<div className="sm:grid sm:grid-cols-3 sm:gap-4 sm:items-center sm:border-t sm:border-gray-200 sm:pt-5">
 								<label
-									htmhtmlFor="photo"
+								htmlFor="photo"
 									className="block text-sm font-medium text-gray-700"
 								>
 									Photo
@@ -94,7 +94,7 @@ export const LabelsOnLeft = () => {
 
 							<div className="sm:grid sm:grid-cols-3 sm:gap-4 sm:items-start sm:border-t sm:border-gray-200 sm:pt-5">
 								<label
-									htmhtmlFor="cover_photo"
+								htmlFor="cover_photo"
 									className="block text-sm font-medium text-gray-700 sm:mt-px sm:pt-2"
 								>
 									Cover photo
@@ -118,7 +118,7 @@ export const LabelsOnLeft = () => {
 											</svg>
 											<div className="flex text-sm text-gray-600">
 												<label
-													htmhtmlFor="file-upload"
+												htmlFor="file-upload"
 													className="relative cursor-pointer bg-white rounded-md font-medium text-indigo-600 hover:text-indigo-500 focus-within:outline-none focus-within:ring-2 focus-within:ring-offset-2 focus-within:ring-indigo-500"
 												>
 													<span>Upload a file</span>
@@ -156,7 +156,7 @@ export const LabelsOnLeft = () => {
 						<div className="space-y-6 sm:space-y-5">
 							<div className="sm:grid sm:grid-cols-3 sm:gap-4 sm:items-start sm:border-t sm:border-gray-200 sm:pt-5">
 								<label
-									htmhtmlFor="first_name"
+								htmlFor="first_name"
 									className="block text-sm font-medium text-gray-700 sm:mt-px sm:pt-2"
 								>
 									First name
@@ -174,7 +174,7 @@ export const LabelsOnLeft = () => {
 
 							<div className="sm:grid sm:grid-cols-3 sm:gap-4 sm:items-start sm:border-t sm:border-gray-200 sm:pt-5">
 								<label
-									htmhtmlFor="last_name"
+								htmlFor="last_name"
 									className="block text-sm font-medium text-gray-700 sm:mt-px sm:pt-2"
 								>
 									Last name
@@ -192,7 +192,7 @@ export const LabelsOnLeft = () => {
 
 							<div className="sm:grid sm:grid-cols-3 sm:gap-4 sm:items-start sm:border-t sm:border-gray-200 sm:pt-5">
 								<label
-									htmhtmlFor="email"
+								htmlFor="email"
 									className="block text-sm font-medium text-gray-700 sm:mt-px sm:pt-2"
 								>
 									Email address
@@ -210,7 +210,7 @@ export const LabelsOnLeft = () => {
 
 							<div className="sm:grid sm:grid-cols-3 sm:gap-4 sm:items-start sm:border-t sm:border-gray-200 sm:pt-5">
 								<label
-									htmhtmlFor="country"
+								htmlFor="country"
 									className="block text-sm font-medium text-gray-700 sm:mt-px sm:pt-2"
 								>
 									Country / Region
@@ -231,7 +231,7 @@ export const LabelsOnLeft = () => {
 
 							<div className="sm:grid sm:grid-cols-3 sm:gap-4 sm:items-start sm:border-t sm:border-gray-200 sm:pt-5">
 								<label
-									htmhtmlFor="street_address"
+								htmlFor="street_address"
 									className="block text-sm font-medium text-gray-700 sm:mt-px sm:pt-2"
 								>
 									Street address
@@ -249,7 +249,7 @@ export const LabelsOnLeft = () => {
 
 							<div className="sm:grid sm:grid-cols-3 sm:gap-4 sm:items-start sm:border-t sm:border-gray-200 sm:pt-5">
 								<label
-									htmhtmlFor="city"
+								htmlFor="city"
 									className="block text-sm font-medium text-gray-700 sm:mt-px sm:pt-2"
 								>
 									City
@@ -266,7 +266,7 @@ export const LabelsOnLeft = () => {
 
 							<div className="sm:grid sm:grid-cols-3 sm:gap-4 sm:items-start sm:border-t sm:border-gray-200 sm:pt-5">
 								<label
-									htmhtmlFor="state"
+								htmlFor="state"
 									className="block text-sm font-medium text-gray-700 sm:mt-px sm:pt-2"
 								>
 									State / Province
@@ -283,7 +283,7 @@ export const LabelsOnLeft = () => {
 
 							<div className="sm:grid sm:grid-cols-3 sm:gap-4 sm:items-start sm:border-t sm:border-gray-200 sm:pt-5">
 								<label
-									htmhtmlFor="zip"
+								htmlFor="zip"
 									className="block text-sm font-medium text-gray-700 sm:mt-px sm:pt-2"
 								>
 									ZIP / Postal
@@ -337,7 +337,7 @@ export const LabelsOnLeft = () => {
 													</div>
 													<div className="ml-3 text-sm">
 														<label
-															htmhtmlFor="comments"
+														htmlFor="comments"
 															className="font-medium text-gray-700"
 														>
 															Comments
@@ -362,7 +362,7 @@ export const LabelsOnLeft = () => {
 														</div>
 														<div className="ml-3 text-sm">
 															<label
-																htmhtmlFor="candidates"
+															htmlFor="candidates"
 																className="font-medium text-gray-700"
 															>
 																Candidates
@@ -388,7 +388,7 @@ export const LabelsOnLeft = () => {
 														</div>
 														<div className="ml-3 text-sm">
 															<label
-																htmhtmlFor="offers"
+															htmlFor="offers"
 																className="font-medium text-gray-700"
 															>
 																Offers
@@ -437,7 +437,7 @@ export const LabelsOnLeft = () => {
 															className="focus:ring-indigo-500 h-4 w-4 text-indigo-600 border-gray-300"
 														/>
 														<label
-															htmhtmlFor="push_everything"
+														htmlFor="push_everything"
 															className="ml-3 block text-sm font-medium text-gray-700"
 														>
 															Everything
@@ -451,7 +451,7 @@ export const LabelsOnLeft = () => {
 															className="focus:ring-indigo-500 h-4 w-4 text-indigo-600 border-gray-300"
 														/>
 														<label
-															htmhtmlFor="push_email"
+														htmlFor="push_email"
 															className="ml-3 block text-sm font-medium text-gray-700"
 														>
 															Same as email
@@ -465,7 +465,7 @@ export const LabelsOnLeft = () => {
 															className="focus:ring-indigo-500 h-4 w-4 text-indigo-600 border-gray-300"
 														/>
 														<label
-															htmhtmlFor="push_nothing"
+														htmlFor="push_nothing"
 															className="ml-3 block text-sm font-medium text-gray-700"
 														>
 															No push

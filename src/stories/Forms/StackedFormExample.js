@@ -23,7 +23,7 @@ export const Stacked = () => {
 						<div className="mt-6 grid grid-cols-1 gap-y-6 gap-x-4 sm:grid-cols-6">
 							<div className="sm:col-span-4">
 								<label
-									htmhtmlFor="username"
+								htmlFor="username"
 									className="block text-sm font-medium text-gray-700"
 								>
 									Username
@@ -44,7 +44,7 @@ export const Stacked = () => {
 
 							<div className="sm:col-span-6">
 								<label
-									htmhtmlFor="about"
+								htmlFor="about"
 									className="block text-sm font-medium text-gray-700"
 								>
 									About
@@ -64,7 +64,7 @@ export const Stacked = () => {
 
 							<div className="sm:col-span-6">
 								<label
-									htmhtmlFor="photo"
+								htmlFor="photo"
 									className="block text-sm font-medium text-gray-700"
 								>
 									Photo
@@ -90,7 +90,7 @@ export const Stacked = () => {
 
 							<div className="sm:col-span-6">
 								<label
-									htmhtmlFor="cover_photo"
+								htmlFor="cover_photo"
 									className="block text-sm font-medium text-gray-700"
 								>
 									Cover photo
@@ -113,7 +113,7 @@ export const Stacked = () => {
 										</svg>
 										<div className="flex text-sm text-gray-600">
 											<label
-												htmhtmlFor="file-upload"
+											htmlFor="file-upload"
 												className="relative cursor-pointer bg-white rounded-md font-medium text-indigo-600 hover:text-indigo-500 focus-within:outline-none focus-within:ring-2 focus-within:ring-offset-2 focus-within:ring-indigo-500"
 											>
 												<span>Upload a file</span>
@@ -150,7 +150,7 @@ export const Stacked = () => {
 						<div className="mt-6 grid grid-cols-1 gap-y-6 gap-x-4 sm:grid-cols-6">
 							<div className="sm:col-span-3">
 								<label
-									htmhtmlFor="first_name"
+								htmlFor="first_name"
 									className="block text-sm font-medium text-gray-700"
 								>
 									First name
@@ -168,7 +168,7 @@ export const Stacked = () => {
 
 							<div className="sm:col-span-3">
 								<label
-									htmhtmlFor="last_name"
+								htmlFor="last_name"
 									className="block text-sm font-medium text-gray-700"
 								>
 									Last name
@@ -186,7 +186,7 @@ export const Stacked = () => {
 
 							<div className="sm:col-span-4">
 								<label
-									htmhtmlFor="email"
+								htmlFor="email"
 									className="block text-sm font-medium text-gray-700"
 								>
 									Email address
@@ -204,7 +204,7 @@ export const Stacked = () => {
 
 							<div className="sm:col-span-3">
 								<label
-									htmhtmlFor="country"
+								htmlFor="country"
 									className="block text-sm font-medium text-gray-700"
 								>
 									Country / Region
@@ -225,7 +225,7 @@ export const Stacked = () => {
 
 							<div className="sm:col-span-6">
 								<label
-									htmhtmlFor="street_address"
+								htmlFor="street_address"
 									className="block text-sm font-medium text-gray-700"
 								>
 									Street address
@@ -243,7 +243,7 @@ export const Stacked = () => {
 
 							<div className="sm:col-span-2">
 								<label
-									htmhtmlFor="city"
+								htmlFor="city"
 									className="block text-sm font-medium text-gray-700"
 								>
 									City
@@ -260,7 +260,7 @@ export const Stacked = () => {
 
 							<div className="sm:col-span-2">
 								<label
-									htmhtmlFor="state"
+								htmlFor="state"
 									className="block text-sm font-medium text-gray-700"
 								>
 									State / Province
@@ -277,7 +277,7 @@ export const Stacked = () => {
 
 							<div className="sm:col-span-2">
 								<label
-									htmhtmlFor="zip"
+								htmlFor="zip"
 									className="block text-sm font-medium text-gray-700"
 								>
 									ZIP / Postal
@@ -323,7 +323,7 @@ export const Stacked = () => {
 										</div>
 										<div className="ml-3 text-sm">
 											<label
-												htmhtmlFor="comments"
+											htmlFor="comments"
 												className="font-medium text-gray-700"
 											>
 												Comments
@@ -345,7 +345,7 @@ export const Stacked = () => {
 										</div>
 										<div className="ml-3 text-sm">
 											<label
-												htmhtmlFor="candidates"
+											htmlFor="candidates"
 												className="font-medium text-gray-700"
 											>
 												Candidates
@@ -367,7 +367,7 @@ export const Stacked = () => {
 										</div>
 										<div className="ml-3 text-sm">
 											<label
-												htmhtmlFor="offers"
+											htmlFor="offers"
 												className="font-medium text-gray-700"
 											>
 												Offers
@@ -399,7 +399,7 @@ export const Stacked = () => {
 											className="focus:ring-indigo-500 h-4 w-4 text-indigo-600 border-gray-300"
 										/>
 										<label
-											htmhtmlFor="push_everything"
+										htmlFor="push_everything"
 											className="ml-3 block text-sm font-medium text-gray-700"
 										>
 											Everything
@@ -413,7 +413,7 @@ export const Stacked = () => {
 											className="focus:ring-indigo-500 h-4 w-4 text-indigo-600 border-gray-300"
 										/>
 										<label
-											htmhtmlFor="push_email"
+										htmlFor="push_email"
 											className="ml-3 block text-sm font-medium text-gray-700"
 										>
 											Same as email
@@ -427,7 +427,7 @@ export const Stacked = () => {
 											className="focus:ring-indigo-500 h-4 w-4 text-indigo-600 border-gray-300"
 										/>
 										<label
-											htmhtmlFor="push_nothing"
+										htmlFor="push_nothing"
 											className="ml-3 block text-sm font-medium text-gray-700"
 										>
 											No push notifications

@@ -17,7 +17,7 @@ export default (props) => {
 						<form className="mt-6 flex flex-col sm:flex-row lg:mt-0 lg:justify-end">
 							<div>
 								<label
-									htmlhtmhtmlFor="email-address"
+								htmlFor="email-address"
 									className="sr-only"
 								>
 									Email address
