@@ -29,11 +29,15 @@ export const HeaderB = () => {
 		"Blog",
 	];
 
+	const [showSearch, setShowSearch] = React.useState(false);
+	const [showMenu, setShowMenu] = React.useState(false);
+
 	return (
-		<header className="shadow-md">
+		<header
+			className={`${showSearch ? "" : "-translate-y-14"} transform transition duration-300 shadow-md`}>
 			{/* search */}
 			<div className="bg-black text-gray p-3">
-				<div className="container relative">
+				<div className="max-w-5xl mx-auto relative">
 					<input
 						type="text"
 						className="appearance-none bg-black text-white placeholder-white placeholder-opacity-100 text-xs w-full border-0 border-b border-gray pb-1 "
@@ -46,7 +50,10 @@ export const HeaderB = () => {
 						>
 							Go !
 						</button>
-						<button className="border border-gray hover:text-white hover:border-white rounded-full w-6 h-6 py-0.25 leading-none font-mono font-thin inline-flex justify-center items-center">
+						<button
+							onClick={() => setShowSearch(false)}
+							className="border border-gray hover:text-white hover:border-white rounded-full w-6 h-6 py-0.25 leading-none font-mono font-thin inline-flex justify-center items-center"
+						>
 							x
 						</button>
 					</div>
@@ -54,7 +61,10 @@ export const HeaderB = () => {
 			</div>
 			{/* mobile header */}
 			<div className="flex justify-between p-3 md:hidden">
-				<button className="px-3">
+				<button
+					onClick={() => {setShowMenu(!showMenu)}}
+					className="px-3"
+				>
 					<svg
 						className="w-6 h-6"
 						xmlns="http://www.w3.org/2000/svg"
@@ -73,13 +83,16 @@ export const HeaderB = () => {
 				<a href="#!">
 					<img
 						className=""
-						src="https://www-new.lbankalik.ma/themes/lbankalik/logo.png"
+						src="https://www.lbankalik.ma/sites/lbankalik/files/logo.png"
 						alt="lbankalik"
 						width="80"
 						height="46"
 					/>
 				</a>
-				<button className="px-3">
+				<button
+					onClick={() => setShowSearch(!showSearch)}
+					className="px-3"
+				>
 					<svg
 						className="w-6 h-6"
 						xmlns="http://www.w3.org/2000/svg"
@@ -97,7 +110,7 @@ export const HeaderB = () => {
 				</button>
 			</div>
 			{/* desktop header */}
-			<div className="container items-center hidden md:flex">
+			<div className="max-w-5xl mx-auto items-center hidden md:flex">
 				<a href="#!" className="flex-shrink-0 ltr:mr-12 rtl:ml-12">
 					<img
 						className=""
@@ -110,9 +123,10 @@ export const HeaderB = () => {
 				<div className="flex-grow">
 					<nav className="border-b border-gray-300">
 						<ul className="flex items-center justify-end py-2 divide-x-2 divide-gray-600 rtl:divide-x-reverse divide-x text-gray-400 text-xs">
-							{upperNav.map((item) => (
-								<li className="px-4">
+							{upperNav.map((item, i) => (
+								<li className="px-4" key={i}>
 									<a
+										onClick={i === 0 ? () => setShowSearch(!showSearch) : null}
 										className="hover:text-awb-orange"
 										href="#!"
 									>
@@ -144,7 +158,7 @@ export const HeaderB = () => {
 							{lowerNav.map((item) => (
 								<li className="">
 									<a
-										className="font-medium hover:text-awb-orange after:block after:content-empty after:h-1 after:bg-awb-yellow after:transition after:w-0 hover:after:w-full"
+										className="font-medium hover:text-awb-orange after:block after:content-empty after:h-1 after:bg-awb-yellow after:transition after:w-0 hover:after:w-full "
 										href="#!"
 									>
 										{item}
@@ -153,7 +167,7 @@ export const HeaderB = () => {
 							))}
 							<li className="">
 								<a
-									className="font-medium p-2 border bg-white border-awb-orange text-awb-orange rounded-md hover:bg-awb-orange hover:text-white hover:shadow-lg"
+									className="font-medium p-2 border bg-white border-awb-orange text-awb-orange rounded-md hover:bg-awb-orange hover:text-white hover:shadow-lg whitespace-nowrap "
 									href="#!"
 								>
 									Ouvrir mon compte

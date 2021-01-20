@@ -99,7 +99,7 @@ module.exports = {
 		fontFamily: null,
 
 		extend: {
-			margin: ["direction", "hover", "after"],
+			margin: ["direction", "hover", "active", "after"],
 			padding: ["direction"],
 			translate: ["direction", "active"],
 			inset: ["direction"],

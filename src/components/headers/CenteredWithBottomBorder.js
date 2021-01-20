@@ -15,7 +15,7 @@ export default (props) => {
 						<a href="#!">
 							<span className="sr-only">Workflow</span>
 							<img
-								class="h-8 w-auto sm:h-10"
+								className="h-8 w-auto sm:h-10"
 								src={capitalAzurLogo}
 								alt=""
 							/>
@@ -27,12 +27,12 @@ export default (props) => {
 								SetMenuOpen(true);
 							}}
 							type="button"
-							class="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500"
+							className="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500"
 						>
 							<span className="sr-only">Open menu</span>
 							{/* <!-- Heroicon name: menu --> */}
 							<svg
-								class="h-6 w-6"
+								className="h-6 w-6"
 								xmlns="http://www.w3.org/2000/svg"
 								fill="none"
 								viewBox="0 0 24 24"
@@ -57,7 +57,7 @@ export default (props) => {
 									setIsOpen1(!isOpen1);
 								}}
 								type="button"
-								class="group bg-white rounded-md text-gray-500 inline-flex items-center text-base font-medium hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+								className="group bg-white rounded-md text-gray-500 inline-flex items-center text-base font-medium hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
 							>
 								<span>Solutions</span>
 								{/* <!--
@@ -66,7 +66,7 @@ export default (props) => {
 								Item active: "text-gray-600", Item inactive: "text-gray-400"
 								--> */}
 								<svg
-									class="ltr:ml-2 rtl:mr-2 h-5 w-5 text-gray-400 group-hover:text-gray-500"
+									className="ltr:ml-2 rtl:mr-2 h-5 w-5 text-gray-400 group-hover:text-gray-500"
 									xmlns="http://www.w3.org/2000/svg"
 									viewBox="0 0 20 20"
 									fill="currentColor"
@@ -91,7 +91,7 @@ export default (props) => {
 							To: "opacity-0 translate-y-1"
 							--> */}
 							<div
-								class={`${
+								className={`${
 									isOpen1 ? "bloack" : "hidden"
 								} absolute z-10 ltr:-ml-4 rtl:-mr-4 mt-3 transform px-2 w-screen max-w-md sm:px-0 lg:ml-0 lg:ltr:left-1/2 lg:rtl:right-1/2 lg:ltr:-translate-x-1/2 lg:rtl:translate-x-1/2`}
 							>
@@ -99,11 +99,11 @@ export default (props) => {
 									<div className="relative grid gap-6 bg-white px-5 py-6 sm:gap-8 sm:p-8">
 										<a
 											href="#!"
-											class="-m-3 p-3 flex items-start rounded-lg hover:bg-gray-50"
+											className="-m-3 p-3 flex items-start rounded-lg hover:bg-gray-50"
 										>
 											{/* <!-- Heroicon name: chart-bar --> */}
 											<svg
-												class="flex-shrink-0 h-6 w-6 text-indigo-600"
+												className="flex-shrink-0 h-6 w-6 text-indigo-600"
 												xmlns="http://www.w3.org/2000/svg"
 												fill="none"
 												viewBox="0 0 24 24"
@@ -131,11 +131,11 @@ export default (props) => {
 
 										<a
 											href="#!"
-											class="-m-3 p-3 flex items-start rounded-lg hover:bg-gray-50"
+											className="-m-3 p-3 flex items-start rounded-lg hover:bg-gray-50"
 										>
 											{/* <!-- Heroicon name: cursor-click --> */}
 											<svg
-												class="flex-shrink-0 h-6 w-6 text-indigo-600"
+												className="flex-shrink-0 h-6 w-6 text-indigo-600"
 												xmlns="http://www.w3.org/2000/svg"
 												fill="none"
 												viewBox="0 0 24 24"
@@ -163,11 +163,11 @@ export default (props) => {
 
 										<a
 											href="#!"
-											class="-m-3 p-3 flex items-start rounded-lg hover:bg-gray-50"
+											className="-m-3 p-3 flex items-start rounded-lg hover:bg-gray-50"
 										>
 											{/* <!-- Heroicon name: shield-check --> */}
 											<svg
-												class="flex-shrink-0 h-6 w-6 text-indigo-600"
+												className="flex-shrink-0 h-6 w-6 text-indigo-600"
 												xmlns="http://www.w3.org/2000/svg"
 												fill="none"
 												viewBox="0 0 24 24"
@@ -194,11 +194,11 @@ export default (props) => {
 
 										<a
 											href="#!"
-											class="-m-3 p-3 flex items-start rounded-lg hover:bg-gray-50"
+											className="-m-3 p-3 flex items-start rounded-lg hover:bg-gray-50"
 										>
 											{/* <!-- Heroicon name: view-grid --> */}
 											<svg
-												class="flex-shrink-0 h-6 w-6 text-indigo-600"
+												className="flex-shrink-0 h-6 w-6 text-indigo-600"
 												xmlns="http://www.w3.org/2000/svg"
 												fill="none"
 												viewBox="0 0 24 24"
@@ -226,11 +226,11 @@ export default (props) => {
 
 										<a
 											href="#!"
-											class="-m-3 p-3 flex items-start rounded-lg hover:bg-gray-50"
+											className="-m-3 p-3 flex items-start rounded-lg hover:bg-gray-50"
 										>
 											{/* <!-- Heroicon name: refresh --> */}
 											<svg
-												class="flex-shrink-0 h-6 w-6 text-indigo-600"
+												className="flex-shrink-0 h-6 w-6 text-indigo-600"
 												xmlns="http://www.w3.org/2000/svg"
 												fill="none"
 												viewBox="0 0 24 24"
@@ -260,11 +260,11 @@ export default (props) => {
 										<div className="flow-root">
 											<a
 												href="#!"
-												class="-m-3 p-3 flex items-center rounded-md text-base font-medium text-gray-900 hover:bg-gray-100"
+												className="-m-3 p-3 flex items-center rounded-md text-base font-medium text-gray-900 hover:bg-gray-100"
 											>
 												{/* <!-- Heroicon name: play --> */}
 												<svg
-													class="flex-shrink-0 h-6 w-6 text-gray-400"
+													className="flex-shrink-0 h-6 w-6 text-gray-400"
 													xmlns="http://www.w3.org/2000/svg"
 													fill="none"
 													viewBox="0 0 24 24"
@@ -293,11 +293,11 @@ export default (props) => {
 										<div className="flow-root">
 											<a
 												href="#!"
-												class="-m-3 p-3 flex items-center rounded-md text-base font-medium text-gray-900 hover:bg-gray-100"
+												className="-m-3 p-3 flex items-center rounded-md text-base font-medium text-gray-900 hover:bg-gray-100"
 											>
 												{/* <!-- Heroicon name: phone --> */}
 												<svg
-													class="flex-shrink-0 h-6 w-6 text-gray-400"
+													className="flex-shrink-0 h-6 w-6 text-gray-400"
 													xmlns="http://www.w3.org/2000/svg"
 													fill="none"
 													viewBox="0 0 24 24"
@@ -323,13 +323,13 @@ export default (props) => {
 
 						<a
 							href="#!"
-							class="text-base font-medium text-gray-500 hover:text-gray-900"
+							className="text-base font-medium text-gray-500 hover:text-gray-900"
 						>
 							Pricing
 						</a>
 						<a
 							href="#!"
-							class="text-base font-medium text-gray-500 hover:text-gray-900"
+							className="text-base font-medium text-gray-500 hover:text-gray-900"
 						>
 							Docs
 						</a>
@@ -342,7 +342,7 @@ export default (props) => {
 									setIsOpen2(!isOpen2);
 								}}
 								type="button"
-								class="group bg-white rounded-md text-gray-500 inline-flex items-center text-base font-medium hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+								className="group bg-white rounded-md text-gray-500 inline-flex items-center text-base font-medium hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
 							>
 								<span>More</span>
 								{/* <!-- 
@@ -350,7 +350,7 @@ export default (props) => {
 								"text-gray-600", Item inactive: "text-gray-400"
 								-->*/}
 								<svg
-									class="ltr:ml-2 rtl:mr-2 h-5 w-5 text-gray-400 group-hover:text-gray-500"
+									className="ltr:ml-2 rtl:mr-2 h-5 w-5 text-gray-400 group-hover:text-gray-500"
 									xmlns="http://www.w3.org/2000/svg"
 									viewBox="0 0 20 20"
 									fill="currentColor"
@@ -375,7 +375,7 @@ export default (props) => {
 							To: "opacity-0 translate-y-1"
 							--> */}
 							<div
-								class={`${
+								className={`${
 									isOpen2 ? "bloack" : "hidden"
 								} absolute z-10 ltr:left-1/2 rtl:right-1/2 transform ltr:-translate-x-1/2 rtl:translate-x-1/2 mt-3 px-2 w-screen max-w-md sm:px-0`}
 							>
@@ -383,11 +383,11 @@ export default (props) => {
 									<div className="relative grid gap-6 bg-white px-5 py-6 sm:gap-8 sm:p-8">
 										<a
 											href="#!"
-											class="-m-3 p-3 flex items-start rounded-lg hover:bg-gray-50"
+											className="-m-3 p-3 flex items-start rounded-lg hover:bg-gray-50"
 										>
 											{/* <!-- Heroicon name: support --> */}
 											<svg
-												class="flex-shrink-0 h-6 w-6 text-indigo-600"
+												className="flex-shrink-0 h-6 w-6 text-indigo-600"
 												xmlns="http://www.w3.org/2000/svg"
 												fill="none"
 												viewBox="0 0 24 24"
@@ -415,11 +415,11 @@ export default (props) => {
 
 										<a
 											href="#!"
-											class="-m-3 p-3 flex items-start rounded-lg hover:bg-gray-50"
+											className="-m-3 p-3 flex items-start rounded-lg hover:bg-gray-50"
 										>
 											{/* <!-- Heroicon name: bookmark-alt --> */}
 											<svg
-												class="flex-shrink-0 h-6 w-6 text-indigo-600"
+												className="flex-shrink-0 h-6 w-6 text-indigo-600"
 												xmlns="http://www.w3.org/2000/svg"
 												fill="none"
 												viewBox="0 0 24 24"
@@ -447,11 +447,11 @@ export default (props) => {
 
 										<a
 											href="#!"
-											class="-m-3 p-3 flex items-start rounded-lg hover:bg-gray-50"
+											className="-m-3 p-3 flex items-start rounded-lg hover:bg-gray-50"
 										>
 											{/* <!-- Heroicon name: calendar --> */}
 											<svg
-												class="flex-shrink-0 h-6 w-6 text-indigo-600"
+												className="flex-shrink-0 h-6 w-6 text-indigo-600"
 												xmlns="http://www.w3.org/2000/svg"
 												fill="none"
 												viewBox="0 0 24 24"
@@ -479,11 +479,11 @@ export default (props) => {
 
 										<a
 											href="#!"
-											class="-m-3 p-3 flex items-start rounded-lg hover:bg-gray-50"
+											className="-m-3 p-3 flex items-start rounded-lg hover:bg-gray-50"
 										>
 											{/* <!-- Heroicon name: shield-check --> */}
 											<svg
-												class="flex-shrink-0 h-6 w-6 text-indigo-600"
+												className="flex-shrink-0 h-6 w-6 text-indigo-600"
 												xmlns="http://www.w3.org/2000/svg"
 												fill="none"
 												viewBox="0 0 24 24"
@@ -517,7 +517,7 @@ export default (props) => {
 												<li className="text-base truncate">
 													<a
 														href="#!"
-														class="font-medium text-gray-900 hover:text-gray-700"
+														className="font-medium text-gray-900 hover:text-gray-700"
 													>
 														Boost your conversion
 														rate
@@ -527,7 +527,7 @@ export default (props) => {
 												<li className="text-base truncate">
 													<a
 														href="#!"
-														class="font-medium text-gray-900 hover:text-gray-700"
+														className="font-medium text-gray-900 hover:text-gray-700"
 													>
 														How to use search engine
 														optimization to drive
@@ -538,7 +538,7 @@ export default (props) => {
 												<li className="text-base truncate">
 													<a
 														href="#!"
-														class="font-medium text-gray-900 hover:text-gray-700"
+														className="font-medium text-gray-900 hover:text-gray-700"
 													>
 														Improve your customer
 														experience
@@ -549,7 +549,7 @@ export default (props) => {
 										<div className="mt-5 text-sm">
 											<a
 												href="#!"
-												class="font-medium text-indigo-600 hover:text-indigo-500"
+												className="font-medium text-indigo-600 hover:text-indigo-500"
 											>
 												{" "}
 												View all posts{" "}
@@ -566,13 +566,13 @@ export default (props) => {
 					<div className="hidden md:flex items-center justify-end md:flex-1 lg:w-0">
 						<a
 							href="#!"
-							class="whitespace-nowrap text-base font-medium text-gray-500 hover:text-gray-900"
+							className="whitespace-nowrap text-base font-medium text-gray-500 hover:text-gray-900"
 						>
 							Sign in
 						</a>
 						<a
 							href="#!"
-							class="ltr:ml-8 rtl:mr-8 whitespace-nowrap inline-flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-indigo-600 hover:bg-indigo-700"
+							className="ltr:ml-8 rtl:mr-8 whitespace-nowrap inline-flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-indigo-600 hover:bg-indigo-700"
 						>
 							Sign up
 						</a>
@@ -591,7 +591,7 @@ export default (props) => {
 				To: "opacity-0 scale-95"
 			-->*/}
 			<div
-				class={`${
+				className={`${
 					isMenuOpen ? "block" : "hidden"
 				} absolute top-0 inset-x-0 p-2 transition transform ltr:origin-top-right rtl:origin-top-left md:hidden`}
 			>
@@ -600,7 +600,7 @@ export default (props) => {
 						<div className="flex items-center justify-between">
 							<div>
 								<img
-									class="h-8 w-auto"
+									className="h-8 w-auto"
 									src={capitalAzurLogo}
 									alt="Workflow"
 								/>
@@ -611,12 +611,12 @@ export default (props) => {
 										SetMenuOpen(false);
 									}}
 									type="button"
-									class="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500"
+									className="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500"
 								>
 									<span className="sr-only">Close menu</span>
 									{/* <!-- Heroicon name: x --> */}
 									<svg
-										class="h-6 w-6"
+										className="h-6 w-6"
 										xmlns="http://www.w3.org/2000/svg"
 										fill="none"
 										viewBox="0 0 24 24"
@@ -637,11 +637,11 @@ export default (props) => {
 							<nav className="grid gap-y-8">
 								<a
 									href="#!"
-									class="-m-3 p-3 flex items-center rounded-md hover:bg-gray-50"
+									className="-m-3 p-3 flex items-center rounded-md hover:bg-gray-50"
 								>
 									{/* <!-- Heroicon name: chart-bar --> */}
 									<svg
-										class="flex-shrink-0 h-6 w-6 text-indigo-600"
+										className="flex-shrink-0 h-6 w-6 text-indigo-600"
 										xmlns="http://www.w3.org/2000/svg"
 										fill="none"
 										viewBox="0 0 24 24"
@@ -662,11 +662,11 @@ export default (props) => {
 
 								<a
 									href="#!"
-									class="-m-3 p-3 flex items-center rounded-md hover:bg-gray-50"
+									className="-m-3 p-3 flex items-center rounded-md hover:bg-gray-50"
 								>
 									{/* <!-- Heroicon name: cursor-click --> */}
 									<svg
-										class="flex-shrink-0 h-6 w-6 text-indigo-600"
+										className="flex-shrink-0 h-6 w-6 text-indigo-600"
 										xmlns="http://www.w3.org/2000/svg"
 										fill="none"
 										viewBox="0 0 24 24"
@@ -687,11 +687,11 @@ export default (props) => {
 
 								<a
 									href="#!"
-									class="-m-3 p-3 flex items-center rounded-md hover:bg-gray-50"
+									className="-m-3 p-3 flex items-center rounded-md hover:bg-gray-50"
 								>
 									{/* <!-- Heroicon name: shield-check --> */}
 									<svg
-										class="flex-shrink-0 h-6 w-6 text-indigo-600"
+										className="flex-shrink-0 h-6 w-6 text-indigo-600"
 										xmlns="http://www.w3.org/2000/svg"
 										fill="none"
 										viewBox="0 0 24 24"
@@ -712,11 +712,11 @@ export default (props) => {
 
 								<a
 									href="#!"
-									class="-m-3 p-3 flex items-center rounded-md hover:bg-gray-50"
+									className="-m-3 p-3 flex items-center rounded-md hover:bg-gray-50"
 								>
 									{/* <!-- Heroicon name: view-grid --> */}
 									<svg
-										class="flex-shrink-0 h-6 w-6 text-indigo-600"
+										className="flex-shrink-0 h-6 w-6 text-indigo-600"
 										xmlns="http://www.w3.org/2000/svg"
 										fill="none"
 										viewBox="0 0 24 24"
@@ -737,11 +737,11 @@ export default (props) => {
 
 								<a
 									href="#!"
-									class="-m-3 p-3 flex items-center rounded-md hover:bg-gray-50"
+									className="-m-3 p-3 flex items-center rounded-md hover:bg-gray-50"
 								>
 									{/* <!-- Heroicon name: refresh --> */}
 									<svg
-										class="flex-shrink-0 h-6 w-6 text-indigo-600"
+										className="flex-shrink-0 h-6 w-6 text-indigo-600"
 										xmlns="http://www.w3.org/2000/svg"
 										fill="none"
 										viewBox="0 0 24 24"
@@ -766,56 +766,56 @@ export default (props) => {
 						<div className="grid grid-cols-2 gap-y-4 gap-x-8">
 							<a
 								href="#!"
-								class="text-base font-medium text-gray-900 hover:text-gray-700"
+								className="text-base font-medium text-gray-900 hover:text-gray-700"
 							>
 								Pricing
 							</a>
 
 							<a
 								href="#!"
-								class="text-base font-medium text-gray-900 hover:text-gray-700"
+								className="text-base font-medium text-gray-900 hover:text-gray-700"
 							>
 								Docs
 							</a>
 
 							<a
 								href="#!"
-								class="text-base font-medium text-gray-900 hover:text-gray-700"
+								className="text-base font-medium text-gray-900 hover:text-gray-700"
 							>
 								Enterprise
 							</a>
 
 							<a
 								href="#!"
-								class="text-base font-medium text-gray-900 hover:text-gray-700"
+								className="text-base font-medium text-gray-900 hover:text-gray-700"
 							>
 								Blog
 							</a>
 
 							<a
 								href="#!"
-								class="text-base font-medium text-gray-900 hover:text-gray-700"
+								className="text-base font-medium text-gray-900 hover:text-gray-700"
 							>
 								Help Center
 							</a>
 
 							<a
 								href="#!"
-								class="text-base font-medium text-gray-900 hover:text-gray-700"
+								className="text-base font-medium text-gray-900 hover:text-gray-700"
 							>
 								Guides
 							</a>
 
 							<a
 								href="#!"
-								class="text-base font-medium text-gray-900 hover:text-gray-700"
+								className="text-base font-medium text-gray-900 hover:text-gray-700"
 							>
 								Security
 							</a>
 
 							<a
 								href="#!"
-								class="text-base font-medium text-gray-900 hover:text-gray-700"
+								className="text-base font-medium text-gray-900 hover:text-gray-700"
 							>
 								Events
 							</a>
@@ -823,7 +823,7 @@ export default (props) => {
 						<div>
 							<a
 								href="#!"
-								class="w-full flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-indigo-600 hover:bg-indigo-700"
+								className="w-full flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-indigo-600 hover:bg-indigo-700"
 							>
 								Sign up
 							</a>
@@ -831,7 +831,7 @@ export default (props) => {
 								Existing customer?
 								<a
 									href="#!"
-									class="text-indigo-600 hover:text-indigo-500"
+									className="text-indigo-600 hover:text-indigo-500"
 								>
 									Sign in
 								</a>

@@ -10,27 +10,27 @@ export default (props) => {
 	return (
 		<div className="relative bg-white">
 			<div className="relative z-20 shadow">
-				<div className="max-w-7xl mx-auto flex justify-between items-center px-4 py-5 sm:px-6 sm:py-4 lg:px-8 md:justify-start md:space-x-10">
+				<div className="max-w-7xl mx-auto flex justify-between items-center px-4 py-5 sm:px-6 sm:py-4 lg:px-8 md:justify-start md:space-x-10 md:rtl:space-x-reverse">
 					<div>
 						<a href="#" className="flex">
 							<span className="sr-only">Workflow</span>
 							<img
-								class="h-8 w-auto sm:h-10"
+								className="h-8 w-auto sm:h-10"
 								src={capitalAzurLogo}
 								alt=""
 							/>
 						</a>
 					</div>
-					<div className="-mr-2 -my-2 md:hidden">
+					<div className="ltr:-mr-2 rtl:-ml-2 -my-2 md:hidden">
 						<button
 							onClick={() => setMenuOpen(true)}
 							type="button"
-							class="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500"
+							className="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500"
 						>
 							<span className="sr-only">Open menu</span>
 							{/* <!-- Heroicon name: menu --> */}
 							<svg
-								class="h-6 w-6"
+								className="h-6 w-6"
 								xmlns="http://www.w3.org/2000/svg"
 								fill="none"
 								viewBox="0 0 24 24"
@@ -47,7 +47,7 @@ export default (props) => {
 						</button>
 					</div>
 					<div className="hidden md:flex-1 md:flex md:items-center md:justify-between">
-						<nav className="flex space-x-10">
+						<nav className="flex space-x-10 rtl:space-x-reverse">
 							<div className="relative">
 								{/* <!-- Item active: "text-gray-900", Item inactive: "text-gray-500" --> */}
 								<button
@@ -56,7 +56,7 @@ export default (props) => {
 										setSolutionsOpen(!isSolutionsOpen)
 									}}
 									type="button"
-									class={`${ isSolutionsOpen ? "text-gray-900" : "text-gray-500" } group bg-white rounded-md inline-flex items-center text-base font-medium hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500`}
+									className={`${ isSolutionsOpen ? "text-gray-900" : "text-gray-500" } group bg-white rounded-md inline-flex items-center text-base font-medium hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500`}
 								>
 									<span>Solutions</span>
 									{/* <!--
@@ -64,7 +64,7 @@ export default (props) => {
 										Item active: "text-gray-600", Item inactive: "text-gray-400"
 									--> */}
 									<svg
-										class="ml-2 h-5 w-5 text-gray-400 group-hover:text-gray-500"
+										className="ltr:ml-2 rtl:mr-2 h-5 w-5 text-gray-400 group-hover:text-gray-500"
 										xmlns="http://www.w3.org/2000/svg"
 										viewBox="0 0 20 20"
 										fill="currentColor"
@@ -80,13 +80,13 @@ export default (props) => {
 							</div>
 							<a
 								href="#"
-								class="text-base font-medium text-gray-500 hover:text-gray-900"
+								className="text-base font-medium text-gray-500 hover:text-gray-900"
 							>
 								Pricing
 							</a>
 							<a
 								href="#"
-								class="text-base font-medium text-gray-500 hover:text-gray-900"
+								className="text-base font-medium text-gray-500 hover:text-gray-900"
 							>
 								Docs
 							</a>
@@ -98,7 +98,7 @@ export default (props) => {
 										setMoreOpen(!isMoreOpen)
 									}}
 									type="button"
-									class={`${ isMoreOpen ? "text-gray-900" : "text-gray-500" } group bg-white rounded-md inline-flex items-center text-base font-medium hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500`}
+									className={`${ isMoreOpen ? "text-gray-900" : "text-gray-500" } group bg-white rounded-md inline-flex items-center text-base font-medium hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500`}
 								>
 									<span>More</span>
 									{/* <!--
@@ -106,7 +106,7 @@ export default (props) => {
 										Item active: "text-gray-600", Item inactive: "text-gray-400"
 									--> */}
 									<svg
-										class="ml-2 h-5 w-5 text-gray-400 group-hover:text-gray-500"
+										className="ltr:ml-2 rtl:mr-2 h-5 w-5 text-gray-400 group-hover:text-gray-500"
 										xmlns="http://www.w3.org/2000/svg"
 										viewBox="0 0 20 20"
 										fill="currentColor"
@@ -121,16 +121,16 @@ export default (props) => {
 								</button>
 							</div>
 						</nav>
-						<div className="flex items-center md:ml-12">
+						<div className="flex items-center md:ltr:ml-12 md:rtl:mr-12">
 							<a
 								href="#"
-								class="text-base font-medium text-gray-500 hover:text-gray-900"
+								className="text-base font-medium text-gray-500 hover:text-gray-900"
 							>
 								Sign in
 							</a>
 							<a
 								href="#"
-								class="ml-8 inline-flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-indigo-600 hover:bg-indigo-700"
+								className="ltr:ml-8 rtl:mr-8 inline-flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-indigo-600 hover:bg-indigo-700"
 							>
 								Sign up
 							</a>
@@ -155,14 +155,14 @@ export default (props) => {
 					<div className="max-w-7xl mx-auto grid gap-y-6 px-4 py-6 sm:grid-cols-2 sm:gap-8 sm:px-6 sm:py-8 lg:grid-cols-4 lg:px-8 lg:py-12 xl:py-16">
 						<a
 							href="#"
-							class="-m-3 p-3 flex flex-col justify-between rounded-lg hover:bg-gray-50"
+							className="-m-3 p-3 flex flex-col justify-between rounded-lg hover:bg-gray-50"
 						>
 							<div className="flex md:h-full lg:flex-col">
 								<div className="flex-shrink-0">
 									<span className="inline-flex items-center justify-center h-10 w-10 rounded-md bg-indigo-500 text-white sm:h-12 sm:w-12">
 										{/* <!-- Heroicon name: chart-bar --> */}
 										<svg
-											class="h-6 w-6"
+											className="h-6 w-6"
 											xmlns="http://www.w3.org/2000/svg"
 											fill="none"
 											viewBox="0 0 24 24"
@@ -178,7 +178,7 @@ export default (props) => {
 										</svg>
 									</span>
 								</div>
-								<div className="ml-4 md:flex-1 md:flex md:flex-col md:justify-between lg:ml-0 lg:mt-4">
+								<div className="ltr:ml-4 rtl:mr-4 md:flex-1 md:flex md:flex-col md:justify-between lg:ltr:ml-0 lg:rtl:mr-0 lg:mt-4">
 									<div>
 										<p className="text-base font-medium text-gray-900">
 											Analytics
@@ -198,14 +198,14 @@ export default (props) => {
 
 						<a
 							href="#"
-							class="-m-3 p-3 flex flex-col justify-between rounded-lg hover:bg-gray-50"
+							className="-m-3 p-3 flex flex-col justify-between rounded-lg hover:bg-gray-50"
 						>
 							<div className="flex md:h-full lg:flex-col">
 								<div className="flex-shrink-0">
 									<span className="inline-flex items-center justify-center h-10 w-10 rounded-md bg-indigo-500 text-white sm:h-12 sm:w-12">
 										{/* <!-- Heroicon name: cursor-click --> */}
 										<svg
-											class="h-6 w-6"
+											className="h-6 w-6"
 											xmlns="http://www.w3.org/2000/svg"
 											fill="none"
 											viewBox="0 0 24 24"
@@ -221,7 +221,7 @@ export default (props) => {
 										</svg>
 									</span>
 								</div>
-								<div className="ml-4 md:flex-1 md:flex md:flex-col md:justify-between lg:ml-0 lg:mt-4">
+								<div className="ltr:ml-4 rtl:mr-4 md:flex-1 md:flex md:flex-col md:justify-between lg:ltr:ml-0 lg:rtl:mr-0 lg:mt-4">
 									<div>
 										<p className="text-base font-medium text-gray-900">
 											Engagement
@@ -241,14 +241,14 @@ export default (props) => {
 
 						<a
 							href="#"
-							class="-m-3 p-3 flex flex-col justify-between rounded-lg hover:bg-gray-50"
+							className="-m-3 p-3 flex flex-col justify-between rounded-lg hover:bg-gray-50"
 						>
 							<div className="flex md:h-full lg:flex-col">
 								<div className="flex-shrink-0">
 									<span className="inline-flex items-center justify-center h-10 w-10 rounded-md bg-indigo-500 text-white sm:h-12 sm:w-12">
 										{/* <!-- Heroicon name: shield-check --> */}
 										<svg
-											class="h-6 w-6"
+											className="h-6 w-6"
 											xmlns="http://www.w3.org/2000/svg"
 											fill="none"
 											viewBox="0 0 24 24"
@@ -264,7 +264,7 @@ export default (props) => {
 										</svg>
 									</span>
 								</div>
-								<div className="ml-4 md:flex-1 md:flex md:flex-col md:justify-between lg:ml-0 lg:mt-4">
+								<div className="ltr:ml-4 rtl:mr-4 md:flex-1 md:flex md:flex-col md:justify-between lg:ltr:ml-0 lg:rtl:mr-0 lg:mt-4">
 									<div>
 										<p className="text-base font-medium text-gray-900">
 											Security
@@ -284,14 +284,14 @@ export default (props) => {
 
 						<a
 							href="#"
-							class="-m-3 p-3 flex flex-col justify-between rounded-lg hover:bg-gray-50"
+							className="-m-3 p-3 flex flex-col justify-between rounded-lg hover:bg-gray-50"
 						>
 							<div className="flex md:h-full lg:flex-col">
 								<div className="flex-shrink-0">
 									<span className="inline-flex items-center justify-center h-10 w-10 rounded-md bg-indigo-500 text-white sm:h-12 sm:w-12">
 										{/* <!-- Heroicon name: view-grid --> */}
 										<svg
-											class="h-6 w-6"
+											className="h-6 w-6"
 											xmlns="http://www.w3.org/2000/svg"
 											fill="none"
 											viewBox="0 0 24 24"
@@ -307,7 +307,7 @@ export default (props) => {
 										</svg>
 									</span>
 								</div>
-								<div className="ml-4 md:flex-1 md:flex md:flex-col md:justify-between lg:ml-0 lg:mt-4">
+								<div className="ltr:ml-4 rtl:mr-4 md:flex-1 md:flex md:flex-col md:justify-between lg:ltr:ml-0 lg:rtl:mr-0 lg:mt-4">
 									<div>
 										<p className="text-base font-medium text-gray-900">
 											Integrations
@@ -327,15 +327,15 @@ export default (props) => {
 					</div>
 				</div>
 				<div className="bg-gray-50">
-					<div className="max-w-7xl mx-auto space-y-6 px-4 py-5 sm:flex sm:space-y-0 sm:space-x-10 sm:px-6 lg:px-8">
+					<div className="max-w-7xl mx-auto space-y-6 px-4 py-5 sm:flex sm:space-y-0 sm:space-x-10 sm:rtl:space-x-reverse sm:px-6 lg:px-8">
 						<div className="flow-root">
 							<a
 								href="#"
-								class="-m-3 p-3 flex items-center rounded-md text-base font-medium text-gray-900 hover:bg-gray-100"
+								className="-m-3 p-3 flex items-center rounded-md text-base font-medium text-gray-900 hover:bg-gray-100"
 							>
 								{/* <!-- Heroicon name: play --> */}
 								<svg
-									class="flex-shrink-0 h-6 w-6 text-gray-400"
+									className="flex-shrink-0 h-6 w-6 text-gray-400"
 									xmlns="http://www.w3.org/2000/svg"
 									fill="none"
 									viewBox="0 0 24 24"
@@ -355,18 +355,18 @@ export default (props) => {
 										d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
 									/>
 								</svg>
-								<span className="ml-3">Watch Demo</span>
+								<span className="ltr:ml-3 rtl:mr-3">Watch Demo</span>
 							</a>
 						</div>
 
 						<div className="flow-root">
 							<a
 								href="#"
-								class="-m-3 p-3 flex items-center rounded-md text-base font-medium text-gray-900 hover:bg-gray-100"
+								className="-m-3 p-3 flex items-center rounded-md text-base font-medium text-gray-900 hover:bg-gray-100"
 							>
 								{/* <!-- Heroicon name: check-circle --> */}
 								<svg
-									class="flex-shrink-0 h-6 w-6 text-gray-400"
+									className="flex-shrink-0 h-6 w-6 text-gray-400"
 									xmlns="http://www.w3.org/2000/svg"
 									fill="none"
 									viewBox="0 0 24 24"
@@ -380,18 +380,18 @@ export default (props) => {
 										d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
 									/>
 								</svg>
-								<span className="ml-3">View All Products</span>
+								<span className="ltr:ml-3 rtl:mr-3">View All Products</span>
 							</a>
 						</div>
 
 						<div className="flow-root">
 							<a
 								href="#"
-								class="-m-3 p-3 flex items-center rounded-md text-base font-medium text-gray-900 hover:bg-gray-100"
+								className="-m-3 p-3 flex items-center rounded-md text-base font-medium text-gray-900 hover:bg-gray-100"
 							>
 								{/* <!-- Heroicon name: phone --> */}
 								<svg
-									class="flex-shrink-0 h-6 w-6 text-gray-400"
+									className="flex-shrink-0 h-6 w-6 text-gray-400"
 									xmlns="http://www.w3.org/2000/svg"
 									fill="none"
 									viewBox="0 0 24 24"
@@ -405,7 +405,7 @@ export default (props) => {
 										d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
 									/>
 								</svg>
-								<span className="ml-3">Contact Sales</span>
+								<span className="ltr:ml-3 rtl:mr-3">Contact Sales</span>
 							</a>
 						</div>
 					</div>
@@ -429,7 +429,7 @@ export default (props) => {
 					<div className="bg-gray-50 w-1/2"></div>
 				</div>
 				<div className="relative max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2">
-					<nav className="grid gap-y-10 px-4 py-8 bg-white sm:grid-cols-2 sm:gap-x-8 sm:py-12 sm:px-6 lg:px-8 xl:pr-12">
+					<nav className="grid gap-y-10 px-4 py-8 bg-white sm:grid-cols-2 sm:gap-x-8 sm:py-12 sm:px-6 lg:px-8 xl:ltr:pr-12 xl:rtl:pl-12">
 						<div>
 							<h3 className="text-sm font-medium tracking-wide text-gray-500 uppercase">
 								Company
@@ -438,11 +438,11 @@ export default (props) => {
 								<li className="flow-root">
 									<a
 										href="#"
-										class="-m-3 p-3 flex items-center rounded-md text-base font-medium text-gray-900 hover:bg-gray-50"
+										className="-m-3 p-3 flex items-center rounded-md text-base font-medium text-gray-900 hover:bg-gray-50"
 									>
 										{/* <!-- Heroicon name: information-circle --> */}
 										<svg
-											class="flex-shrink-0 h-6 w-6 text-gray-400"
+											className="flex-shrink-0 h-6 w-6 text-gray-400"
 											xmlns="http://www.w3.org/2000/svg"
 											fill="none"
 											viewBox="0 0 24 24"
@@ -456,18 +456,18 @@ export default (props) => {
 												d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
 											/>
 										</svg>
-										<span className="ml-4">About</span>
+										<span className="ltr:ml-4 rtl:mr-4">About</span>
 									</a>
 								</li>
 
 								<li className="flow-root">
 									<a
 										href="#"
-										class="-m-3 p-3 flex items-center rounded-md text-base font-medium text-gray-900 hover:bg-gray-50"
+										className="-m-3 p-3 flex items-center rounded-md text-base font-medium text-gray-900 hover:bg-gray-50"
 									>
 										{/* <!-- Heroicon name: office-building --> */}
 										<svg
-											class="flex-shrink-0 h-6 w-6 text-gray-400"
+											className="flex-shrink-0 h-6 w-6 text-gray-400"
 											xmlns="http://www.w3.org/2000/svg"
 											fill="none"
 											viewBox="0 0 24 24"
@@ -481,18 +481,18 @@ export default (props) => {
 												d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"
 											/>
 										</svg>
-										<span className="ml-4">Customers</span>
+										<span className="ltr:ml-4 rtl:mr-4">Customers</span>
 									</a>
 								</li>
 
 								<li className="flow-root">
 									<a
 										href="#"
-										class="-m-3 p-3 flex items-center rounded-md text-base font-medium text-gray-900 hover:bg-gray-50"
+										className="-m-3 p-3 flex items-center rounded-md text-base font-medium text-gray-900 hover:bg-gray-50"
 									>
 										{/* <!-- Heroicon name: newspaper --> */}
 										<svg
-											class="flex-shrink-0 h-6 w-6 text-gray-400"
+											className="flex-shrink-0 h-6 w-6 text-gray-400"
 											xmlns="http://www.w3.org/2000/svg"
 											fill="none"
 											viewBox="0 0 24 24"
@@ -506,18 +506,18 @@ export default (props) => {
 												d="M19 20H5a2 2 0 01-2-2V6a2 2 0 012-2h10a2 2 0 012 2v1m2 13a2 2 0 01-2-2V7m2 13a2 2 0 002-2V9a2 2 0 00-2-2h-2m-4-3H9M7 16h6M7 8h6v4H7V8z"
 											/>
 										</svg>
-										<span className="ml-4">Press</span>
+										<span className="ltr:ml-4 rtl:mr-4">Press</span>
 									</a>
 								</li>
 
 								<li className="flow-root">
 									<a
 										href="#"
-										class="-m-3 p-3 flex items-center rounded-md text-base font-medium text-gray-900 hover:bg-gray-50"
+										className="-m-3 p-3 flex items-center rounded-md text-base font-medium text-gray-900 hover:bg-gray-50"
 									>
 										{/* <!-- Heroicon name: briefcase --> */}
 										<svg
-											class="flex-shrink-0 h-6 w-6 text-gray-400"
+											className="flex-shrink-0 h-6 w-6 text-gray-400"
 											xmlns="http://www.w3.org/2000/svg"
 											fill="none"
 											viewBox="0 0 24 24"
@@ -531,18 +531,18 @@ export default (props) => {
 												d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
 											/>
 										</svg>
-										<span className="ml-4">Careers</span>
+										<span className="ltr:ml-4 rtl:mr-4">Careers</span>
 									</a>
 								</li>
 
 								<li className="flow-root">
 									<a
 										href="#"
-										class="-m-3 p-3 flex items-center rounded-md text-base font-medium text-gray-900 hover:bg-gray-50"
+										className="-m-3 p-3 flex items-center rounded-md text-base font-medium text-gray-900 hover:bg-gray-50"
 									>
 										{/* <!-- Heroicon name: shield-check --> */}
 										<svg
-											class="flex-shrink-0 h-6 w-6 text-gray-400"
+											className="flex-shrink-0 h-6 w-6 text-gray-400"
 											xmlns="http://www.w3.org/2000/svg"
 											fill="none"
 											viewBox="0 0 24 24"
@@ -556,7 +556,7 @@ export default (props) => {
 												d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"
 											/>
 										</svg>
-										<span className="ml-4">Privacy</span>
+										<span className="ltr:ml-4 rtl:mr-4">Privacy</span>
 									</a>
 								</li>
 							</ul>
@@ -569,11 +569,11 @@ export default (props) => {
 								<li className="flow-root">
 									<a
 										href="#"
-										class="-m-3 p-3 flex items-center rounded-md text-base font-medium text-gray-900 hover:bg-gray-50"
+										className="-m-3 p-3 flex items-center rounded-md text-base font-medium text-gray-900 hover:bg-gray-50"
 									>
 										{/* <!-- Heroicon name: user-group --> */}
 										<svg
-											class="flex-shrink-0 h-6 w-6 text-gray-400"
+											className="flex-shrink-0 h-6 w-6 text-gray-400"
 											xmlns="http://www.w3.org/2000/svg"
 											fill="none"
 											viewBox="0 0 24 24"
@@ -587,18 +587,18 @@ export default (props) => {
 												d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"
 											/>
 										</svg>
-										<span className="ml-4">Community</span>
+										<span className="ltr:ml-4 rtl:mr-4">Community</span>
 									</a>
 								</li>
 
 								<li className="flow-root">
 									<a
 										href="#"
-										class="-m-3 p-3 flex items-center rounded-md text-base font-medium text-gray-900 hover:bg-gray-50"
+										className="-m-3 p-3 flex items-center rounded-md text-base font-medium text-gray-900 hover:bg-gray-50"
 									>
 										{/* <!-- Heroicon name: globe-alt --> */}
 										<svg
-											class="flex-shrink-0 h-6 w-6 text-gray-400"
+											className="flex-shrink-0 h-6 w-6 text-gray-400"
 											xmlns="http://www.w3.org/2000/svg"
 											fill="none"
 											viewBox="0 0 24 24"
@@ -612,18 +612,18 @@ export default (props) => {
 												d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9"
 											/>
 										</svg>
-										<span className="ml-4">Partners</span>
+										<span className="ltr:ml-4 rtl:mr-4">Partners</span>
 									</a>
 								</li>
 
 								<li className="flow-root">
 									<a
 										href="#"
-										class="-m-3 p-3 flex items-center rounded-md text-base font-medium text-gray-900 hover:bg-gray-50"
+										className="-m-3 p-3 flex items-center rounded-md text-base font-medium text-gray-900 hover:bg-gray-50"
 									>
 										{/* <!-- Heroicon name: bookmark-alt --> */}
 										<svg
-											class="flex-shrink-0 h-6 w-6 text-gray-400"
+											className="flex-shrink-0 h-6 w-6 text-gray-400"
 											xmlns="http://www.w3.org/2000/svg"
 											fill="none"
 											viewBox="0 0 24 24"
@@ -637,18 +637,18 @@ export default (props) => {
 												d="M16 4v12l-4-2-4 2V4M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"
 											/>
 										</svg>
-										<span className="ml-4">Guides</span>
+										<span className="ltr:ml-4 rtl:mr-4">Guides</span>
 									</a>
 								</li>
 
 								<li className="flow-root">
 									<a
 										href="#"
-										class="-m-3 p-3 flex items-center rounded-md text-base font-medium text-gray-900 hover:bg-gray-50"
+										className="-m-3 p-3 flex items-center rounded-md text-base font-medium text-gray-900 hover:bg-gray-50"
 									>
 										{/* <!-- Heroicon name: desktop-computer --> */}
 										<svg
-											class="flex-shrink-0 h-6 w-6 text-gray-400"
+											className="flex-shrink-0 h-6 w-6 text-gray-400"
 											xmlns="http://www.w3.org/2000/svg"
 											fill="none"
 											viewBox="0 0 24 24"
@@ -662,13 +662,13 @@ export default (props) => {
 												d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
 											/>
 										</svg>
-										<span className="ml-4">Webinars</span>
+										<span className="ltr:ml-4 rtl:mr-4">Webinars</span>
 									</a>
 								</li>
 							</ul>
 						</div>
 					</nav>
-					<div className="bg-gray-50 px-4 py-8 sm:py-12 sm:px-6 lg:px-8 xl:pl-12">
+					<div className="bg-gray-50 px-4 py-8 sm:py-12 sm:px-6 lg:px-8 xl:ltr:pl-12 xl:rtl:pr-12">
 						<div>
 							<h3 className="text-sm font-medium tracking-wide text-gray-500 uppercase">
 								From the blog
@@ -677,17 +677,17 @@ export default (props) => {
 								<li className="flow-root">
 									<a
 										href="#"
-										class="-m-3 p-3 flex rounded-lg hover:bg-gray-100"
+										className="-m-3 p-3 flex rounded-lg hover:bg-gray-100"
 									>
 										<div className="hidden sm:block flex-shrink-0">
 											<img
-												class="w-32 h-20 object-cover rounded-md"
+												className="w-32 h-20 object-cover rounded-md"
 												// src={capitalAzurLogo}
 												src="https://images.unsplash.com/photo-1558478551-1a378f63328e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2849&q=80"
 												alt=""
 											/>
 										</div>
-										<div className="w-0 flex-1 sm:ml-8">
+										<div className="w-0 flex-1 sm:ltr:ml-8 sm:rtl:mr-8">
 											<h4 className="text-base font-medium text-gray-900 truncate">
 												Boost your conversion rate
 											</h4>
@@ -703,16 +703,16 @@ export default (props) => {
 								<li className="flow-root">
 									<a
 										href="#"
-										class="-m-3 p-3 flex rounded-lg hover:bg-gray-100"
+										className="-m-3 p-3 flex rounded-lg hover:bg-gray-100"
 									>
 										<div className="hidden sm:block flex-shrink-0">
 											<img
-												class="w-32 h-20 object-cover rounded-md"
+												className="w-32 h-20 object-cover rounded-md"
 												src="https://images.unsplash.com/1/apple-gear-looking-pretty.jpg?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2850&q=80"
 												alt=""
 											/>
 										</div>
-										<div className="w-0 flex-1 sm:ml-8">
+										<div className="w-0 flex-1 sm:ltr:ml-8 sm:rtl:mr-8">
 											<h4 className="text-base font-medium text-gray-900 truncate">
 												How to use search engine
 												optimization to drive traffic to
@@ -732,7 +732,7 @@ export default (props) => {
 						<div className="mt-6 text-sm font-medium">
 							<a
 								href="#"
-								class="text-indigo-600 hover:text-indigo-500"
+								className="text-indigo-600 hover:text-indigo-500"
 							>
 								{" "}
 								View all posts{" "}
@@ -754,30 +754,30 @@ export default (props) => {
 				To: "opacity-0 scale-95"
 			--> */}
 			<div
-				class={`${
+				className={`${
 					isMenuOpen ? "block" : "hidden"
-				} absolute z-30 top-0 inset-x-0 p-2 transition transform origin-top-right md:hidden`}
+				} absolute z-30 top-0 inset-x-0 p-2 transition transform ltr:origin-top-right rtl:origin-top-left md:hidden`}
 			>
 				<div className="rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 bg-white divide-y-2 divide-gray-50">
 					<div className="pt-5 pb-6 px-5 sm:pb-8">
 						<div className="flex items-center justify-between">
 							<div>
 								<img
-									class="h-8 w-auto"
+									className="h-8 w-auto"
 									src={capitalAzurLogo}
 									alt="Workflow"
 								/>
 							</div>
-							<div className="-mr-2">
+							<div className="ltr:-mr-2 rtl:-ml-2">
 								<button
 									onClick={() => setMenuOpen(false)}
 									type="button"
-									class="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500"
+									className="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500"
 								>
 									<span className="sr-only">Close menu</span>
 									{/* <!-- Heroicon name: x --> */}
 									<svg
-										class="h-6 w-6"
+										className="h-6 w-6"
 										xmlns="http://www.w3.org/2000/svg"
 										fill="none"
 										viewBox="0 0 24 24"
@@ -799,12 +799,12 @@ export default (props) => {
 								<div className="grid gap-7 sm:grid-cols-2 sm:gap-y-8 sm:gap-x-4">
 									<a
 										href="#"
-										class="-m-3 flex items-center p-3 rounded-lg hover:bg-gray-50"
+										className="-m-3 flex items-center p-3 rounded-lg hover:bg-gray-50"
 									>
 										<div className="flex-shrink-0 flex items-center justify-center h-10 w-10 rounded-md bg-indigo-500 text-white sm:h-12 sm:w-12">
 											{/* <!-- Heroicon name: chart-bar --> */}
 											<svg
-												class="h-6 w-6"
+												className="h-6 w-6"
 												xmlns="http://www.w3.org/2000/svg"
 												fill="none"
 												viewBox="0 0 24 24"
@@ -819,19 +819,19 @@ export default (props) => {
 												/>
 											</svg>
 										</div>
-										<div className="ml-4 text-base font-medium text-gray-900">
+										<div className="ltr:ml-4 rtl:mr-4 text-base font-medium text-gray-900">
 											Analytics
 										</div>
 									</a>
 
 									<a
 										href="#"
-										class="-m-3 flex items-center p-3 rounded-lg hover:bg-gray-50"
+										className="-m-3 flex items-center p-3 rounded-lg hover:bg-gray-50"
 									>
 										<div className="flex-shrink-0 flex items-center justify-center h-10 w-10 rounded-md bg-indigo-500 text-white sm:h-12 sm:w-12">
 											{/* <!-- Heroicon name: cursor-click --> */}
 											<svg
-												class="h-6 w-6"
+												className="h-6 w-6"
 												xmlns="http://www.w3.org/2000/svg"
 												fill="none"
 												viewBox="0 0 24 24"
@@ -846,19 +846,19 @@ export default (props) => {
 												/>
 											</svg>
 										</div>
-										<div className="ml-4 text-base font-medium text-gray-900">
+										<div className="ltr:ml-4 rtl:mr-4 text-base font-medium text-gray-900">
 											Engagement
 										</div>
 									</a>
 
 									<a
 										href="#"
-										class="-m-3 flex items-center p-3 rounded-lg hover:bg-gray-50"
+										className="-m-3 flex items-center p-3 rounded-lg hover:bg-gray-50"
 									>
 										<div className="flex-shrink-0 flex items-center justify-center h-10 w-10 rounded-md bg-indigo-500 text-white sm:h-12 sm:w-12">
 											{/* <!-- Heroicon name: shield-check --> */}
 											<svg
-												class="h-6 w-6"
+												className="h-6 w-6"
 												xmlns="http://www.w3.org/2000/svg"
 												fill="none"
 												viewBox="0 0 24 24"
@@ -873,19 +873,19 @@ export default (props) => {
 												/>
 											</svg>
 										</div>
-										<div className="ml-4 text-base font-medium text-gray-900">
+										<div className="ltr:ml-4 rtl:mr-4 text-base font-medium text-gray-900">
 											Security
 										</div>
 									</a>
 
 									<a
 										href="#"
-										class="-m-3 flex items-center p-3 rounded-lg hover:bg-gray-50"
+										className="-m-3 flex items-center p-3 rounded-lg hover:bg-gray-50"
 									>
 										<div className="flex-shrink-0 flex items-center justify-center h-10 w-10 rounded-md bg-indigo-500 text-white sm:h-12 sm:w-12">
 											{/* <!-- Heroicon name: view-grid --> */}
 											<svg
-												class="h-6 w-6"
+												className="h-6 w-6"
 												xmlns="http://www.w3.org/2000/svg"
 												fill="none"
 												viewBox="0 0 24 24"
@@ -900,7 +900,7 @@ export default (props) => {
 												/>
 											</svg>
 										</div>
-										<div className="ml-4 text-base font-medium text-gray-900">
+										<div className="ltr:ml-4 rtl:mr-4 text-base font-medium text-gray-900">
 											Integrations
 										</div>
 									</a>
@@ -908,11 +908,12 @@ export default (props) => {
 								<div className="mt-8 text-base">
 									<a
 										href="#"
-										class="font-medium text-indigo-600 hover:text-indigo-500"
+										className="font-medium text-indigo-600 hover:text-indigo-500"
 									>
 										{" "}
 										View all products{" "}
-										<span aria-hidden="true">&rarr;</span>
+										<span className="rtl:hidden" aria-hidden="true">&rarr;</span>
+										<span className="ltr:hidden" aria-hidden="true">&larr;</span>
 									</a>
 								</div>
 							</nav>
@@ -922,42 +923,42 @@ export default (props) => {
 						<div className="grid grid-cols-2 gap-4">
 							<a
 								href="#"
-								class="rounded-md text-base font-medium text-gray-900 hover:text-gray-700"
+								className="rounded-md text-base font-medium text-gray-900 hover:text-gray-700"
 							>
 								Pricing
 							</a>
 
 							<a
 								href="#"
-								class="rounded-md text-base font-medium text-gray-900 hover:text-gray-700"
+								className="rounded-md text-base font-medium text-gray-900 hover:text-gray-700"
 							>
 								Docs
 							</a>
 
 							<a
 								href="#"
-								class="rounded-md text-base font-medium text-gray-900 hover:text-gray-700"
+								className="rounded-md text-base font-medium text-gray-900 hover:text-gray-700"
 							>
 								Company
 							</a>
 
 							<a
 								href="#"
-								class="rounded-md text-base font-medium text-gray-900 hover:text-gray-700"
+								className="rounded-md text-base font-medium text-gray-900 hover:text-gray-700"
 							>
 								Resources
 							</a>
 
 							<a
 								href="#"
-								class="rounded-md text-base font-medium text-gray-900 hover:text-gray-700"
+								className="rounded-md text-base font-medium text-gray-900 hover:text-gray-700"
 							>
 								Blog
 							</a>
 
 							<a
 								href="#"
-								class="rounded-md text-base font-medium text-gray-900 hover:text-gray-700"
+								className="rounded-md text-base font-medium text-gray-900 hover:text-gray-700"
 							>
 								Contact Sales
 							</a>
@@ -965,7 +966,7 @@ export default (props) => {
 						<div className="mt-6">
 							<a
 								href="#"
-								class="w-full flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-indigo-600 hover:bg-indigo-700"
+								className="w-full flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-indigo-600 hover:bg-indigo-700"
 							>
 								Sign up
 							</a>
@@ -973,7 +974,7 @@ export default (props) => {
 								Existing customer?
 								<a
 									href="#"
-									class="text-indigo-600 hover:text-indigo-500"
+									className="text-indigo-600 hover:text-indigo-500"
 								>
 									Sign in
 								</a>

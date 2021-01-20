@@ -11,7 +11,7 @@ export const Stateless = () => {
 			["px-3 py-2 text-sm leading-4", "px-6 py-3 text-base"].map( size => {
 				return (
 
-					<div className="flex my-5 space-x-5 justify-center items-center">
+					<div className="flex flex-col md:flex-row flex-wrap my-5 space-x-5 justify-center items-center">
 						<button type="button" className={`btn ${size}`}>
 							Button Primary
 						</button>
