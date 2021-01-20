@@ -1,7 +1,7 @@
 import React from "react";
 
 export default {
-	title: "Primitives/toggles"
+	title: "Primitives/Toggles"
 }
 
 export const Simple = (props) => {
