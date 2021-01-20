@@ -128,3 +128,31 @@ export const WithIcon = () => {
 		</button>
 	);
 };
+
+export const Switch = () => {
+	const [selected, setSelected] = React.useState("monthly");
+
+	return (
+		<div className="relative mt-6 bg-gray-100 rounded-lg p-0.5 flex self-center sm:mt-8 max-w-max mx-auto">
+			<button
+				onClick={() => setSelected("monthly")}
+				type="button"
+				className={`${
+					selected === "monthly" ? "bg-white border-gray-200" : "border-transparent"
+				} relative border rounded-md shadow-sm py-2 w-1/2 text-sm font-medium text-gray-700 whitespace-nowrap focus:outline-none focus:z-10 sm:w-auto sm:px-8`}
+			>
+				Monthly billing
+			</button>
+			<button
+				onClick={() => setSelected("yearly")}
+				type="button"
+				className={`${
+					selected === "yearly" ? "bg-white border-gray-200" : "border-transparent"
+				} relative border rounded-md py-2 w-1/2 text-sm font-medium text-gray-700 whitespace-nowrap focus:outline-none focus:z-10 sm:w-auto sm:px-8`}
+			>
+				Yearly billing
+			</button>
+		</div>
+	);
+};
+
