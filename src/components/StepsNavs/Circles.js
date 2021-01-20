@@ -4,7 +4,7 @@ import React from "react";
 export default (props) => {
 	return (
 		<nav className="flex items-center justify-center" aria-label="Progress">
-			<ol className="flex items-center">
+			<ol className="flex items-center origin-bottom-left transform-gpu rotate-90 md:rotate-0">
 				<li className="relative pr-8 sm:pr-20">
 					{/* Completed Step */}
 					<div
@@ -15,7 +15,7 @@ export default (props) => {
 					</div>
 					<a
 						href="#"
-						className="relative w-8 h-8 flex items-center justify-center bg-indigo-600 rounded-full hover:bg-indigo-900"
+						className="relative w-8 h-8 flex items-center justify-center bg-indigo-600 rounded-full hover:bg-indigo-900 transform-gpu -rotate-90 md:rotate-0"
 					>
 						{/* Heroicon name: check */}
 						<svg
@@ -44,7 +44,7 @@ export default (props) => {
 					</div>
 					<a
 						href="#"
-						className="relative w-8 h-8 flex items-center justify-center bg-indigo-600 rounded-full hover:bg-indigo-900"
+						className="relative w-8 h-8 flex items-center justify-center bg-indigo-600 rounded-full hover:bg-indigo-900 transform-gpu -rotate-90 md:rotate-0"
 					>
 						{/* Heroicon name: check */}
 						<svg
@@ -73,7 +73,7 @@ export default (props) => {
 					</div>
 					<a
 						href="#"
-						className="relative w-8 h-8 flex items-center justify-center bg-white border-2 border-indigo-600 rounded-full"
+						className="relative w-8 h-8 flex items-center justify-center bg-white border-2 border-indigo-600 rounded-full transform-gpu -rotate-90 md:rotate-0"
 						aria-current="step"
 					>
 						<span
@@ -93,7 +93,7 @@ export default (props) => {
 					</div>
 					<a
 						href="#"
-						className="group relative w-8 h-8 flex items-center justify-center bg-white border-2 border-gray-300 rounded-full hover:border-gray-400"
+						className="group relative w-8 h-8 flex items-center justify-center bg-white border-2 border-gray-300 rounded-full hover:border-gray-400 transform-gpu -rotate-90 md:rotate-0"
 					>
 						<span
 							className="h-2.5 w-2.5 bg-transparent rounded-full group-hover:bg-gray-300"
@@ -112,7 +112,7 @@ export default (props) => {
 					</div>
 					<a
 						href="#"
-						className="group relative w-8 h-8 flex items-center justify-center bg-white border-2 border-gray-300 rounded-full hover:border-gray-400"
+						className="group relative w-8 h-8 flex items-center justify-center bg-white border-2 border-gray-300 rounded-full hover:border-gray-400 transform-gpu -rotate-90 md:rotate-0"
 					>
 						<span
 							className="h-2.5 w-2.5 bg-transparent rounded-full group-hover:bg-gray-300"
