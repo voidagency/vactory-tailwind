@@ -3,7 +3,7 @@ import React from "react";
 export default (props) => {
 	return (
 		<div className="rounded-lg bg-gray-200 overflow-hidden shadow divide-y divide-gray-200 sm:divide-y-0 sm:grid sm:grid-cols-2 sm:gap-px">
-			<div className="rounded-tl-lg rounded-tr-lg sm:rounded-tr-none relative group bg-white p-6 focus-within:ring-2 focus-within:ring-inset focus-within:ring-indigo-500">
+			<div className="ltr:rounded-tl-lg rtl:rounded-tr-lg ltr:rounded-tr-lg rtl:rounded-tl-lg sm:ltr:rounded-tr-none sm:rtl:rounded-tl-none relative group bg-white p-6 focus-within:ring-2 focus-within:ring-inset focus-within:ring-indigo-500">
 				<div>
 					<span className="rounded-lg inline-flex p-3 bg-green-50 text-green-700 ring-4 ring-white">
 						{/* <!-- Heroicon name: clock --> */}
@@ -42,11 +42,11 @@ export default (props) => {
 					</p>
 				</div>
 				<span
-					className="pointer-events-none absolute top-6 right-6 text-gray-300 group-hover:text-gray-400"
+					className="pointer-events-none absolute top-6 ltr:right-6 rtl:left-6 text-gray-300 group-hover:text-gray-400"
 					aria-hidden="true"
 				>
 					<svg
-						className="h-6 w-6"
+						className="h-6 w-6 transform rtl:-scale-x-100"
 						xmlns="http://www.w3.org/2000/svg"
 						fill="currentColor"
 						viewBox="0 0 24 24"
@@ -56,7 +56,7 @@ export default (props) => {
 				</span>
 			</div>
 
-			<div className="sm:rounded-tr-lg relative group bg-white p-6 focus-within:ring-2 focus-within:ring-inset focus-within:ring-indigo-500">
+			<div className="sm:ltr:rounded-tr-lg sm:rtl:rounded-tl-l relative group bg-white p-6 focus-within:ring-2 focus-within:ring-inset focus-within:ring-indigo-500">
 				<div>
 					<span className="rounded-lg inline-flex p-3 bg-purple-50 text-purple-700 ring-4 ring-white">
 						{/* <!-- Heroicon name: badge-check --> */}
@@ -95,11 +95,11 @@ export default (props) => {
 					</p>
 				</div>
 				<span
-					className="pointer-events-none absolute top-6 right-6 text-gray-300 group-hover:text-gray-400"
+					className="pointer-events-none absolute top-6 ltr:right-6 rtl:left-6 text-gray-300 group-hover:text-gray-400"
 					aria-hidden="true"
 				>
 					<svg
-						className="h-6 w-6"
+						className="h-6 w-6 transform rtl:-scale-x-100"
 						xmlns="http://www.w3.org/2000/svg"
 						fill="currentColor"
 						viewBox="0 0 24 24"
@@ -148,11 +148,11 @@ export default (props) => {
 					</p>
 				</div>
 				<span
-					className="pointer-events-none absolute top-6 right-6 text-gray-300 group-hover:text-gray-400"
+					className="pointer-events-none absolute top-6 ltr:right-6 rtl:left-6 text-gray-300 group-hover:text-gray-400"
 					aria-hidden="true"
 				>
 					<svg
-						className="h-6 w-6"
+						className="h-6 w-6 transform rtl:-scale-x-100"
 						xmlns="http://www.w3.org/2000/svg"
 						fill="currentColor"
 						viewBox="0 0 24 24"
@@ -201,11 +201,11 @@ export default (props) => {
 					</p>
 				</div>
 				<span
-					className="pointer-events-none absolute top-6 right-6 text-gray-300 group-hover:text-gray-400"
+					className="pointer-events-none absolute top-6 ltr:right-6 rtl:left-6 text-gray-300 group-hover:text-gray-400"
 					aria-hidden="true"
 				>
 					<svg
-						className="h-6 w-6"
+						className="h-6 w-6 transform rtl:-scale-x-100"
 						xmlns="http://www.w3.org/2000/svg"
 						fill="currentColor"
 						viewBox="0 0 24 24"
@@ -215,7 +215,7 @@ export default (props) => {
 				</span>
 			</div>
 
-			<div className="sm:rounded-bl-lg relative group bg-white p-6 focus-within:ring-2 focus-within:ring-inset focus-within:ring-indigo-500">
+			<div className="sm:ltr:rounded-bl-lg sm:rtl:rounded-br-l relative group bg-white p-6 focus-within:ring-2 focus-within:ring-inset focus-within:ring-indigo-500">
 				<div>
 					<span className="rounded-lg inline-flex p-3 bg-pink-50 text-pink-700 ring-4 ring-white">
 						{/* <!-- Heroicon name: receipt-refund --> */}
@@ -254,11 +254,11 @@ export default (props) => {
 					</p>
 				</div>
 				<span
-					className="pointer-events-none absolute top-6 right-6 text-gray-300 group-hover:text-gray-400"
+					className="pointer-events-none absolute top-6 ltr:right-6 rtl:left-6 text-gray-300 group-hover:text-gray-400"
 					aria-hidden="true"
 				>
 					<svg
-						className="h-6 w-6"
+						className="h-6 w-6 transform rtl:-scale-x-100"
 						xmlns="http://www.w3.org/2000/svg"
 						fill="currentColor"
 						viewBox="0 0 24 24"
@@ -268,7 +268,7 @@ export default (props) => {
 				</span>
 			</div>
 
-			<div className="rounded-bl-lg rounded-br-lg sm:rounded-bl-none relative group bg-white p-6 focus-within:ring-2 focus-within:ring-inset focus-within:ring-indigo-500">
+			<div className="ltr:rounded-bl-lg rtl:rounded-br-lg ltr:rounded-br-lg rtl:rounded-bl-lg sm:ltr:rounded-bl-none sm:rtl:rounded-br-non relative group bg-white p-6 focus-within:ring-2 focus-within:ring-inset focus-within:ring-indigo-500">
 				<div>
 					<span className="rounded-lg inline-flex p-3 bg-indigo-50 text-indigo-700 ring-4 ring-white">
 						{/* <!-- Heroicon name: academic-cap --> */}
@@ -312,11 +312,11 @@ export default (props) => {
 					</p>
 				</div>
 				<span
-					className="pointer-events-none absolute top-6 right-6 text-gray-300 group-hover:text-gray-400"
+					className="pointer-events-none absolute top-6 ltr:right-6 rtl:left-6 text-gray-300 group-hover:text-gray-400"
 					aria-hidden="true"
 				>
 					<svg
-						className="h-6 w-6"
+						className="h-6 w-6 transform rtl:-scale-x-100"
 						xmlns="http://www.w3.org/2000/svg"
 						fill="currentColor"
 						viewBox="0 0 24 24"

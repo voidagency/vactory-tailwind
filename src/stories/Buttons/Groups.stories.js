@@ -18,19 +18,19 @@ export const Basic = () => {
 		<span class="relative z-0 inline-flex shadow-sm rounded-md">
 			<button
 				type="button"
-				class="relative inline-flex items-center px-4 py-2 rounded-l-md border border-gray-300 bg-white text-sm font-medium text-gray-700 hover:bg-gray-50 focus:z-10 focus:outline-none focus:ring-1 focus:ring-indigo-500 focus:border-indigo-500"
+				class="relative inline-flex items-center px-4 py-2 ltr:rounded-l-md rtl:rounded-r-md border border-gray-300 bg-white text-sm font-medium text-gray-700 hover:bg-gray-50 focus:z-10 focus:outline-none focus:ring-1 focus:ring-indigo-500 focus:border-indigo-500"
 			>
 				Years
 			</button>
 			<button
 				type="button"
-				class="-ml-px relative inline-flex items-center px-4 py-2 border border-gray-300 bg-white text-sm font-medium text-gray-700 hover:bg-gray-50 focus:z-10 focus:outline-none focus:ring-1 focus:ring-indigo-500 focus:border-indigo-500"
+				class="ltr:-ml-px rtl:-mr-px relative inline-flex items-center px-4 py-2 border border-gray-300 bg-white text-sm font-medium text-gray-700 hover:bg-gray-50 focus:z-10 focus:outline-none focus:ring-1 focus:ring-indigo-500 focus:border-indigo-500"
 			>
 				Months
 			</button>
 			<button
 				type="button"
-				class="-ml-px relative inline-flex items-center px-4 py-2 rounded-r-md border border-gray-300 bg-white text-sm font-medium text-gray-700 hover:bg-gray-50 focus:z-10 focus:outline-none focus:ring-1 focus:ring-indigo-500 focus:border-indigo-500"
+				class="ltr:-ml-px rtl:-mr-px relative inline-flex items-center px-4 py-2 ltr:rounded-r-md rtl:rounded-l-md border border-gray-300 bg-white text-sm font-medium text-gray-700 hover:bg-gray-50 focus:z-10 focus:outline-none focus:ring-1 focus:ring-indigo-500 focus:border-indigo-500"
 			>
 				Days
 			</button>
@@ -41,7 +41,7 @@ export const Basic = () => {
 export const WithNativeSelect = () => {
 	return (
 		<span className="relative z-0 inline-flex shadow-sm rounded-md">
-			<span className="relative inline-flex items-center px-2 py-2 rounded-l-md border border-gray-300 bg-white">
+			<span className="relative inline-flex items-center px-2 py-2 ltr:rounded-l-md rtl:rounded-r-md border border-gray-300 bg-white">
 				<label htmlFor="select-all" className="sr-only">
 					Select all
 				</label>
@@ -58,7 +58,7 @@ export const WithNativeSelect = () => {
 			<select
 				id="message-type"
 				name="message-type"
-				className="-ml-px block w-full pl-3 pr-9 py-2 rounded-l-none rounded-r-md border border-gray-300 bg-white text-sm font-medium text-gray-700 hover:bg-gray-50 focus:z-10 focus:outline-none focus:ring-1 focus:ring-indigo-500 focus:border-indigo-500"
+				className="ltr:-ml-px rtl:-mr-px block w-full ltr:pl-3 rtl:pr-3 ltr:pr-9 rtl:pl-9 py-2 ltr:rounded-l-none rtl:rounded-r-none ltr:rounded-r-md rtl:rounded-l-md border border-gray-300 bg-white text-sm font-medium text-gray-700 hover:bg-gray-50 focus:z-10 focus:outline-none focus:ring-1 focus:ring-indigo-500 focus:border-indigo-500"
 			>
 				<option>Unread messages</option>
 				<option>Sent messages</option>
@@ -90,16 +90,16 @@ export const WithDropdown = () => {
 		<span className="relative z-0 inline-flex shadow-sm rounded-md">
 			<button
 				type="button"
-				className="relative inline-flex items-center px-4 py-2 rounded-l-md border border-gray-300 bg-white text-sm font-medium text-gray-700 hover:bg-gray-50 focus:z-10 focus:outline-none focus:ring-1 focus:ring-indigo-500 focus:border-indigo-500"
+				className="relative inline-flex items-center px-4 py-2 ltr:rounded-l-md rtl:rounded-r-md border border-gray-300 bg-white text-sm font-medium text-gray-700 hover:bg-gray-50 focus:z-10 focus:outline-none focus:ring-1 focus:ring-indigo-500 focus:border-indigo-500"
 			>
 				Save changes
 			</button>
-			<span ref={popin} className="-ml-px relative block">
+			<span ref={popin} className="ltr:-ml-px rtl:-mr-px relative block">
 				<button
 					onClick={(e) => setIsOpen(!isOpen)}
 					id="option-menu"
 					type="button"
-					className="relative inline-flex items-center px-2 py-2 rounded-r-md border border-gray-300 bg-white text-sm font-medium text-gray-500 hover:bg-gray-50 focus:z-10 focus:outline-none focus:ring-1 focus:ring-indigo-500 focus:border-indigo-500"
+					className="relative inline-flex items-center px-2 py-2 ltr:rounded-r-md rtl:rounded-l-md border border-gray-300 bg-white text-sm font-medium text-gray-500 hover:bg-gray-50 focus:z-10 focus:outline-none focus:ring-1 focus:ring-indigo-500 focus:border-indigo-500"
 					aria-haspopup="true"
 					aria-expanded={isOpen}
 				>
@@ -146,7 +146,7 @@ export const WithDropdown = () => {
 						exitDone: "hidden",
 					}}
 				>
-					<div className="origin-top-right absolute right-0 mt-2 -mr-1 w-56 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5">
+					<div className="ltr:origin-top-right rtl:origin-top-left absolute ltr:right-0 rtl:left-0 mt-2 ltr:-mr-1 rtl:-ml-1 w-56 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5">
 						<div
 							className="py-1"
 							role="menu"
@@ -187,11 +187,11 @@ export const WithStats = () => {
 		<span className="relative z-0 inline-flex shadow-sm rounded-md">
 			<button
 				type="button"
-				className="relative inline-flex items-center px-4 py-2 rounded-l-md border border-gray-300 bg-white text-sm font-medium text-gray-700 hover:bg-gray-50 focus:z-10 focus:outline-none focus:ring-1 focus:ring-indigo-500 focus:border-indigo-500"
+				className="relative inline-flex items-center px-4 py-2 ltr:rounded-l-md rtl:rounded-r-md border border-gray-300 bg-white text-sm font-medium text-gray-700 hover:bg-gray-50 focus:z-10 focus:outline-none focus:ring-1 focus:ring-indigo-500 focus:border-indigo-500"
 			>
 				{/* Heroicon name: bookmark */}
 				<svg
-					className="-ml-1 mr-2 h-5 w-5 text-gray-400"
+					className="ltr:-ml-1 rtl:-mr-1 ltr:mr-2 rtl:ml-2 h-5 w-5 text-gray-400"
 					xmlns="http://www.w3.org/2000/svg"
 					viewBox="0 0 20 20"
 					fill="currentColor"
@@ -203,7 +203,7 @@ export const WithStats = () => {
 			</button>
 			<button
 				type="button"
-				className="-ml-px relative inline-flex items-center px-3 py-2 rounded-r-md border border-gray-300 bg-gray-50 text-sm font-medium text-gray-700 hover:bg-gray-100 focus:z-10 focus:outline-none focus:ring-1 focus:ring-indigo-500 focus:border-indigo-500"
+				className="ltr:-ml-px rtl:-mr-px relative inline-flex items-center px-3 py-2 ltr:rounded-r-md rtl:rounded-l-md border border-gray-300 bg-gray-50 text-sm font-medium text-gray-700 hover:bg-gray-100 focus:z-10 focus:outline-none focus:ring-1 focus:ring-indigo-500 focus:border-indigo-500"
 			>
 				12k
 			</button>

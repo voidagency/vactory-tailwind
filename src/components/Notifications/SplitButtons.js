@@ -8,13 +8,13 @@ export default (props) => {
     Notification panel, show/hide based on alert state.
 
     Entering: "transform ease-out duration-300 transition"
-From: "translate-y-2 opacity-0 sm:translate-y-0 sm:translate-x-2"
+From: "translate-y-2 opacity-0 sm:translate-y-0 sm:ltr:translate-x-2 sm:rtl:-translate-x-2"
 To: "translate-y-0 opacity-100 sm:translate-x-0"
     Leaving: "transition ease-in duration-100"
 From: "opacity-100"
 To: "opacity-0"
   */}
-			<div className="max-w-md w-full bg-white shadow-lg rounded-lg pointer-events-auto flex ring-1 ring-black ring-opacity-5 divide-x divide-gray-200">
+			<div className="max-w-md w-full bg-white shadow-lg rounded-lg pointer-events-auto flex ring-1 ring-black ring-opacity-5 divide-x rtl:divide-x-reverse divide-gray-200">
 				<div className="w-0 flex-1 flex items-center p-4">
 					<div className="w-full">
 						<p className="text-sm font-medium text-gray-900">

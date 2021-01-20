@@ -338,7 +338,7 @@ export const TrailingButton = () => {
 							placeholder="John Doe"
 						/>
 					</div>
-					<button className="ltr:-ml-px rtl:-mr-px relative inline-flex items-center ltr:space-x-2 rtl:space-x-reverse px-4 py-2 border border-gray-300 text-sm font-medium ltr:rounded-r-md rtl:rounded-l-md text-gray-700 bg-gray-50 hover:bg-gray-100 focus:outline-none focus:ring-1 focus:ring-indigo-500 focus:border-indigo-500">
+					<button className="ltr:-ml-px rtl:-mr-px relative inline-flex items-center space-x-2 rtl:space-x-reverse px-4 py-2 border border-gray-300 text-sm font-medium ltr:rounded-r-md rtl:rounded-l-md text-gray-700 bg-gray-50 hover:bg-gray-100 focus:outline-none focus:ring-1 focus:ring-indigo-500 focus:border-indigo-500">
 						<svg
 							className="h-5 w-5 text-gray-400"
 							x-description="Heroicon name: sort-ascending"
@@ -487,7 +487,7 @@ export const FileInput = () => {
 								className="sr-only"
 							/>
 						</label>
-						<p className="pl-1">or drag and drop</p>
+						<p className="ltr:pl-1 rtl:pr-1">or drag and drop</p>
 					</div>
 					<p className="text-xs text-gray-500">
 						PNG, JPG, GIF up to 10MB

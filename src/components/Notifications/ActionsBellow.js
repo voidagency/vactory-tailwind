@@ -8,7 +8,7 @@ export default (props) => {
     Notification panel, show/hide based on alert state.
 
     Entering: "transform ease-out duration-300 transition"
-From: "translate-y-2 opacity-0 sm:translate-y-0 sm:translate-x-2"
+From: "translate-y-2 opacity-0 sm:translate-y-0 sm:ltr:translate-x-2 sm:rtl:-translate-x-2"
 To: "translate-y-0 opacity-100 sm:translate-x-0"
     Leaving: "transition ease-in duration-100"
 From: "opacity-100"
@@ -35,7 +35,7 @@ To: "opacity-0"
 								/>
 							</svg>
 						</div>
-						<div className="ml-3 w-0 flex-1 pt-0.5">
+						<div className="ltr:ml-3 rtl:mr-3 w-0 flex-1 pt-0.5">
 							<p className="text-sm font-medium text-gray-900">
 								Discussion moved
 							</p>
@@ -47,12 +47,12 @@ To: "opacity-0"
 								<button className="bg-white rounded-md text-sm font-medium text-indigo-600 hover:text-indigo-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
 									Undo
 								</button>
-								<button className="ml-6 bg-white rounded-md text-sm font-medium text-gray-700 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
+								<button className="ltr:ml-6 rtl:mr-6 bg-white rounded-md text-sm font-medium text-gray-700 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
 									Dismiss
 								</button>
 							</div>
 						</div>
-						<div className="ml-4 flex-shrink-0 flex">
+						<div className="ltr:ml-4 rtl:mr-4 flex-shrink-0 flex">
 							<button className="bg-white rounded-md inline-flex text-gray-400 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
 								<span className="sr-only">Close</span>
 								{/* Heroicon name: x */}
