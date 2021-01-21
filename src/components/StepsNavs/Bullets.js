@@ -5,7 +5,7 @@ export default (props) => {
 	return (
 		<nav className="flex items-center justify-center" aria-label="Progress">
 			<p className="text-sm font-medium">Step 2 of 4</p>
-			<ol className="ml-8 flex items-center space-x-5">
+			<ol className="ltr:ml-8 rtl:mr-8 flex items-center space-x-5 rtl:space-x-reverse">
 				<li>
 					{/* Completed Step */}
 					<a

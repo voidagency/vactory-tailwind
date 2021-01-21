@@ -25,17 +25,17 @@ export default (props) => {
 									/>
 								</svg>
 							</span>
-							<span className="ml-4 text-sm font-medium text-gray-900">
+							<span className="ltr:ml-4 rtl:mr-4 text-sm font-medium text-gray-900">
 								Job details
 							</span>
 						</span>
 					</a>
 					<div
-						className="hidden md:block absolute top-0 right-0 h-full w-5"
+						className="hidden md:block absolute top-0 ltr:right-0 rtl:left-0 h-full w-5"
 						aria-hidden="true"
 					>
 						<svg
-							className="h-full w-full text-gray-300"
+							className="h-full w-full text-gray-300 transform rtl:-scale-x-100"
 							viewBox="0 0 22 80"
 							fill="none"
 							preserveAspectRatio="none"
@@ -61,16 +61,16 @@ export default (props) => {
 						>
 							<span className="text-indigo-600">02</span>
 						</span>
-						<span className="ml-4 text-sm font-medium text-indigo-600">
+						<span className="ltr:ml-4 rtl:mr-4 text-sm font-medium text-indigo-600">
 							Application form
 						</span>
 					</a>
 					<div
-						className="hidden md:block absolute top-0 right-0 h-full w-5"
+						className="hidden md:block absolute top-0 ltr:right-0 rtl:left-0 h-full w-5"
 						aria-hidden="true"
 					>
 						<svg
-							className="h-full w-full text-gray-300"
+							className="h-full w-full text-gray-300 transform rtl:-scale-x-100"
 							viewBox="0 0 22 80"
 							fill="none"
 							preserveAspectRatio="none"
@@ -93,7 +93,7 @@ export default (props) => {
 									03
 								</span>
 							</span>
-							<span className="ml-4 text-sm font-medium text-gray-500 group-hover:text-gray-900">
+							<span className="ltr:ml-4 rtl:mr-4 text-sm font-medium text-gray-500 group-hover:text-gray-900">
 								Preview
 							</span>
 						</span>

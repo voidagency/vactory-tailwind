@@ -4,8 +4,8 @@ import React from "react";
 export default (props) => {
 	return (
 		<nav className="flex items-center justify-center" aria-label="Progress">
-			<ol className="flex items-center origin-bottom-left transform-gpu rotate-90 md:rotate-0">
-				<li className="relative pr-8 sm:pr-20">
+			<ol className="flex items-center ltr:origin-bottom-left rtl:origin-bottom-right transform-gpu rotate-90 md:rotate-0">
+				<li className="relative ltr:pr-8 rtl:pl-8 sm:ltr:pr-20 sm:rtl:pl-20">
 					{/* Completed Step */}
 					<div
 						className="absolute inset-0 flex items-center"
@@ -34,7 +34,7 @@ export default (props) => {
 						<span className="sr-only">Step 1</span>
 					</a>
 				</li>
-				<li className="relative pr-8 sm:pr-20">
+				<li className="relative ltr:pr-8 rtl:pl-8 sm:ltr:pr-20 sm:rtl:pl-20">
 					{/* Completed Step */}
 					<div
 						className="absolute inset-0 flex items-center"
@@ -63,7 +63,7 @@ export default (props) => {
 						<span className="sr-only">Step 2</span>
 					</a>
 				</li>
-				<li className="relative pr-8 sm:pr-20">
+				<li className="relative ltr:pr-8 rtl:pl-8 sm:ltr:pr-20 sm:rtl:pl-20">
 					{/* Current Step */}
 					<div
 						className="absolute inset-0 flex items-center"
@@ -83,7 +83,7 @@ export default (props) => {
 						<span className="sr-only">Step 3</span>
 					</a>
 				</li>
-				<li className="relative pr-8 sm:pr-20">
+				<li className="relative ltr:pr-8 rtl:pl-8 sm:ltr:pr-20 sm:rtl:pl-20">
 					{/* Upcoming Step */}
 					<div
 						className="absolute inset-0 flex items-center"

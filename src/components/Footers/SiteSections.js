@@ -19,7 +19,7 @@ export default (props) => {
 							Making the world a better place through constructing
 							elegant hierarchies.
 						</p>
-						<div className="flex space-x-6">
+						<div className="flex space-x-6 rtl:space-x-reverse">
 							<a
 								href="#!"
 								className="text-gray-400 hover:text-gray-500"
@@ -310,7 +310,7 @@ export default (props) => {
 							className="appearance-none min-w-0 w-full bg-white border border-gray-300 py-2 px-4 text-base rounded-md text-gray-900 placeholder-gray-500 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:placeholder-gray-400 sm:max-w-xs"
 							placeholder="Enter your email"
 						/>
-						<div className="mt-3 rounded-md sm:mt-0 sm:ml-3 sm:flex-shrink-0">
+						<div className="mt-3 rounded-md sm:mt-0 sm:ltr:ml-3 sm:rtl:mr-3 sm:flex-shrink-0">
 							<button
 								type="submit"
 								className="w-full bg-indigo-600 border border-transparent rounded-md py-2 px-4 flex items-center justify-center text-base font-medium text-white hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
@@ -321,7 +321,7 @@ export default (props) => {
 					</form>
 				</div>
 				<div className="mt-8 border-t border-gray-200 pt-8 md:flex md:items-center md:justify-between">
-					<div className="flex space-x-6 md:order-2">
+					<div className="flex space-x-6 rtl:space-x-reverse md:order-2">
 						<a
 							href="#!"
 							className="text-gray-400 hover:text-gray-500"

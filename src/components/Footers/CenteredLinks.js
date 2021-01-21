@@ -63,7 +63,7 @@ export default (props) => {
 						</a>
 					</div>
 				</nav>
-				<div className="mt-8 flex justify-center space-x-6">
+				<div className="mt-8 flex justify-center space-x-6 rtl:space-x-reverse">
 					<a href="#!" className="text-gray-400 hover:text-gray-500">
 						<span className="sr-only">Facebook</span>
 						<svg

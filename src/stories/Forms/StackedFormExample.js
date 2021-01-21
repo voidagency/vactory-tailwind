@@ -23,13 +23,13 @@ export const Stacked = () => {
 						<div className="mt-6 grid grid-cols-1 gap-y-6 gap-x-4 sm:grid-cols-6">
 							<div className="sm:col-span-4">
 								<label
-								htmlFor="username"
+									htmlFor="username"
 									className="block text-sm font-medium text-gray-700"
 								>
 									Username
 								</label>
 								<div className="mt-1 flex rounded-md shadow-sm">
-									<span className="inline-flex items-center px-3 rounded-l-md border border-r-0 border-gray-300 bg-gray-50 text-gray-500 sm:text-sm">
+									<span className="inline-flex items-center px-3 ltr:rounded-l-md rtl:rounded-r-md border ltr:border-r-0 rtl:border-l-0 border-gray-300 bg-gray-50 text-gray-500 sm:text-sm">
 										workcation.com/
 									</span>
 									<input
@@ -37,14 +37,14 @@ export const Stacked = () => {
 										name="username"
 										id="username"
 										autoComplete="username"
-										className="flex-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full min-w-0 rounded-none rounded-r-md sm:text-sm border-gray-300"
+										className="flex-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full min-w-0 rounded-none ltr:rounded-r-md rtl:rounded-l-md sm:text-sm border-gray-300"
 									/>
 								</div>
 							</div>
 
 							<div className="sm:col-span-6">
 								<label
-								htmlFor="about"
+									htmlFor="about"
 									className="block text-sm font-medium text-gray-700"
 								>
 									About
@@ -64,7 +64,7 @@ export const Stacked = () => {
 
 							<div className="sm:col-span-6">
 								<label
-								htmlFor="photo"
+									htmlFor="photo"
 									className="block text-sm font-medium text-gray-700"
 								>
 									Photo
@@ -81,7 +81,7 @@ export const Stacked = () => {
 									</span>
 									<button
 										type="button"
-										className="ml-5 bg-white py-2 px-3 border border-gray-300 rounded-md shadow-sm text-sm leading-4 font-medium text-gray-700 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+										className="ltr:ml-5 rtl:mr-5 bg-white py-2 px-3 border border-gray-300 rounded-md shadow-sm text-sm leading-4 font-medium text-gray-700 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
 									>
 										Change
 									</button>
@@ -90,7 +90,7 @@ export const Stacked = () => {
 
 							<div className="sm:col-span-6">
 								<label
-								htmlFor="cover_photo"
+									htmlFor="cover_photo"
 									className="block text-sm font-medium text-gray-700"
 								>
 									Cover photo
@@ -113,7 +113,7 @@ export const Stacked = () => {
 										</svg>
 										<div className="flex text-sm text-gray-600">
 											<label
-											htmlFor="file-upload"
+												htmlFor="file-upload"
 												className="relative cursor-pointer bg-white rounded-md font-medium text-indigo-600 hover:text-indigo-500 focus-within:outline-none focus-within:ring-2 focus-within:ring-offset-2 focus-within:ring-indigo-500"
 											>
 												<span>Upload a file</span>
@@ -124,7 +124,7 @@ export const Stacked = () => {
 													className="sr-only"
 												/>
 											</label>
-											<p className="pl-1">
+											<p className="ltr:pl-1 rtl:pr-1">
 												or drag and drop
 											</p>
 										</div>
@@ -150,7 +150,7 @@ export const Stacked = () => {
 						<div className="mt-6 grid grid-cols-1 gap-y-6 gap-x-4 sm:grid-cols-6">
 							<div className="sm:col-span-3">
 								<label
-								htmlFor="first_name"
+									htmlFor="first_name"
 									className="block text-sm font-medium text-gray-700"
 								>
 									First name
@@ -168,7 +168,7 @@ export const Stacked = () => {
 
 							<div className="sm:col-span-3">
 								<label
-								htmlFor="last_name"
+									htmlFor="last_name"
 									className="block text-sm font-medium text-gray-700"
 								>
 									Last name
@@ -186,7 +186,7 @@ export const Stacked = () => {
 
 							<div className="sm:col-span-4">
 								<label
-								htmlFor="email"
+									htmlFor="email"
 									className="block text-sm font-medium text-gray-700"
 								>
 									Email address
@@ -204,7 +204,7 @@ export const Stacked = () => {
 
 							<div className="sm:col-span-3">
 								<label
-								htmlFor="country"
+									htmlFor="country"
 									className="block text-sm font-medium text-gray-700"
 								>
 									Country / Region
@@ -225,7 +225,7 @@ export const Stacked = () => {
 
 							<div className="sm:col-span-6">
 								<label
-								htmlFor="street_address"
+									htmlFor="street_address"
 									className="block text-sm font-medium text-gray-700"
 								>
 									Street address
@@ -243,7 +243,7 @@ export const Stacked = () => {
 
 							<div className="sm:col-span-2">
 								<label
-								htmlFor="city"
+									htmlFor="city"
 									className="block text-sm font-medium text-gray-700"
 								>
 									City
@@ -260,7 +260,7 @@ export const Stacked = () => {
 
 							<div className="sm:col-span-2">
 								<label
-								htmlFor="state"
+									htmlFor="state"
 									className="block text-sm font-medium text-gray-700"
 								>
 									State / Province
@@ -277,7 +277,7 @@ export const Stacked = () => {
 
 							<div className="sm:col-span-2">
 								<label
-								htmlFor="zip"
+									htmlFor="zip"
 									className="block text-sm font-medium text-gray-700"
 								>
 									ZIP / Postal
@@ -321,9 +321,9 @@ export const Stacked = () => {
 												className="focus:ring-indigo-500 h-4 w-4 text-indigo-600 border-gray-300 rounded"
 											/>
 										</div>
-										<div className="ml-3 text-sm">
+										<div className="ltr:ml-3 rtl:mr-3 text-sm">
 											<label
-											htmlFor="comments"
+												htmlFor="comments"
 												className="font-medium text-gray-700"
 											>
 												Comments
@@ -343,9 +343,9 @@ export const Stacked = () => {
 												className="focus:ring-indigo-500 h-4 w-4 text-indigo-600 border-gray-300 rounded"
 											/>
 										</div>
-										<div className="ml-3 text-sm">
+										<div className="ltr:ml-3 rtl:mr-3 text-sm">
 											<label
-											htmlFor="candidates"
+												htmlFor="candidates"
 												className="font-medium text-gray-700"
 											>
 												Candidates
@@ -365,9 +365,9 @@ export const Stacked = () => {
 												className="focus:ring-indigo-500 h-4 w-4 text-indigo-600 border-gray-300 rounded"
 											/>
 										</div>
-										<div className="ml-3 text-sm">
+										<div className="ltr:ml-3 rtl:mr-3 text-sm">
 											<label
-											htmlFor="offers"
+												htmlFor="offers"
 												className="font-medium text-gray-700"
 											>
 												Offers
@@ -399,8 +399,8 @@ export const Stacked = () => {
 											className="focus:ring-indigo-500 h-4 w-4 text-indigo-600 border-gray-300"
 										/>
 										<label
-										htmlFor="push_everything"
-											className="ml-3 block text-sm font-medium text-gray-700"
+											htmlFor="push_everything"
+											className="ltr:ml-3 rtl:mr-3 block text-sm font-medium text-gray-700"
 										>
 											Everything
 										</label>
@@ -413,8 +413,8 @@ export const Stacked = () => {
 											className="focus:ring-indigo-500 h-4 w-4 text-indigo-600 border-gray-300"
 										/>
 										<label
-										htmlFor="push_email"
-											className="ml-3 block text-sm font-medium text-gray-700"
+											htmlFor="push_email"
+											className="ltr:ml-3 rtl:mr-3 block text-sm font-medium text-gray-700"
 										>
 											Same as email
 										</label>
@@ -427,8 +427,8 @@ export const Stacked = () => {
 											className="focus:ring-indigo-500 h-4 w-4 text-indigo-600 border-gray-300"
 										/>
 										<label
-										htmlFor="push_nothing"
-											className="ml-3 block text-sm font-medium text-gray-700"
+											htmlFor="push_nothing"
+											className="ltr:ml-3 rtl:mr-3 block text-sm font-medium text-gray-700"
 										>
 											No push notifications
 										</label>
@@ -449,7 +449,7 @@ export const Stacked = () => {
 						</button>
 						<button
 							type="submit"
-							className="ml-3 inline-flex justify-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+							className="ltr:ml-3 rtl:mr-3 inline-flex justify-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
 						>
 							Save
 						</button>

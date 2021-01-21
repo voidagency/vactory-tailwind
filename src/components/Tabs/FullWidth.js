@@ -1,5 +1,5 @@
 import React from "react";
-import { CSSTransition } from "react-transition-group";
+import { Transition } from "@headlessui/react";
 // https://tailwindui.com/components/application-ui/navigation/tabs#component-7c429fe94a1fc0801cfd429c3b507c12
 
 export default (props) => {
@@ -85,77 +85,59 @@ export default (props) => {
 				</div>
 			</div>
 
-				<CSSTransition
-					in={currentTab === "My Account"}
-					timeout={{
-						enter: 300,
-						exit: 200,
-					}}
-					classNames={{
-						enter: "ease-out duration-300 opacity-0",
-						enterActive: "ease-out duration-300 opacity-100",
-						enterDone: "block-!",
-						exit: "ease-in duration-200",
-						exitActive: "opacity-0",
-						exitDone: "hidden",
-					}}
+			<div className="relative">
+				<Transition
+					show={currentTab === "My Account"}
+					enter="transform ease-out duration-300 transition"
+					enterFrom="scale-90 opacity-0"
+					enterTo="scale-100 opacity-100"
+					leave="transform ease-out duration-300 transition"
+					leaveFrom="scale-100 opacity-100"
+					leaveTo="scale-90 opacity-0"
+					className="absolute inset-0"
 				>
 					<div>My Account</div>
-				</CSSTransition>
+				</Transition>
 
-				<CSSTransition
-					in={currentTab === "Company"}
-					timeout={{
-						enter: 300,
-						exit: 200,
-					}}
-					classNames={{
-						enter: "ease-out duration-300 opacity-0",
-						enterActive: "ease-out duration-300 opacity-100",
-						enterDone: "block-!",
-						exit: "ease-in duration-200",
-						exitActive: "opacity-0",
-						exitDone: "hidden",
-					}}
+				<Transition
+					show={currentTab === "Company"}
+					enter="transform ease-out duration-300 transition"
+					enterFrom="scale-90 opacity-0"
+					enterTo="scale-100 opacity-100"
+					leave="transform ease-out duration-300 transition"
+					leaveFrom="scale-100 opacity-100"
+					leaveTo="scale-90 opacity-0"
+					className="absolute inset-0"
 				>
 					<div>Company</div>
-				</CSSTransition>
+				</Transition>
 
-				<CSSTransition
-					in={currentTab === "Team Members"}
-					timeout={{
-						enter: 300,
-						exit: 200,
-					}}
-					classNames={{
-						enter: "ease-out duration-300 opacity-0",
-						enterActive: "ease-out duration-300 opacity-100",
-						enterDone: "block-!",
-						exit: "ease-in duration-200",
-						exitActive: "opacity-0",
-						exitDone: "hidden",
-					}}
+				<Transition
+					show={currentTab === "Team Members"}
+					enter="transform ease-out duration-300 transition"
+					enterFrom="scale-90 opacity-0"
+					enterTo="scale-100 opacity-100"
+					leave="transform ease-out duration-300 transition"
+					leaveFrom="scale-100 opacity-100"
+					leaveTo="scale-90 opacity-0"
+					className="absolute inset-0"
 				>
 					<div>Team Members</div>
-				</CSSTransition>
+				</Transition>
 
-				<CSSTransition
-					in={currentTab === "Billing"}
-					timeout={{
-						enter: 300,
-						exit: 200,
-					}}
-					classNames={{
-						enter: "ease-out duration-300 opacity-0",
-						enterActive: "ease-out duration-300 opacity-100",
-						enterDone: "block-!",
-						exit: "ease-in duration-200",
-						exitActive: "opacity-0",
-						exitDone: "hidden",
-					}}
+				<Transition
+					show={currentTab === "Billing"}
+					enter="transform ease-out duration-300 transition"
+					enterFrom="scale-90 opacity-0"
+					enterTo="scale-100 opacity-100"
+					leave="transform ease-out duration-300 transition"
+					leaveFrom="scale-100 opacity-100"
+					leaveTo="scale-90 opacity-0"
+					className="absolute inset-0"
 				>
 					<div>Billing</div>
-				</CSSTransition>
+				</Transition>
+			</div>
 		</div>
 	);
 };
