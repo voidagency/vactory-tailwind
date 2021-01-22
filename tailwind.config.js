@@ -6,7 +6,7 @@ module.exports = {
 		// enabled: true,
 		content: ["./src/**/*.{js,jsx,ts,tsx}"],
 		options: {
-			safelist: [/^border-\w+-\d00/, /^text-\w+-\d+/, /^bg-\w+-\d+/]
+			safelist: [/^border-\w+-\d00/, /^text-\w+-\d+/, /^bg-\w+-\d+/],
 		},
 	},
 	darkMode: "class", // or 'media' or 'class'
@@ -92,6 +92,12 @@ module.exports = {
 			},
 			backgroundSize: {
 				1: "1rem",
+			},
+			zIndex: {
+				"-1": "-1",
+				1: "1",
+				2: "2",
+				3: "3",
 			},
 		},
 	},
