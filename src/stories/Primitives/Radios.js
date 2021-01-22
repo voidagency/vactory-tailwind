@@ -1,4 +1,5 @@
 import React from "react";
+import { Transition } from "@headlessui/react";
 
 export default {
 	title: "Primitives/Radios",
@@ -244,7 +245,7 @@ export const Grouped = () => {
 	);
 };
 
-export const Cards = () => {
+export const Stacked = () => {
 	const [selected, setSelected] = React.useState(null);
 
 	const clickHandler = (event) => {
@@ -442,4 +443,89 @@ export const Cards = () => {
 			</ul>
 		</fieldset>
 	);
+};
+
+export const Cards = () => {
+	const [selected, setSelected] = React.useState(null);
+
+	const clickHandler = (event) => {
+		setSelected(event.currentTarget.id);
+	};
+
+	return (
+		<fieldset className="max-w-lg mx-auto my-5">
+			<legend id="radiogroup-label" className="sr-only">
+				Choose a Plan
+			</legend>
+			<ul
+				className="flex items-center flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-4 rtl:space-x-reverse"
+				role="radiogroup"
+				aria-labelledby="radiogroup-label"
+			>
+				{["Hobby", "Growth", "Business", "Enterprise"].map(
+					(name, index) => {
+						return (
+							<li
+								key={index}
+								onClick={clickHandler}
+								id="radiogroup-option-0"
+								tabIndex={0}
+								role="radio"
+								aria-checked="false"
+								onClick={() => setSelected(name)}
+								className={`${
+									selected === name
+										? "border-green bg-green-50"
+										: "border-transparent bg-white"
+								} group w-40 h-34 p-4 relative rounded-lg shadow-lg border-2 cursor-pointer hover:bg-green-50 focus:outline-none focus:ring-1 focus:ring-offset-2 focus:ring-green-100`}
+							>
+									<p className="mb-3 text-xs uppercase font-semibold text-gray-500 text">
+										{name}
+									</p>
+									<Transition
+										show={selected === name}
+										enter="transform transition duration-100 ease-in"
+										enterFrom="scale-50 opacity-75"
+										enterTo="scale-100 opacity-100"
+										as="svg"
+										className="absolute ltr:right-3 rtl:left-3 top-3 rounded-full w-6 h-6 p-1 bg-green-200 text-green-600"
+										xmlns="http://www.w3.org/2000/svg"
+										fill="none"
+										viewBox="0 0 24 24"
+										stroke="currentColor"
+									>
+										<path
+											strokeLinecap="round"
+											strokeLinejoin="round"
+											strokeWidth={3}
+											d="M5 13l4 4L19 7"
+										/>
+									</Transition>
+									<div className="text-gray-900 font-extrabold">
+										<span className="text-4xl ltr:mr-3 rtl:ml-3">
+											{index * 5 || 1}
+										</span>
+										<span className="text-2xl">GB</span>
+									</div>
+									<div className="text-gray-500 font-semibold">
+										$
+										<span className="text-gray-900">
+											{(index + 1) * 5}
+										</span>{" "}
+										/ mo
+									</div>
+							</li>
+						);
+					}
+				)}
+			</ul>
+		</fieldset>
+	);
+};
+
+Cards.parameters = {
+	backgrounds: {
+		default: "gray-50",
+		values: [{ name: "gray-50", value: "#edf1f5" }],
+	},
 };
