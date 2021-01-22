@@ -1,12 +1,28 @@
 import React from "react";
-import capitalAzurLogo from "../../images/capital-azur-indigo-700.svg"
+import { Transition } from "@headlessui/react";
+import capitalAzurLogo from "../../images/capital-azur-indigo-700.svg";
 
 export default (props) => {
-	const [isOpen1, setIsOpen1] = React.useState(false)
-	const [isOpen2, setIsOpen2] = React.useState(false)
+	const [isOpen1, setIsOpen1] = React.useState(false);
+	const [isOpen2, setIsOpen2] = React.useState(false);
 	const [isMenuOpen, SetMenuOpen] = React.useState(false);
 
+	// close flyout menu when we click outside of them
+	React.useEffect(() => {
+		const handleClickOutside = (e) => {
+			// do nothing on click inside of the menu or on the triggers
+			if (e.target.closest(".flyout")) return;
 
+			setIsOpen1(false);
+			setIsOpen2(false);
+		};
+
+		document.addEventListener("mousedown", handleClickOutside);
+
+		return () => {
+			document.removeEventListener("mousedown", handleClickOutside);
+		};
+	}, []);
 	return (
 		<div className="relative bg-white">
 			<div className="max-w-7xl mx-auto px-4 sm:px-6">
@@ -80,20 +96,15 @@ export default (props) => {
 								</svg>
 							</button>
 
-							{/* <!--
-							'Solutions' flyout menu, show/hide based on flyout menu state.
-
-							Entering: "transition ease-out duration-200"
-							From: "opacity-0 translate-y-1"
-							To: "opacity-100 translate-y-0"
-							Leaving: "transition ease-in duration-150"
-							From: "opacity-100 translate-y-0"
-							To: "opacity-0 translate-y-1"
-							--> */}
-							<div
-								className={`${
-									isOpen1 ? "bloack" : "hidden"
-								} absolute z-10 ltr:-ml-4 rtl:-mr-4 mt-3 transform px-2 w-screen max-w-md sm:px-0 lg:ml-0 lg:ltr:left-1/2 lg:rtl:right-1/2 lg:ltr:-translate-x-1/2 lg:rtl:translate-x-1/2`}
+							<Transition
+								show={isOpen1}
+								enter="transition ease-out duration-200"
+								enterFrom="opacity-0 translate-y-1"
+								enterTo="opacity-100 translate-y-0"
+								leave="transition ease-in duration-150"
+								leaveFrom="opacity-100 translate-y-0"
+								leaveTo="opacity-0 translate-y-1"
+								className={`flyout absolute z-10 ltr:-ml-4 rtl:-mr-4 mt-3 transform px-2 w-screen max-w-md sm:px-0 lg:ml-0 lg:ltr:left-1/2 lg:rtl:right-1/2 lg:ltr:-translate-x-1/2 lg:rtl:translate-x-1/2`}
 							>
 								<div className="rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 overflow-hidden">
 									<div className="relative grid gap-6 bg-white px-5 py-6 sm:gap-8 sm:p-8">
@@ -318,7 +329,7 @@ export default (props) => {
 										</div>
 									</div>
 								</div>
-							</div>
+							</Transition>
 						</div>
 
 						<a
@@ -364,20 +375,15 @@ export default (props) => {
 								</svg>
 							</button>
 
-							{/* <!--
-							'More' flyout menu, show/hide based on flyout menu state.
-
-							Entering: "transition ease-out duration-200"
-							From: "opacity-0 translate-y-1"
-							To: "opacity-100 translate-y-0"
-							Leaving: "transition ease-in duration-150"
-							From: "opacity-100 translate-y-0"
-							To: "opacity-0 translate-y-1"
-							--> */}
-							<div
-								className={`${
-									isOpen2 ? "bloack" : "hidden"
-								} absolute z-10 ltr:left-1/2 rtl:right-1/2 transform ltr:-translate-x-1/2 rtl:translate-x-1/2 mt-3 px-2 w-screen max-w-md sm:px-0`}
+							<Transition
+								show={isOpen2}
+								enter="transition ease-out duration-200"
+								enterFrom="opacity-0 translate-y-1"
+								enterTo="opacity-100 translate-y-0"
+								leave="transition ease-in duration-150"
+								leaveFrom="opacity-100 translate-y-0"
+								leaveTo="opacity-0 translate-y-1"
+								className={`flyout absolute z-10 ltr:left-1/2 rtl:right-1/2 transform ltr:-translate-x-1/2 rtl:translate-x-1/2 mt-3 px-2 w-screen max-w-md sm:px-0`}
 							>
 								<div className="rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 overflow-hidden">
 									<div className="relative grid gap-6 bg-white px-5 py-6 sm:gap-8 sm:p-8">
@@ -560,7 +566,7 @@ export default (props) => {
 										</div>
 									</div>
 								</div>
-							</div>
+							</Transition>
 						</div>
 					</nav>
 					<div className="hidden md:flex items-center justify-end md:flex-1 lg:w-0">
@@ -580,20 +586,15 @@ export default (props) => {
 				</div>
 			</div>
 
-			{/* <!-- 
-				Mobile menu, show/hide based on mobile menu state.
-
-				Entering: "duration-200 ease-out"
-				From: "opacity-0 scale-95"
-				To: "opacity-100 scale-100"
-				Leaving: "duration-100 ease-in"
-				From: "opacity-100 scale-100"
-				To: "opacity-0 scale-95"
-			-->*/}
-			<div
-				className={`${
-					isMenuOpen ? "block" : "hidden"
-				} absolute top-0 inset-x-0 p-2 transition transform ltr:origin-top-right rtl:origin-top-left md:hidden`}
+			<Transition
+				show={isMenuOpen}
+				enter="duration-200 ease-out"
+				enterFrom="opacity-0 scale-95"
+				enterTo="opacity-100 scale-100"
+				leave="duration-100 ease-in"
+				leaveFrom="opacity-100 scale-100"
+				leaveTo="opacity-0 scale-95"
+				className={`absolute top-0 inset-x-0 p-2 transition transform ltr:origin-top-right rtl:origin-top-left md:hidden`}
 			>
 				<div className="rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 bg-white divide-y-2 divide-gray-50">
 					<div className="pt-5 pb-6 px-5">
@@ -839,7 +840,7 @@ export default (props) => {
 						</div>
 					</div>
 				</div>
-			</div>
+			</Transition>
 		</div>
 	);
 };

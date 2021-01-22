@@ -1,4 +1,5 @@
 import React from "react";
+import { Transition } from "@headlessui/react";
 import capitalAzurLogo from "../../images/capital-azur-indigo-700.svg";
 
 export default (props) => {
@@ -53,10 +54,14 @@ export default (props) => {
 								<button
 									onClick={() => {
 										setMoreOpen(false);
-										setSolutionsOpen(!isSolutionsOpen)
+										setSolutionsOpen(!isSolutionsOpen);
 									}}
 									type="button"
-									className={`${ isSolutionsOpen ? "text-gray-900" : "text-gray-500" } group bg-white rounded-md inline-flex items-center text-base font-medium hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500`}
+									className={`${
+										isSolutionsOpen
+											? "text-gray-900"
+											: "text-gray-500"
+									} group bg-white rounded-md inline-flex items-center text-base font-medium hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500`}
 								>
 									<span>Solutions</span>
 									{/* <!--
@@ -95,10 +100,14 @@ export default (props) => {
 								<button
 									onClick={() => {
 										setSolutionsOpen(false);
-										setMoreOpen(!isMoreOpen)
+										setMoreOpen(!isMoreOpen);
 									}}
 									type="button"
-									className={`${ isMoreOpen ? "text-gray-900" : "text-gray-500" } group bg-white rounded-md inline-flex items-center text-base font-medium hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500`}
+									className={`${
+										isMoreOpen
+											? "text-gray-900"
+											: "text-gray-500"
+									} group bg-white rounded-md inline-flex items-center text-base font-medium hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500`}
 								>
 									<span>More</span>
 									{/* <!--
@@ -140,17 +149,16 @@ export default (props) => {
 			</div>
 
 			{/* <!-- Solutions menu --> */}
-			{/* <!--
-				'Solutions' flyout menu, show/hide based on flyout menu state.
-
-				Entering: "transition ease-out duration-200"
-				From: "opacity-0 -translate-y-1"
-				To: "opacity-100 translate-y-0"
-				Leaving: "transition ease-in duration-150"
-				From: "opacity-100 translate-y-0"
-				To: "opacity-0 -translate-y-1"
-			--> */}
-			<div className={`hidden ${isSolutionsOpen ? "md:block" : ""} absolute z-10 inset-x-0 transform shadow-lg`}>
+			<Transition
+				show={isSolutionsOpen}
+				enter="transition ease-out duration-200"
+				enterFrom="opacity-0 -translate-y-1"
+				enterTo="opacity-100 translate-y-0"
+				leave="transition ease-in duration-150"
+				leaveFrom="opacity-100 translate-y-0"
+				leaveTo="opacity-0 -translate-y-1"
+				className={`absolute z-10 inset-x-0 transform shadow-lg`}
+			>
 				<div className="bg-white">
 					<div className="max-w-7xl mx-auto grid gap-y-6 px-4 py-6 sm:grid-cols-2 sm:gap-8 sm:px-6 sm:py-8 lg:grid-cols-4 lg:px-8 lg:py-12 xl:py-16">
 						<a
@@ -355,7 +363,9 @@ export default (props) => {
 										d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
 									/>
 								</svg>
-								<span className="ltr:ml-3 rtl:mr-3">Watch Demo</span>
+								<span className="ltr:ml-3 rtl:mr-3">
+									Watch Demo
+								</span>
 							</a>
 						</div>
 
@@ -380,7 +390,9 @@ export default (props) => {
 										d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
 									/>
 								</svg>
-								<span className="ltr:ml-3 rtl:mr-3">View All Products</span>
+								<span className="ltr:ml-3 rtl:mr-3">
+									View All Products
+								</span>
 							</a>
 						</div>
 
@@ -405,25 +417,26 @@ export default (props) => {
 										d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
 									/>
 								</svg>
-								<span className="ltr:ml-3 rtl:mr-3">Contact Sales</span>
+								<span className="ltr:ml-3 rtl:mr-3">
+									Contact Sales
+								</span>
 							</a>
 						</div>
 					</div>
 				</div>
-			</div>
+			</Transition>
 
 			{/* <!-- More menu --> */}
-			{/* <!--
-				'More' flyout menu, show/hide based on flyout menu state.
-
-				Entering: "transition ease-out duration-200"
-				From: "opacity-0 -translate-y-1"
-				To: "opacity-100 translate-y-0"
-				Leaving: "transition ease-in duration-150"
-				From: "opacity-100 translate-y-0"
-				To: "opacity-0 -translate-y-1"
-			--> */}
-			<div className={`hidden ${isMoreOpen ? "md:block" : ""} absolute z-10 inset-x-0 transform shadow-lg`}>
+			<Transition
+				show={isMoreOpen}
+				enter="transition ease-out duration-200"
+				enterFrom="opacity-0 -translate-y-1"
+				enterTo="opacity-100 translate-y-0"
+				leave="transition ease-in duration-150"
+				leaveFrom="opacity-100 translate-y-0"
+				leaveTo="opacity-0 -translate-y-1"
+				className={`absolute z-10 inset-x-0 transform shadow-lg`}
+			>
 				<div className="absolute inset-0 flex">
 					<div className="bg-white w-1/2"></div>
 					<div className="bg-gray-50 w-1/2"></div>
@@ -456,7 +469,9 @@ export default (props) => {
 												d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
 											/>
 										</svg>
-										<span className="ltr:ml-4 rtl:mr-4">About</span>
+										<span className="ltr:ml-4 rtl:mr-4">
+											About
+										</span>
 									</a>
 								</li>
 
@@ -481,7 +496,9 @@ export default (props) => {
 												d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"
 											/>
 										</svg>
-										<span className="ltr:ml-4 rtl:mr-4">Customers</span>
+										<span className="ltr:ml-4 rtl:mr-4">
+											Customers
+										</span>
 									</a>
 								</li>
 
@@ -506,7 +523,9 @@ export default (props) => {
 												d="M19 20H5a2 2 0 01-2-2V6a2 2 0 012-2h10a2 2 0 012 2v1m2 13a2 2 0 01-2-2V7m2 13a2 2 0 002-2V9a2 2 0 00-2-2h-2m-4-3H9M7 16h6M7 8h6v4H7V8z"
 											/>
 										</svg>
-										<span className="ltr:ml-4 rtl:mr-4">Press</span>
+										<span className="ltr:ml-4 rtl:mr-4">
+											Press
+										</span>
 									</a>
 								</li>
 
@@ -531,7 +550,9 @@ export default (props) => {
 												d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
 											/>
 										</svg>
-										<span className="ltr:ml-4 rtl:mr-4">Careers</span>
+										<span className="ltr:ml-4 rtl:mr-4">
+											Careers
+										</span>
 									</a>
 								</li>
 
@@ -556,7 +577,9 @@ export default (props) => {
 												d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"
 											/>
 										</svg>
-										<span className="ltr:ml-4 rtl:mr-4">Privacy</span>
+										<span className="ltr:ml-4 rtl:mr-4">
+											Privacy
+										</span>
 									</a>
 								</li>
 							</ul>
@@ -587,7 +610,9 @@ export default (props) => {
 												d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"
 											/>
 										</svg>
-										<span className="ltr:ml-4 rtl:mr-4">Community</span>
+										<span className="ltr:ml-4 rtl:mr-4">
+											Community
+										</span>
 									</a>
 								</li>
 
@@ -612,7 +637,9 @@ export default (props) => {
 												d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9"
 											/>
 										</svg>
-										<span className="ltr:ml-4 rtl:mr-4">Partners</span>
+										<span className="ltr:ml-4 rtl:mr-4">
+											Partners
+										</span>
 									</a>
 								</li>
 
@@ -637,7 +664,9 @@ export default (props) => {
 												d="M16 4v12l-4-2-4 2V4M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"
 											/>
 										</svg>
-										<span className="ltr:ml-4 rtl:mr-4">Guides</span>
+										<span className="ltr:ml-4 rtl:mr-4">
+											Guides
+										</span>
 									</a>
 								</li>
 
@@ -662,7 +691,9 @@ export default (props) => {
 												d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
 											/>
 										</svg>
-										<span className="ltr:ml-4 rtl:mr-4">Webinars</span>
+										<span className="ltr:ml-4 rtl:mr-4">
+											Webinars
+										</span>
 									</a>
 								</li>
 							</ul>
@@ -741,22 +772,18 @@ export default (props) => {
 						</div>
 					</div>
 				</div>
-			</div>
+			</Transition>
 
-			{/* <!--
-				Mobile menu, show/hide based on mobile menu state.
-
-				Entering: "duration-200 ease-out"
-				From: "opacity-0 scale-95"
-				To: "opacity-100 scale-100"
-				Leaving: "duration-100 ease-in"
-				From: "opacity-100 scale-100"
-				To: "opacity-0 scale-95"
-			--> */}
-			<div
-				className={`${
-					isMenuOpen ? "block" : "hidden"
-				} absolute z-30 top-0 inset-x-0 p-2 transition transform ltr:origin-top-right rtl:origin-top-left md:hidden`}
+			{/* <!--Mobile menu--> */}
+			<Transition
+				show={isMenuOpen}
+				enter="duration-200 ease-out"
+				enterFrom="opacity-0 scale-95"
+				enterTo="opacity-100 scale-100"
+				leave="duration-100 ease-in"
+				leaveFrom="opacity-100 scale-100"
+				leaveTo="opacity-0 scale-95"
+				className={`absolute z-30 top-0 inset-x-0 p-2 transition transform ltr:origin-top-right rtl:origin-top-left md:hidden`}
 			>
 				<div className="rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 bg-white divide-y-2 divide-gray-50">
 					<div className="pt-5 pb-6 px-5 sm:pb-8">
@@ -912,8 +939,18 @@ export default (props) => {
 									>
 										{" "}
 										View all products{" "}
-										<span className="rtl:hidden" aria-hidden="true">&rarr;</span>
-										<span className="ltr:hidden" aria-hidden="true">&larr;</span>
+										<span
+											className="rtl:hidden"
+											aria-hidden="true"
+										>
+											&rarr;
+										</span>
+										<span
+											className="ltr:hidden"
+											aria-hidden="true"
+										>
+											&larr;
+										</span>
 									</a>
 								</div>
 							</nav>
@@ -982,7 +1019,7 @@ export default (props) => {
 						</div>
 					</div>
 				</div>
-			</div>
+			</Transition>
 		</div>
 	);
 }
