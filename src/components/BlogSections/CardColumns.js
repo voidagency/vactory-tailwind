@@ -3,16 +3,16 @@ import React from "react";
 
 export default (props) => {
 	return (
-		<div className="relative bg-gray-50 pt-16 pb-20 px-4 sm:px-6 lg:pt-24 lg:pb-28 lg:px-8">
+		<div className="relative bg-gray-50 dark:bg-gray-900 pt-16 pb-20 px-4 sm:px-6 lg:pt-24 lg:pb-28 lg:px-8">
 			<div className="absolute inset-0">
-				<div className="bg-white h-1/3 sm:h-2/3"></div>
+				<div className="bg-white dark:bg-black h-1/3 sm:h-2/3" />
 			</div>
 			<div className="relative max-w-7xl mx-auto">
 				<div className="text-center">
-					<h2 className="text-3xl tracking-tight font-extrabold text-gray-900 sm:text-4xl">
+					<h2 className="text-3xl tracking-tight font-extrabold text-gray-900 dark:text-gray-100 sm:text-4xl">
 						From the blog
 					</h2>
-					<p className="mt-3 max-w-2xl mx-auto text-xl text-gray-500 sm:mt-4">
+					<p className="mt-3 max-w-2xl mx-auto text-xl text-gray-500 dark:text-gray-300 sm:mt-4">
 						Lorem ipsum dolor sit amet consectetur, adipisicing
 						elit. Ipsa libero labore natus atque, ducimus sed.
 					</p>
@@ -26,7 +26,7 @@ export default (props) => {
 								alt=""
 							/>
 						</div>
-						<div className="flex-1 bg-white p-6 flex flex-col justify-between">
+						<div className="flex-1 bg-white dark:bg-gray-800 p-6 flex flex-col justify-between">
 							<div className="flex-1">
 								<p className="text-sm font-medium text-indigo-600">
 									<a href="#!" className="hover:underline">
@@ -34,10 +34,10 @@ export default (props) => {
 									</a>
 								</p>
 								<a href="#!" className="block mt-2">
-									<p className="text-xl font-semibold text-gray-900">
+									<p className="text-xl font-semibold text-gray-900 dark:text-white">
 										Boost your conversion rate
 									</p>
-									<p className="mt-3 text-base text-gray-500">
+									<p className="mt-3 text-base text-gray-500 dark:text-gray-400 ">
 										Lorem ipsum dolor sit amet consectetur
 										adipisicing elit. Architecto accusantium
 										praesentium eius, ut atque fuga culpa,
@@ -59,8 +59,11 @@ export default (props) => {
 									</a>
 								</div>
 								<div className="ltr:ml-3 rtl:mr-3">
-									<p className="text-sm font-medium text-gray-900">
-										<a href="#!" className="hover:underline">
+									<p className="text-sm font-medium text-gray-900  dark:text-gray-200">
+										<a
+											href="#!"
+											className="hover:underline"
+										>
 											Roel Aufderehar
 										</a>
 									</p>
@@ -84,7 +87,7 @@ export default (props) => {
 								alt=""
 							/>
 						</div>
-						<div className="flex-1 bg-white p-6 flex flex-col justify-between">
+						<div className="flex-1 bg-white dark:bg-gray-800 p-6 flex flex-col justify-between">
 							<div className="flex-1">
 								<p className="text-sm font-medium text-indigo-600">
 									<a href="#!" className="hover:underline">
@@ -92,11 +95,11 @@ export default (props) => {
 									</a>
 								</p>
 								<a href="#!" className="block mt-2">
-									<p className="text-xl font-semibold text-gray-900">
+									<p className="text-xl font-semibold text-gray-900 dark:text-white">
 										How to use search engine optimization to
 										drive sales
 									</p>
-									<p className="mt-3 text-base text-gray-500">
+									<p className="mt-3 text-base text-gray-500 dark:text-gray-400">
 										Lorem ipsum dolor sit amet consectetur
 										adipisicing elit. Velit facilis
 										asperiores porro quaerat doloribus,
@@ -120,8 +123,11 @@ export default (props) => {
 									</a>
 								</div>
 								<div className="ltr:ml-3 rtl:mr-3">
-									<p className="text-sm font-medium text-gray-900">
-										<a href="#!" className="hover:underline">
+									<p className="text-sm font-medium text-gray-900  dark:text-gray-200">
+										<a
+											href="#!"
+											className="hover:underline"
+										>
 											Brenna Goyette
 										</a>
 									</p>
@@ -145,7 +151,7 @@ export default (props) => {
 								alt=""
 							/>
 						</div>
-						<div className="flex-1 bg-white p-6 flex flex-col justify-between">
+						<div className="flex-1 bg-white dark:bg-gray-800 p-6 flex flex-col justify-between">
 							<div className="flex-1">
 								<p className="text-sm font-medium text-indigo-600">
 									<a href="#!" className="hover:underline">
@@ -153,10 +159,10 @@ export default (props) => {
 									</a>
 								</p>
 								<a href="#!" className="block mt-2">
-									<p className="text-xl font-semibold text-gray-900">
+									<p className="text-xl font-semibold text-gray-900 dark:text-white">
 										Improve your customer experience
 									</p>
-									<p className="mt-3 text-base text-gray-500">
+									<p className="mt-3 text-base text-gray-500 dark:text-gray-400">
 										Lorem ipsum dolor sit amet consectetur
 										adipisicing elit. Sint harum rerum
 										voluptatem quo recusandae magni placeat
@@ -179,8 +185,11 @@ export default (props) => {
 									</a>
 								</div>
 								<div className="ltr:ml-3 rtl:mr-3">
-									<p className="text-sm font-medium text-gray-900">
-										<a href="#!" className="hover:underline">
+									<p className="text-sm font-medium text-gray-900  dark:text-gray-200">
+										<a
+											href="#!"
+											className="hover:underline"
+										>
 											Daniela Metz
 										</a>
 									</p>

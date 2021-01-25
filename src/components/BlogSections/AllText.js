@@ -3,14 +3,14 @@ import React from "react";
 
 export default (props) => {
 	return (
-		<div className="bg-white pt-16 pb-20 px-4 sm:px-6 lg:pt-24 lg:pb-28 lg:px-8">
+		<div className="bg-white dark:bg-black pt-16 pb-20 px-4 sm:px-6 lg:pt-24 lg:pb-28 lg:px-8">
 			<div className="relative max-w-lg mx-auto divide-y-2 divide-gray-200 lg:max-w-7xl">
 				<div>
-					<h2 className="text-3xl tracking-tight font-extrabold text-gray-900 sm:text-4xl">
+					<h2 className="text-3xl tracking-tight font-extrabold text-gray-900 dark:text-gray-100 sm:text-4xl">
 						Press
 					</h2>
 					<div className="mt-3 sm:mt-4 lg:grid lg:grid-cols-2 lg:gap-5 lg:items-center">
-						<p className="text-xl text-gray-500">
+						<p className="text-xl text-gray-500 dark:text-gray-400">
 							Get weekly articles in your inbox on how to grow
 							your business.
 						</p>
@@ -28,7 +28,7 @@ export default (props) => {
 									type="email"
 									autoComplete="email"
 									required
-									className="appearance-none w-full px-4 py-2 border border-gray-300 text-base rounded-md text-gray-900 bg-white placeholder-gray-500 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 lg:max-w-xs"
+									className="appearance-none w-full px-4 py-2 border border-gray-300 dark:border-gray-500 text-base rounded-md text-gray-900 bg-white dark:bg-black placeholder-gray-500 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 lg:max-w-xs"
 									placeholder="Enter your email"
 								/>
 							</div>
@@ -66,7 +66,7 @@ export default (props) => {
 							<time dateTime="2020-03-16">Mar 16, 2020</time>
 						</p>
 						<a href="#!" className="mt-2 block">
-							<p className="text-xl font-semibold text-gray-900">
+							<p className="text-xl font-semibold text-gray-900 dark:text-gray-100">
 								Boost your conversion rate
 							</p>
 							<p className="mt-3 text-base text-gray-500">
@@ -109,7 +109,7 @@ export default (props) => {
 							<time dateTime="2020-03-10">Mar 10, 2020</time>
 						</p>
 						<a href="#!" className="mt-2 block">
-							<p className="text-xl font-semibold text-gray-900">
+							<p className="text-xl font-semibold text-gray-900 dark:text-gray-100">
 								How to use search engine optimization to drive
 								sales
 							</p>
@@ -151,7 +151,7 @@ export default (props) => {
 							<time dateTime="2020-02-12">Feb 12, 2020</time>
 						</p>
 						<a href="#!" className="mt-2 block">
-							<p className="text-xl font-semibold text-gray-900">
+							<p className="text-xl font-semibold text-gray-900 dark:text-gray-100">
 								Improve your customer experience
 							</p>
 							<p className="mt-3 text-base text-gray-500">
@@ -192,7 +192,7 @@ export default (props) => {
 							<time dateTime="2020-01-29">Jan 29, 2020</time>
 						</p>
 						<a href="#!" className="mt-2 block">
-							<p className="text-xl font-semibold text-gray-900">
+							<p className="text-xl font-semibold text-gray-900 dark:text-gray-100">
 								Writing effective landing page copy
 							</p>
 							<p className="mt-3 text-base text-gray-500">
