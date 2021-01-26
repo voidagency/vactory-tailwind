@@ -3,13 +3,13 @@ import React from "react";
 
 export default (props) => {
 	return (
-		<div className="py-12 bg-white">
+		<div className="py-12 bg-white dark:bg-black">
 			<div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 				<div className="lg:text-center">
 					<h2 className="text-base text-indigo-600 font-semibold tracking-wide uppercase">
 						Transactions
 					</h2>
-					<p className="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
+					<p className="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 dark:text-gray-100 sm:text-4xl">
 						A better way to send money
 					</p>
 					<p className="mt-4 max-w-2xl text-xl text-gray-500 lg:mx-auto">
@@ -43,7 +43,7 @@ export default (props) => {
 								</div>
 							</div>
 							<div className="ltr:ml-4 rtl:mr-4">
-								<dt className="text-lg leading-6 font-medium text-gray-900">
+								<dt className="text-lg leading-6 font-medium text-gray-900 dark:text-gray-100">
 									Competitive exchange rates
 								</dt>
 								<dd className="mt-2 text-base text-gray-500">
@@ -77,7 +77,7 @@ export default (props) => {
 								</div>
 							</div>
 							<div className="ltr:ml-4 rtl:mr-4">
-								<dt className="text-lg leading-6 font-medium text-gray-900">
+								<dt className="text-lg leading-6 font-medium text-gray-900 dark:text-gray-100">
 									No hidden fees
 								</dt>
 								<dd className="mt-2 text-base text-gray-500">
@@ -111,7 +111,7 @@ export default (props) => {
 								</div>
 							</div>
 							<div className="ltr:ml-4 rtl:mr-4">
-								<dt className="text-lg leading-6 font-medium text-gray-900">
+								<dt className="text-lg leading-6 font-medium text-gray-900 dark:text-gray-100">
 									Transfers are instant
 								</dt>
 								<dd className="mt-2 text-base text-gray-500">
@@ -145,7 +145,7 @@ export default (props) => {
 								</div>
 							</div>
 							<div className="ltr:ml-4 rtl:mr-4">
-								<dt className="text-lg leading-6 font-medium text-gray-900">
+								<dt className="text-lg leading-6 font-medium text-gray-900 dark:text-gray-100">
 									Mobile notifications
 								</dt>
 								<dd className="mt-2 text-base text-gray-500">

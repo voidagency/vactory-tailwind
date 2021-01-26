@@ -11,7 +11,7 @@ export default (props) => {
 				</p>
 
 				<div className="flex justify-between flex-wrap">
-					<div className="border mx-auto flex flex-col justify-center items-center m-2.5 p-5 pb-6 shadow-2xl w-56 rounded-lg hover:-translate-y-8 transform-gpu transition duration-200 cursor-default my-8">
+					<div className="mx-auto flex flex-col justify-center items-center m-2.5 p-5 pb-6 shadow-2xl w-56 rounded-lg hover:-translate-y-8 transform-gpu transition duration-200 cursor-default my-8">
 						<img
 							src="https://backend.v3.capital-azur.com/sites/default/files/2020-11/cardservice1.png"
 							className="object-contain w-24 h-24 mt-6 mb-8 rounded-full"
@@ -21,7 +21,7 @@ export default (props) => {
 						<h3 className="font-bold">Comptes & Cartes</h3>
 					</div>
 
-					<div className="border mx-auto flex flex-col justify-center items-center m-2.5 p-5 pb-6 shadow-2xl w-56 rounded-lg hover:-translate-y-8 transform-gpu transition duration-200 cursor-default my-8">
+					<div className="mx-auto flex flex-col justify-center items-center m-2.5 p-5 pb-6 shadow-2xl w-56 rounded-lg hover:-translate-y-8 transform-gpu transition duration-200 cursor-default my-8">
 						<img
 							src="https://backend.v3.capital-azur.com/sites/default/files/2020-11/cardservice2.png"
 							className="object-contain w-24 h-24 mt-6 mb-8 rounded-full"
@@ -31,7 +31,7 @@ export default (props) => {
 						<h3 className="font-bold">Epargne</h3>
 					</div>
 
-					<div className="border mx-auto flex flex-col justify-center items-center m-2.5 p-5 pb-6 shadow-2xl w-56 rounded-lg hover:-translate-y-8 transform-gpu transition duration-200 cursor-default my-8">
+					<div className="mx-auto flex flex-col justify-center items-center m-2.5 p-5 pb-6 shadow-2xl w-56 rounded-lg hover:-translate-y-8 transform-gpu transition duration-200 cursor-default my-8">
 						<img
 							src="https://backend.v3.capital-azur.com/sites/default/files/2020-11/cardservice3.png"
 							className="object-contain w-24 h-24 mt-6 mb-8 rounded-full"
@@ -41,7 +41,7 @@ export default (props) => {
 						<h3 className="font-bold">Crédit</h3>
 					</div>
 
-					<div className="border mx-auto flex flex-col justify-center items-center m-2.5 p-5 pb-6 shadow-2xl w-56 rounded-lg hover:-translate-y-8 transform-gpu transition duration-200 cursor-default my-8">
+					<div className="mx-auto flex flex-col justify-center items-center m-2.5 p-5 pb-6 shadow-2xl w-56 rounded-lg hover:-translate-y-8 transform-gpu transition duration-200 cursor-default my-8">
 						<img
 							src="https://backend.v3.capital-azur.com/sites/default/files/2020-11/cardservice4.png"
 							className="object-contain w-24 h-24 mt-6 mb-8 rounded-full"

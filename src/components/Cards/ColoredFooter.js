@@ -36,16 +36,16 @@ export default (props) => {
 					fill="url(#bedc54bc-7371-44a2-a2bc-dc68d819ae60)"
 				/>
 			</svg>
-			<blockquote className="relative bg-white rounded-lg shadow-lg">
+			<blockquote className="relative bg-white dark:bg-black rounded-lg shadow-lg">
 				<div className="rounded-t-lg px-6 py-8 sm:px-10 sm:pt-10 sm:pb-8">
 					<img
 						src="https://tailwindui.com/img/logos/workcation-logo-indigo-600-mark-gray-800-and-indigo-600-text.svg"
 						alt="Workcation"
 						className="h-8"
 					/>
-					<div className="relative text-lg text-gray-700 font-medium mt-8">
+					<div className="relative text-lg text-gray-700 dark:text-gray-300 font-medium mt-8">
 						<svg
-							className="absolute top-0 left-0 transform -translate-x-3 -translate-y-2 h-8 w-8 text-gray-200"
+							className="absolute top-0 left-0 transform -translate-x-3 -translate-y-2 h-8 w-8 text-gray-200 dark:text-gray-700"
 							fill="currentColor"
 							viewBox="0 0 32 32"
 							aria-hidden="true"
@@ -70,7 +70,7 @@ export default (props) => {
 						/>
 					</div>
 					<span className="relative ml-4 text-indigo-300 font-semibold leading-6 sm:ml-24 sm:pl-1">
-						<p className="text-white font-semibold sm:inline">
+						<p className="text-white font-semibold sm:inline ltr:mr-1 rtl:ml-1">
 							Judith Black
 						</p>
 						<p className="sm:inline">CEO at Workcation</p>
