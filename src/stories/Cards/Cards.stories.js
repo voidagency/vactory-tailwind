@@ -1,6 +1,7 @@
 import React from 'react';
 import {CardA, CardB} from '../../components'
 import ColoredFooter from "../../components/Cards/ColoredFooter";
+import WithOverlay from "../../components/Cards/WithOverlay";
 
 export default {
 	title: "Sections/Cards",
@@ -52,3 +53,10 @@ export const Card2 = () => {
 export const WithColoredFooter = () => {
 	return <ColoredFooter />
 }
+
+export const CardWithOverlay = () => <WithOverlay />;
+CardWithOverlay.decorators = [
+		S => <div className="flex justify-center p-4">
+			<S />
+		</div>
+	]

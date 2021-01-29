@@ -207,6 +207,7 @@ export default (props) => {
 						<img
 							className="relative mx-auto"
 							width="490"
+							referrerPolicy="no-referrer"
 							src="https://tailwindui.com/img/features/feature-example-1.png"
 							alt=""
 						/>
@@ -369,6 +370,7 @@ export default (props) => {
 							</svg>
 							<img
 								className="relative mx-auto"
+								referrerPolicy="no-referrer"
 								width="490"
 								src="https://tailwindui.com/img/features/feature-example-2.png"
 								alt=""

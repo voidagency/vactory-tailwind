@@ -39,6 +39,7 @@ export default (props) => {
 			<blockquote className="relative bg-white dark:bg-black rounded-lg shadow-lg">
 				<div className="rounded-t-lg px-6 py-8 sm:px-10 sm:pt-10 sm:pb-8">
 					<img
+						referrerPolicy="no-referrer"
 						src="https://tailwindui.com/img/logos/workcation-logo-indigo-600-mark-gray-800-and-indigo-600-text.svg"
 						alt="Workcation"
 						className="h-8"

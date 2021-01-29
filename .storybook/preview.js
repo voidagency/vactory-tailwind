@@ -34,7 +34,6 @@ export const parameters = {
 		},
 	},
 	backgrounds: {
-		default: "grey",
 		values: [
 			{
 				name: "light",

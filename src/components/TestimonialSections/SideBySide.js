@@ -9,6 +9,7 @@ export default (props) => {
 					<div className="md:flex-shrink-0">
 						<img
 							className="h-12"
+							referrerPolicy="no-referrer"
 							src="https://tailwindui.com/img/logos/tuple-logo-indigo-300.svg"
 							alt="Tuple"
 						/>
@@ -54,6 +55,7 @@ export default (props) => {
 				<div className="py-12 px-4 border-t-2 border-indigo-900 sm:px-6 md:py-16 md:ltr:pr-0 md:rtl:pl-0 md:ltr:pl-10 md:rtl:pr-10 md:border-t-0 md:ltr:border-l md:rtl:border-r lg:ltr:pl-16 lg:rtl:pr-16">
 					<div className="md:flex-shrink-0">
 						<img
+							referrerPolicy="no-referrer"
 							className="h-12"
 							src="https://tailwindui.com/img/logos/workcation-logo-indigo-300.svg"
 							alt="Workcation"
