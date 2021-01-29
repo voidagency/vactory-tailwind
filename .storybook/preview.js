@@ -33,6 +33,23 @@ export const parameters = {
 			order: ["Primitives", "Elements", "Sections"],
 		},
 	},
+	backgrounds: {
+		default: "grey",
+		values: [
+			{
+				name: "light",
+				value: "#f8f8f8"
+			},
+			{
+				name: "grey",
+				value: "#e5e7eb",
+			},
+			{
+				name: "dark",
+				value: "#333333"
+			}
+		],
+	},
 };
 
 // Gatsby's Link overrides:

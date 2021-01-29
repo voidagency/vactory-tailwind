@@ -4,17 +4,6 @@ import SplitWithImage from "../../components/Sliders/Slides/SplitWithImage";
 
 export default {
 	title: "Elements/Sliders/Slides",
-	parameters: {
-		backgrounds: {
-			default: "grey",
-			values: [
-				{
-					name: "grey",
-					value: "#e5e7eb",
-				},
-			],
-		},
-	},
 };
 
 export const CenteredSimpleSlide = () => <SimpleCentered />;
