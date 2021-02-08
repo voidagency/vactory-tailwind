@@ -3,6 +3,7 @@ import { HeaderA, HeaderB } from "../../components";
 import DirSwitch from "../../utilites/dirSwitch";
 import Header_CenteredWithBottomBorder from "../../components/headers/CenteredWithBottomBorder";
 import Header_WithFullWidthFlayout from "../../components/headers/WithFullWidthFlayout";
+import Header_Sticky from "../../components/headers/StickyHeader";
 
 export default {
 	title: "Sections/Headers",
@@ -53,4 +54,8 @@ export const CenteredWithBottomBorder = () => {
 
 export const WithFullWidthFlayout = () => {
 	return <Header_WithFullWidthFlayout />;
+};
+
+export const Sticky = () => {
+	return <Header_Sticky />;
 };
