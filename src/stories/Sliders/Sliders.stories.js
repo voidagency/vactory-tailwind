@@ -1,6 +1,7 @@
 import React from "react";
 import Slider_Simple from "../../components/Sliders/Simple";
 import VideoCarousel from "../../components/Sliders/VideoCarousel";
+import CardsSlider from "../../components/Sliders/CardsSlider";
 
 
 export default {
@@ -21,3 +22,5 @@ export default {
 export const Simple = () => <Slider_Simple />;
 
 export const _VideoCarousel = () => <VideoCarousel />;
+
+export const _CardsSlider = () => <CardsSlider />;

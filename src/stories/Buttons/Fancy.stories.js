@@ -11,7 +11,7 @@ export const FancyButton = () => {
 		<>
 			{["px-3 py-2 text-sm leading-4", "px-6 py-3 text-base"].map(
 				(size) => (
-					<div className="flex flex-col md:flex-row flex-wrap space-y-2 md:space-y-0 my-5 space-x-5 justify-center items-center">
+					<div className="flex flex-col md:flex-row flex-wrap space-y-2 md:space-y-0 my-5 space-x-5 rtl:space-x-reverse justify-center items-center">
 						<div>
 							<button
 								type="button"

@@ -9,7 +9,7 @@ export const Success = () => {
 	return (
 		<>
 		{["px-3 py-2 text-sm leading-4", "px-6 py-3 text-base"].map( size => (
-			<div className="flex flex-col md:flex-row flex-wrap items-center space-y-2 md:space-y-0 my-5 space-x-5 justify-center">
+			<div className="flex flex-col md:flex-row flex-wrap items-center space-y-2 md:space-y-0 my-5 space-x-5 rtl:space-x-reverse justify-center">
 
 				<button type="button" className={`inline-flex items-center border border-transparent ${size} font-medium rounded-md shadow-sm text-white bg-green-600 hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500`}>
 					Button Primary
@@ -37,7 +37,7 @@ export const Error = () => {
 	return (
 		<>
 		{["px-3 py-2 text-sm leading-4", "px-6 py-3 text-base"].map( size => (
-			<div className="flex flex-col md:flex-row flex-wrap items-center space-y-2 md:space-y-0 my-5 space-x-5 justify-center">
+			<div className="flex flex-col md:flex-row flex-wrap items-center space-y-2 md:space-y-0 my-5 space-x-5 rtl:space-x-reverse justify-center">
 
 				<button type="button" className={`inline-flex items-center border border-transparent ${size} font-medium rounded-md shadow-sm text-white bg-red-600 hover:bg-red-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500`}>
 					Button Primary
@@ -65,7 +65,7 @@ export const Info = () => {
 	return (
 		<>
 		{["px-3 py-2 text-sm leading-4", "px-6 py-3 text-base"].map( size => (
-			<div className="flex flex-col md:flex-row flex-wrap items-center space-y-2 md:space-y-0 my-5 space-x-5 justify-center">
+			<div className="flex flex-col md:flex-row flex-wrap items-center space-y-2 md:space-y-0 my-5 space-x-5  justify-center">
 
 				<button type="button" className={`inline-flex items-center border border-transparent ${size} font-medium rounded-md shadow-sm text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500`}>
 					Button Primary
@@ -93,7 +93,7 @@ export const Warning = () => {
 	return (
 		<>
 		{["px-3 py-2 text-sm leading-4", "px-6 py-3 text-base"].map( size => (
-			<div className="flex flex-col md:flex-row flex-wrap items-center space-y-2 md:space-y-0 my-5 space-x-5 justify-center">
+			<div className="flex flex-col md:flex-row flex-wrap items-center space-y-2 md:space-y-0 my-5 space-x-5 rtl:space-x-reverse justify-center">
 
 				<button type="button" className={`inline-flex items-center border border-transparent ${size} font-medium rounded-md shadow-sm text-white bg-yellow-600 hover:bg-yellow-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500`}>
 					Button Primary
