@@ -9872,6 +9872,11 @@ react-hotkeys@2.0.0:
   dependencies:
     prop-types "^15.6.1"
 
+react-icomoon@^2.4.3:
+  version "2.4.3"
+  resolved "https://registry.yarnpkg.com/react-icomoon/-/react-icomoon-2.4.3.tgz#119ad55ca101ba9ba9b15745c55fd1b3eff87218"
+  integrity sha512-e36ahIlBwq+fL7A546WLtrSmR/IaA0hj88aFwdP2xbdmudwd1v1XjjVzC9U0K0ULwY+LTTse/7ePYr3oKMJitA==
+
 react-input-autosize@^3.0.0:
   version "3.0.0"
   resolved "https://registry.yarnpkg.com/react-input-autosize/-/react-input-autosize-3.0.0.tgz#6b5898c790d4478d69420b55441fcc31d5c50a85"
