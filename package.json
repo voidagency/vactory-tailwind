@@ -1,6 +1,6 @@
 {
   "name": "vactory-ui",
-  "version": "1.1.0-327",
+  "version": "1.1.0-330",
   "author": "Abdelkoddous <a.elidrissi@void.fr>",
   "license": "MIT",
   "scripts": {
@@ -42,6 +42,7 @@
   },
   "devDependencies": {
     "@babel/core": "^7.11.6",
+    "@rollup/plugin-image": "^2.1.1",
     "@storybook/addon-actions": "^6.1.11",
     "@storybook/addon-essentials": "^6.1.11",
     "@storybook/addon-links": "^6.1.11",
@@ -59,10 +60,9 @@
   "homepage": "https://github.com/voidagency/vactory-tailwind#readme",
   "description": "",
   "files": [
-    "dist/",
-    "styles.css"
+    "dist/"
   ],
-  "source": "src/components/**/index.js",
+  "source": "src/components",
   "exports": {
     ".": "./*",
     "./*": "./dist/*"
