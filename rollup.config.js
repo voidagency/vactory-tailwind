@@ -22,6 +22,7 @@ const listComponentsDir = (dir) => {
 };
 
 const createConfig = (filename) => ({
+	external: ['react', 'react-dom'],
 	input: `src/components/${filename}/index.js`,
 	output: {
 		file: `dist/${filename}.js`,
