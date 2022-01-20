@@ -1,18 +1,20 @@
 {
   "name": "vactory-ui",
-  "version": "1.1.0-323",
+  "version": "1.1.0-327",
   "author": "Abdelkoddous <a.elidrissi@void.fr>",
   "license": "MIT",
   "scripts": {
-    "develop": "gatsby develop",
-    "build": "gatsby build",
     "storybook": "start-storybook -p 6006 --ci",
-    "build-storybook": "build-storybook"
+    "storybook:build": "build-storybook",
+    "tailwind:build": "tailwindcss build -i ./src/styles/global.css -o ./dist/styles.css",
+    "rollup": "rollup --config rollup.config.js",
+    "build": "yarn tailwind:build && yarn rollup"
   },
   "dependencies": {
     "@glidejs/glide": "^3.4.1",
     "@headlessui/react": "^0.2.0",
     "@rollup/plugin-babel": "^5.3.0",
+    "@rollup/plugin-json": "^4.1.0",
     "@storybook/addon-controls": "^6.1.11",
     "@storybook/addon-knobs": "^6.1.11",
     "@tailwindcss/aspect-ratio": "^0.2.0",
@@ -61,5 +63,8 @@
     "styles.css"
   ],
   "source": "src/components/**/index.js",
-  "exports": "./dist/"
+  "exports": {
+    ".": "./*",
+    "./*": "./dist/*"
+  }
 }
