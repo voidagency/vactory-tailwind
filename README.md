@@ -31,13 +31,13 @@ Enjoy a bunch of beautiful and ready to use components :)
   import './App.css';
   import "vactory-ui/styles.css";
 + import Toolbox from "vactory-ui/Toolbox";
-+ import StickyFull from "vactory-ui/Banners";
++ import Banners from "vactory-ui/Banners";
 
   function App() {
     return (
       <div className="App">
 +       <Toolbox.Sliding />
-+       <StickyFull.Floating />
++       <Banners.Floating />
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
 ```
