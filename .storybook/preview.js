@@ -5,13 +5,12 @@ import { action } from "@storybook/addon-actions";
 // import {AppSettings, i18nInstance} from 'vactory-gatsby-core';
 import { addDecorator } from "@storybook/react";
 import {
-	theme as vactoryTheme,
 	// GlobalStyle,
 	mergeIcons,
 	iconSet,
 	VactoryIconProvider,
 	// DirectionManager
-} from "vactory-ui";
+} from "../src/components/Icon";
 
 // import deepmerge from 'deepmerge';
 // import VactoryGlobaltStyle from '../src/vactory-gatsby-ui/GlobalStyle'

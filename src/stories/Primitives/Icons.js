@@ -35,26 +35,24 @@ export const Icons = () => {
 	};
 
     return (
-        <VactoryIconProvider value={customIcons}>
-                <div className="flex flex-col">
-                    <div className="flex flex-row flex-wrap">
-                        {
-                            iconNameList(customIcons).map((iconName, key) => {
+            <div className="flex flex-col">
+                <div className="flex flex-row flex-wrap">
+                    {
+                        iconNameList(customIcons).map((iconName, key) => {
 
-                                if ( iconName.indexOf(filter) > -1 )
-                                return <IconBox
-                                    key={key}
-                                    tabIndex={0}
-                                    onClick={() => copyToClipboard(iconName)}
-                                    >
-									<Icon name={iconName} color="primary" size={number("Size", 48, options, 'GROUP-ID1')}/>
-                                    <div className="mt-3 text-sm">{iconName}</div>
-                                </IconBox>
-                            })
-                        }
-                    </div>
+                            if ( iconName.indexOf(filter) > -1 )
+                            return <IconBox
+                                key={key}
+                                tabIndex={0}
+                                onClick={() => copyToClipboard(iconName)}
+                                >
+                                <Icon name={iconName} color="primary" size={number("Size", 48, options, 'GROUP-ID1')}/>
+                                <div className="mt-3 text-sm">{iconName}</div>
+                            </IconBox>
+                        })
+                    }
                 </div>
-        </VactoryIconProvider>
+            </div>
     )
 }
 

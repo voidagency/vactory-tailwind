@@ -1,5 +1,5 @@
 import React from "react";
-import {Icon} from "vactory-ui";
+import {Icon} from "../Icon";
 import clsx from "clsx";
 
 const menu = [

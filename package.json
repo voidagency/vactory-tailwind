@@ -1,8 +1,7 @@
 {
-  "name": "tailwind",
-  "version": "1.0.0",
-  "main": "index.js",
-  "author": "Hamza Bahlaouane <h.bahlaouane@void.fr>",
+  "name": "vactory-ui",
+  "version": "1.1.0-323",
+  "author": "Abdelkoddous <a.elidrissi@void.fr>",
   "license": "MIT",
   "scripts": {
     "develop": "gatsby develop",
@@ -13,6 +12,7 @@
   "dependencies": {
     "@glidejs/glide": "^3.4.1",
     "@headlessui/react": "^0.2.0",
+    "@rollup/plugin-babel": "^5.3.0",
     "@storybook/addon-controls": "^6.1.11",
     "@storybook/addon-knobs": "^6.1.11",
     "@tailwindcss/aspect-ratio": "^0.2.0",
@@ -24,6 +24,7 @@
     "cogo-toast": "^4.2.3",
     "copy-to-clipboard": "^3.3.1",
     "dotenv": "^8.2.0",
+    "microbundle": "^0.14.2",
     "postcss": "^8.2.2",
     "postcss-import": "^14.0.0",
     "postcss-loader": "^4.1.0",
@@ -35,8 +36,7 @@
     "tailwindcss-children": "^2.1.0",
     "tailwindcss-dir": "^4.0.0",
     "tailwindcss-pseudo-elements": "^1.5.1",
-    "tailwindcss-rtl": "^0.7.3",
-    "vactory-ui": "^1.0.8"
+    "tailwindcss-rtl": "^0.7.3"
   },
   "devDependencies": {
     "@babel/core": "^7.11.6",
@@ -44,6 +44,22 @@
     "@storybook/addon-essentials": "^6.1.11",
     "@storybook/addon-links": "^6.1.11",
     "@storybook/react": "^6.1.11",
-    "babel-loader": "^8.1.0"
-  }
+    "babel-loader": "^8.1.0",
+    "rollup": "^2.64.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/voidagency/vactory-tailwind.git"
+  },
+  "bugs": {
+    "url": "https://github.com/voidagency/vactory-tailwind/issues"
+  },
+  "homepage": "https://github.com/voidagency/vactory-tailwind#readme",
+  "description": "",
+  "files": [
+    "dist/",
+    "styles.css"
+  ],
+  "source": "src/components/**/index.js",
+  "exports": "./dist/"
 }

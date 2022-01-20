@@ -1,6 +1,6 @@
 import React from "react";
 import { Transition } from "@headlessui/react";
-import { Icon } from "vactory-ui";
+import { Icon } from "../Icon";
 
 export const HeaderB = () => {
 	const upperNav = [
