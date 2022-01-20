@@ -1,7 +1,7 @@
 import React from "react";
 import Glide from "@glidejs/glide";
-import "./styles/glide.core.css";
-import "./styles/glide.theme.css";
+// import "./styles/glide.core.css";
+// import "./styles/glide.theme.css";
 import SlideViewCentered from "./Slides/SimpleCentered"
 import SlideViewSplit from "./Slides/SplitWithImage"
 
